@@ -122,41 +122,48 @@ footer {
 /* a_horario-estudiante */
 
 .selector {
-    background-color: #000;
     border-radius: 20px;
     margin: 0 auto;
     height: 50px;
-    width: 25%;
+    width: 30%;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-evenly;
+}
+
+.selector-alt {
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 250px;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#select {
+    background-color: rgba(0, 0, 0, 0.65);
+    color: #FFF;
+    border: none;
+    font-size: 18px;
+    width: 150px;
+    height: 60px;
+    border-radius: 20px;
+    margin-left: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .current {
     color: #FFF;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .current span {
     color: #84B6F4;
-}
-
-.select {
-    width: 70%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-#select {
-    background-color: #000;
-    color: #FFF;
-    border-radius: 20px;
-    margin-top: 20px;
-    height: 50px;
-    width: 100px;
-    font-size: 30px;
-    text-align: center;
 }
 
 .tabla-container {
@@ -168,12 +175,69 @@ footer {
 .tabla-horario {
     border: 1px solid #FFF;
     background-color: #000;
+    margin: 0 auto;
     color: #FFF;
     height: 380px;
     width: 1000px;
     border-radius: 10px;
 }
 
+.tabla-centrar {
+    padding: 50px 0;
+}
+
 .tabla-horario td {
     text-align: center;
+}
+
+/* a_registro-estudiantes y profesores */
+
+.tabla-registro {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #FFF;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 15px;
+    width: 1150px;
+    height: 550px;
+    text-align: center;
+    
+}
+
+.tabla-registro td {
+    background-color: #000;
+}
+
+.tabla-registro td img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.tabla-registro td .editar {
+    width: 30px;
+    height: 30px;
+}
+
+/* p_calificacion-seccionA */
+
+.select-calificacion {
+    display: flex;
+    justify-content: center;
+}
+
+#select-calificacion {
+    background-color: rgba(0, 0, 0, 0.65);
+    color: #FFF;
+    border: none;
+    font-size: 18px;
+    width: 150px;
+    height: 60px;
+    border-radius: 20px;
+    margin-left: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
