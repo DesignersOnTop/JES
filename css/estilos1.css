@@ -1,0 +1,530 @@
+@import url("reset.css");
+
+/* fondo de la pagina aplicada al body del index y problemas al iniciar*/
+#index-body,#problemas-al-iniciar-body {
+    background-image: url(../imagenes/background\(BODY\)1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-image: url(../imagenes/background\(BODY\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Header de las paginas que usaran todos excluyendo a las paginas index.html y problemas-al-iniciar.html */
+header {
+    background-color: #000;
+    height: 65px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+
+header li {
+    width: 50px;
+    transform: translateX(-10px) translateY(-12px);
+
+}
+
+nav {
+    background-color: #000;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+}
+
+.header-container {
+    width: 95%;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.JES {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.JES img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.JES-nom {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transform: translateX(-30px);
+}
+
+.JES-nom h3 {
+    font-size: 12px;
+    margin-top: 1px;
+}
+
+/* HEADER DE LAS PAGINAS HOMES */
+.header-home-container {
+    background-color: #00000000;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 95%;
+    margin-left: 20px;
+}
+
+.logo-jes-home img {
+    width: 280px;
+    height: 240px;
+    position: relative;
+    bottom: 50px;
+}
+
+.jes-nombre-home {
+    text-align: center;
+}
+/* AQUI TERMINA LOS HEADER DE LOS HOMES */
+
+/* HOMES */
+.main-container-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 170px;
+}
+
+.horario-home, .calificaciones-home {
+    width: 340px;
+    height: 120px;
+    background-color: #000;
+    border-radius: 15px;
+    box-shadow: 2px 2px #FFC93D;
+    margin: 0 30px;
+    position: relative;
+    top: 90px;
+}
+
+.horario-home a, .calificaciones-home a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    transform: translateY(20px);
+}
+
+.horario-home h3, .calificaciones-home h3 {
+    order: 1;
+    font-size: 20px;
+    line-height: 80px;
+    transform: translateX(-25px);
+}
+
+.horario-home img, .calificaciones-home img {
+    order: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.home-article-container {
+    display: flex;
+    justify-content: space-around;
+}
+/* AQUI TERMINAN LOS HOMES */
+
+
+/* estilos para problemas-al-iniciar.html y index.html */
+#problemas-al-iniciar-main, #index-main {
+    background-color: rgba(0, 0, 0, 0.84);
+    width: 1100px;
+    height: 580px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px gray;
+    border: 1px solid white;
+}
+
+#inicio-de-sesion {
+    width: 50%;
+}
+
+.cara-de-jes {
+    width: 40%;
+    border-right: 1px solid #FFC93D;
+}
+
+.cara-de-jes img {
+    max-width: 287px;
+    max-height: 260px;
+
+}
+
+.cara-de-jes h2 {
+    font-size: 40px;
+}
+
+.cara-de-jes h3 {
+    font-size: 30px;
+}
+
+.cara-de-jes h2, .cara-de-jes h3 {
+    margin-right: 60px;
+}
+
+.cara-de-jes-contenedor {
+    transform: translateY(-20px);
+}
+
+#inicio-de-sesion h1 {
+    font-size: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+#inicio-de-sesion form{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cara-de-jes-contenedor{
+    width: 100%;
+    height: 80%;
+    text-align: center;
+}
+
+.cara-de-jes img {
+    transform: translateX(-40px);
+}
+
+#id, #password {
+    width: 320px;
+    height: 45px;
+    border-radius: 10px;
+    padding-left: 60px;
+    position: relative;
+}
+
+#introducir-id figure {
+    position: absolute;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    border-radius: inherit;
+    transform: translateX(-25px);
+}
+
+#introducir-id img {
+    width: 60%;
+    transform: translateY(-10px);
+}
+
+#inicio-de-sesion .svg img {
+    fill: #FFC93D;
+}
+
+.problemas-al-iniciar {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+[href="olvido_su_id.html"] {
+    color: #FFC93D;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    transform: translateX(100px);
+}
+
+/* [type="submit"] {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #FFC93D;
+    text-transform: uppercase;
+} */
+
+#inicio-de-sesion #iniciar-sesion {
+    padding: 16px 50px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #FFC93D;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+.problemas-al-iniciar {
+    margin-bottom: 40px;
+}
+
+.problemas-al-iniciar:hover {
+    color: #FFC93D;
+}
+
+[href="olvido_su_id.html"]:hover {
+    color: white;
+}
+
+#introducir-contraseña img {
+    position: absolute;
+    z-index: 1;
+    width: 35px;
+    height: 40px;
+    border-radius: inherit;
+    transform: translateX(-25px) translateY(5px);
+}
+
+
+/* PROBLEMAS-AL-INICIAR.HTML */
+
+#problemas_al_iniciar {
+    width: 50%;
+    text-align: center;
+} 
+
+#problemas_al_iniciar h1 {
+    font-size: 30px;
+    color: #FFC93D;
+}
+
+#parrafo-de-soporte {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.volver-atras {
+    padding: 14px 65px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #FFC93D;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+/* a-formulario de registro estudiantes */
+
+
+.selector {
+    border-radius: 20px;
+    margin: 0 auto;
+    height: 50px;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.selector-alt {
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 250px;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#select {
+    background-color: rgba(0, 0, 0, 0.65);
+    color: #FFF;
+    border: none;
+    font-size: 18px;
+    width: 120px;
+    height: 60px;
+    border-radius: 20px;
+    margin-left: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabla-registro {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #FFF;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 15px;
+    width: 1150px;
+    height: 550px;
+    text-align: center;
+    
+}
+
+.tabla-registro td {
+    background-color: #000;
+}
+
+.tabla-registro td img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+    transform: translateY(20px);
+}
+
+/* FORMULARIO DE REGISTRO ADMIN */
+
+
+.subir-imagen-registro input[type="file"] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.formulario-de-registro {
+    margin-bottom: 20px;
+}
+
+.formulario-de-registro-container label {
+    color: #84B6F4;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.subir-imagen-registro label {
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    line-height: 80px;
+    width: 400px;
+    right: 40px;
+    border-radius: 10px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.subir-imagen-registro label:hover {
+    box-shadow: 2px 2px gray;
+    transition: all .3s;
+}
+
+.subir-imagen-registro {
+    width: 300px;
+    height: 80px;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+
+.formulario-de-registro-container {
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    align-items: flex-start; 
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: rgba(0, 0, 0, 0.800);
+    margin-bottom: 50px;
+}
+
+.formulario-de-registro-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.formulario-de-registro-container::-webkit-scrollbar-thumb {
+    background-color: #84b6f426;
+    border-radius: 5px;
+}
+
+
+.formulario-de-registro-container input,
+.formulario-de-registro-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario-de-registro-container [type="submit"]{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.578);
+    border: white;
+    color:#84B6F4;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario-de-registro-container [type="submit"]:hover {
+    background-color: #84b6f480;
+    color: white;
+}
+
+
+/* AQUI TERMINA EL FORMULARIO DE REGISTRO */
+
+
+/* ESTILO DEL FOOTER */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    height: 20px;
+}
+/* TERMINA EL ESTILO DEL FOOTER */

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/estilos1.css">
+    <link rel="icon" href="imagenes/recursos/logo-jes.png">
+</head>
+<body id="index-body">
+    <main id="index-main">
+        <section class="cara-de-jes">
+            <div class="cara-de-jes-contenedor">
+                <figure>
+                    <img src="imagenes/recursos/logo-jes.png" alt="logo-jes">
+                </figure>
+                <h2>JES</h2>
+                <h3>Junior Explorer System</h3> 
+            </div>
+        </section>
+        <!-- En este section estara el formulario de inicio de sesion ademas del titulo  -->
+        <section id="inicio-de-sesion">
+            <h1>Iniciar Sesion</h1>
+            <form action="#">
+                    <div id="introducir-id">
+                        <figure class="svg">
+                            <img src="imagenes/iconos/ID.svg" alt="icono-id">
+                        </figure>
+                        <input type="text" id="id" placeholder="Introduzca su ID" autofocus autocomplete="on">
+                    </div>
+                    <!-- En esta parte estara tanto el icono de la contraseña asi mismo como el input de la contraseña -->
+                    <div id="introducir-contraseña">
+                        <figure class="svg">
+                            <img src="imagenes/iconos/candado-cerrado.svg" alt="icono-contraseña">
+                        </figure>
+                        <input type="password" id="password" placeholder="Introduzca su Contraseña" autocomplete="off">
+                    </div>
+                    <!-- link para reportar errores al admin -->
+                        <a href="problemas-al-iniciar.html" class="problemas-al-iniciar">Tiene alg&uacute;n problema al iniciar?</a>
+                <!-- Boton de inicio de sesion -->
+                <a href="e-home.html" id="iniciar-sesion">Iniciar Sesion</a>
+                <!-- <input type="submit" value="Solicitar Acceso"> -->
+            </form>
+        </section>
+    </main>
+</body>
+</html>
