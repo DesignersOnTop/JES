@@ -5,42 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asignacion de Horario</title>
     <meta name="description" content="Esta pagina se usara para darle diseño con CSS, para que el Admin pueda modificar o crear y con ayuada de los perfiles de los maestros poder agregar materias o cursos...">
-    <link rel="stylesheet" href="css/smailyn.css">
+    <link rel="icon" href="imagenes/recursos/logo-jes.png">
+    <link rel="stylesheet" href="css/estilosS.css">
  </head>
  <body>
-    <div id="contenedor">
+    <div id="contenedor-asignacion">
         <header>
-            <div id="cabecera">
-                <figure id="logo">
-                    <img src="imagenes/recursos/logo-jes.png" alt="Logo del proyecto">
-                </figure>
-
-                <div id="nombre-Proyecto">
-                    <h4 class="jes">JES</h4>
-                    <h4 class="nombre-jes">Junior Explorers System</h4>
+            <div class="header-container">
+                <div class="JES">
+                    <figure>
+                        <img src="imagenes/recursos/logo-jes.png" alt="logo-jes">
+                    </figure>
+                    <div class="JES-nom">
+                    <h2>JES</h2>
+                        <h3>Junior Explorers System</h3> 
+                    </div>
                 </div>
-
-                <div class="encabezado">
-                    <h4>Secci&oacute;n A</h4>
-                </div>
-
-                <nav>
+                <h1> Asignación Horarios </h1>
+                <nav class="menu-navegador">
                     <ul>
-                        <li><a href="#">
-                            <img src="imagenes/iconos/home.svg" alt="icono del menu" class="icono-home">
-                        </a></li>
-                        <li><a href="#">
-                            <img src="imagenes/iconos/usuario.svg" alt="icono del menu" class="icono-usuario">
-                        </a></li>
-                        <li><a href="#">
-                            <img src="imagenes/iconos/menu.svg" alt="icono del menu" class="icono-menu">
-                        </a></li>
+                        <li>
+                            <figure>
+                                <a href="e-home.html">
+                                    <img src="imagenes/iconos/home.svg" alt="icono-home">
+                                </a>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <a href="1-perfil-Estudiante.html">
+                                    <img src="imagenes/iconos/usuario.svg" alt="icono-usuario">
+                                </a>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="imagenes/iconos/menu.svg" alt="icono-menu">
+                            </figure>
+                        </li>
                     </ul>
-                </nav>
-            </div>    
+                </nav>            
+            </div>
         </header>
 
-        <main>
+        <main id="centro-asig">
             <section>
                 <article>
                     <figure>
@@ -50,7 +58,7 @@
                     <h4 class="asignatura">Ciencias Sociales</h4>
 
                     <figure>
-                        <img src="imagenes/recursos/perfil.Profesor.png" alt="perfil Profesor" class="perfil-profesor">
+                        <img src="imagenes/recursos/perfil.Profesor.png" alt="perfil Profesor" class="perfil-Admin">
                     </figure>
 
                     <div id="informacion-Profesor">
@@ -147,10 +155,10 @@
                 </article>
             </section>
         </main>
-
+    </div>
         <footer id="pie">
             &copy;Todos los Derechos Reservados - Designers
         </footer>
-    </div>
- </body>
- </html>
+  
+</body>
+</html>
