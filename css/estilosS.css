@@ -451,7 +451,65 @@ div .id-Admi {
 
 /* Asignacion de Horaro para el Administrador */
 
+.contenedor-info {
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 250px;
+    width: 70%;
+    border-radius: 15px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.contenedor-info p {
+    color: #FFF;
+    text-align: center;
+}
+
+.contenedor-info img {
+    height: 100px;
+    width: 100px;
+    margin: 15px 0;
+}
+
+.horizontal {
+    
+    height: 150px;
+    width: 550px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vertical {
+    position: absolute;
+}
+
+.flecha-regresar {
+    position: relative;
+}
+
+.flecha-regresar img {
+    width: 30px;
+    height: 30px;
+    transform: translateX(-120px) translateY(-60px);
+}
+
+.tabla-perfil {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #FFF;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    width: 1150px;
+    height: 550px;
+    text-align: center;
+}
 
 /* Departamentos admin y profesores */
 .section-secciones-container {
@@ -488,7 +546,3 @@ div .id-Admi {
 .section-secciones-container h2 {
     line-height: 120px;
 }
-
-
-
-
