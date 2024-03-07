@@ -174,7 +174,7 @@ footer {
 
 .tabla-horario {
     border: 1px solid #FFF;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.65);
     margin: 0 auto;
     color: #FFF;
     height: 380px;
@@ -184,6 +184,10 @@ footer {
 
 .tabla-centrar {
     padding: 50px 0;
+}
+
+.tabla-horario th {
+    background-color: #000;
 }
 
 .tabla-horario td {

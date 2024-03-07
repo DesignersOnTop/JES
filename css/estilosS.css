@@ -499,15 +499,25 @@ div .id-Admi {
     transform: translateX(-120px) translateY(-60px);
 }
 
-.tabla-perfil {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #FFF;
+.tabla-horario {
+    border: 1px solid #FFF;
+    background-color: rgba(0, 0, 0, 0.65);
     margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    border-radius: 15px;
-    width: 1150px;
-    height: 550px;
+    color: #FFF;
+    height: 380px;
+    width: 1000px;
+    border-radius: 10px;
+}
+
+.tabla-centrar {
+    padding: 50px 0;
+}
+
+.tabla-cabecera {
+    background-color: #000;
+}
+
+.tabla-horario td {
     text-align: center;
 }
 
