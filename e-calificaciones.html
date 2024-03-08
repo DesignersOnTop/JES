@@ -7,16 +7,24 @@
     <link rel="stylesheet" href="css/estilos.css">
     <style>
         th, td {
-            width: 180px;
+            min-width: 180px;
             height: 70px;
         }
         td {
-            background-color: #0000007e;
-            border-bottom: 1px solid white;
-            border-right: 1px solid white;
+            background-color: #0000003b;
         }
         .nota-final {
             border: none;
+        }
+        .tabla-centrar::-webkit-scrollbar {
+        width: 10px;
+        background-color: #000;
+        border: 1px solid rgba(255, 255, 255, 0.185);
+        border-radius: 10px;
+        }
+        .tabla-centrar::-webkit-scrollbar-thumb {
+            background-color: #ffc83d50;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -60,8 +68,8 @@
         </div>
     </header>
     <main>
-        <section class="tabla-centrar">
-            <table class="tabla-horario" style="border: 1px solid gray;">
+        <section class="tabla-centrar" style="width: 984px; margin-left: 120px; overflow-x: scroll; overflow-y: hidden;border-radius: 20px; height: 420px;">
+            <table class="tabla-horario" style="border: 1px solid gray; width: 900px;">
                 <tr class="tabla-cabecera">
                     <th>Matem&aacute;tica</th>
                     <th>L. Espa&ntilde;ola</th>
