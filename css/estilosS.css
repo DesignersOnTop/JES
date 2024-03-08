@@ -505,7 +505,7 @@ div .id-Admi {
     margin: 0 auto;
     color: #FFF;
     height: 380px;
-    width: 1000px;
+    width: 70%;
     border-radius: 10px;
 }
 
@@ -519,6 +519,11 @@ div .id-Admi {
 
 .tabla-horario td {
     text-align: center;
+}
+
+.tabla-horario th {
+    background-color: #000;
+    width: 150px;
 }
 
 /* Departamentos admin y profesores */
