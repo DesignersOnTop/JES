@@ -254,18 +254,6 @@ div #titulo {
     margin-left: 30px;
 }
 
-/* footer {
-    background-color: #000;
-    color: #FFF;
-    border-top: 1px solid #FFF;
-    font-size: 12px;
-    height: 30px;
-     margin-top: 50px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 /* PERFIL PROFESOR */
 
 .info-Profesor {
@@ -527,6 +515,7 @@ div .id-Admi {
 }
 
 /* Departamentos admin y profesores */
+
 .section-secciones-container {
     border: 0.5px solid gray;
     width: 800px;
