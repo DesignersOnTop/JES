@@ -488,7 +488,7 @@ div .id-Admi {
 }
 
 .tabla-horario {
-    border: 1px solid #FFF;
+    border: none;
     background-color: rgba(0, 0, 0, 0.65);
     margin: 0 auto;
     color: #FFF;
