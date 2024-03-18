@@ -341,3 +341,9 @@ border-radius: 10px;
     height: 30px;
     transform: translateX(-120px) translateY(-60px);
 }
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 1028px) {
+    
+}
