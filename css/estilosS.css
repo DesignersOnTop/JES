@@ -124,301 +124,81 @@ footer {
 }
 /* MAIN / CENTRO */
 
+.info-ul-container{
+    width: 90%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-left: 20px;
+}
+.info-ul-container li {
+    width: 220px;
+    height: 40px;
+    margin-bottom: 70px;
+}
+.info-ul-container .perfil img {
+    width: 100px;
+    height: 100px;
+    margin-right: -50px;
+}
+
+.info-ul-container .perfil {
+    flex-basis: 100%;
+    height: 80px;
+}
+
+.info-ul-container h4 {
+    color: gray;
+}
 .importante{
     background-color: rgba(0, 0, 0, 0.8);
     color: #FFF;
     position: relative;
     border: 1px solid #FFF;
     margin:  20px auto;
-    height: 550px;
+    height: 485px;
     width: 80% ;
-    border-radius: 30px ;
+    border-radius: 20px;
 }
-
-.perfil img {
-    height: 160px;
-    width: 160px;
-    margin-top: 40px;
-    margin-left: 80px;
-}
-
-.info-estudiante, .relacionado {
-    height: 300px;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap ;
-}
-
-div .nombre {
-    margin-left: 300px  ;
-    margin-top: -100px ;
-}
-
-.nombre h4 {
-    margin-left: 30px;
-}
-
-h4 {
-    font-size: large;
-    color: rgba(137, 127, 127, 0.83);
-    margin-left: 15px;
-}
-
-p {
-    font-size: x-large;
-}
-
-div .apellido {
-    margin-left: 150px  ;
-    margin-top: -100px ;
-}
-
-.apellido h4 {
-    margin-left: 30px;
-}
-
-div .grado {
-    margin-left: 150px  ;
-    margin-top: -100px ;
-} 
-
-.grado h4 {
-    margin-left: 10px;
-}
-
-.grado p{
-  margin-left: 10px;
-}
-
-
-div .fecha-nacimiento {
-    margin-left: 50px;
-    margin-top: -100px ;
-}
-
-.fecha-nacimiento p {
-    margin-left: 30px;
-}
-
-div .email {
-    margin-left: 60px;
-    margin-top: -100px;
-}
-
-.email h4 {
-    margin-left: 70px;
-}
-
-div .id {
-    margin-left: 100px;
-    margin-top: -100px;
-}
-
-.id h4 {
-    margin-left: 30px;
-}
-
-div .genero {
-    margin-left: 140px;
-    margin-top: -100px;
-}
-
-/* ASIDE / INFORMACION RELACIONADA */
-aside .relacionado {
-    display: inline;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-div #titulo {
-    position: absolute;
-    font-size: large;
-    color: rgba(255, 201, 61, 1);
-    left: 40%;
-    top: -210px ;
-}
-
-#datos-padres {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-evenly;
-    transform: translateY(-150px);
-}
-
-.nombre-padre h4, .direccion h4 {
-    margin-left: 60px;
-}
-
-.numero-padre h4 {
-    margin-left: 30px;
-}
-
-/* PERFIL PROFESOR */
-
-.info-Profesor {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-div .seccion {
-    margin-top: 80px;
-    transform: translateX(-600px);
-}
-
-.seccion p {
-    position: relative;
-    margin-left: 35px;
-}
-
-
-div .abajo {
-    display: flex;
-    flex-direction: column;
-}
-
-.abajo  ul li {
-    transform: translateX(400px);
-    margin-top:75px ;
-}
-
-div .nacimiento {
-    transform: translateX(-300px) translateY(-20px);
-    margin-top: 90px ;
-    margin-left: 40px;
-}
-
-.nacimiento h4 {
-    margin-left: 30px;
-}
-
-div #genero {
-    margin-left: 480px;
-    margin-top: -150px;
-}
-
-div #grado {
-    margin-left: 150px  ;
-    margin-top: -100px ;
-} 
-
-#grado h4 {
-    margin-left: 10px;
-}
-
-#grado p{
-  margin-left: 30px;
-}
-
-div #id {
-    margin-left: 100px ;
-    margin-top: -150px;
-}
-
-#id h4 {
-    margin-left: 30px;
-}
-
-div #numero {
-    transform: translateX(-260px) translateY(-20px);
-}
-
-#numero h4 {
-    margin-left: 30px;
-}
-
-div #email {
-    margin-left: 30px;
-    margin-top: -150px;
-}
-
-#email h4 {
-    margin-left: 80px;
-}
-
-div .asignatura {
-    margin-left: 450px;
-    margin-top: -150px;
-}
-
-.asignatura h4 {
-    margin-left: 40px;
-}
-
 /* PERFIL ADMINISTRADOR */
 
-main .titulo{
-    margin-left: 450px;
-    position: relative;
-    top: 60px;
-    font-size: 200%;
-    color: rgba(132, 182, 244, 0.67);
+.importante .titulo {
+    text-align: center;
+    margin-top: 40px;
 }
-
-#cuerpo {
+.editar {
+    margin-left: 1000px;
+}
+.ul-info-container {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 90%;
     display: flex;
-    justify-content: space-between;
-    position: relative;
-}
-
-div .nom-Admi {
-    transform: translateX(200px);
-}
-
-.editar{
-    position: absolute;
-    top: 130px;
-    right: 170px;
-}
-
-/* ASIDE --- PERFIL ADMINISTRADOR */
-aside {
-    color: #fff;
-}
-
-.perfil-Admin img {
-    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    height: 180px;
-    width: 180px;
-    transform: translateY(-400px);
-    margin-left: 580px;
 }
-
-div #nom-Admi {
-    position: relative;
-    left: 200px ;
-    top: 200px;
+.ul-info-container li {
+    flex-basis: 33.333%;
 }
-
-#nom-Admi h4 {
-    font-size: 20px;
+.ul-info-container li img {
+    width: 200px;
+    height: 200px;
 }
-
-#nom-Admi p {
-    font-size: 30px;
-    margin-left: 5px;
+.ul-info-container .id-Admi {
+    flex-basis: 100%;
+    margin-top: 20px;
 }
-
-div #apellido-Admi {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 200px;
-    right: 190px;
+.importante-admin {
+    height: 480px;
 }
-
-div .id-Admi {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: flex-end; */
-    transform: translateY(400px);
-    margin-right: 480px;
-    margin-bottom: 120px;
-}
-
-.id-Admi h4 {
-    margin-left: 40px;
+.ul-info-container h4 {
+    color: gray;
 }
 
 /* PERFIL (ESTUDIANTE Y PROFESOR) PARA EL ADMINISTRADOR */

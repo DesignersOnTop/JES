@@ -124,7 +124,7 @@ nav {
     padding-bottom: 170px;
 }
 
-.horario-home, .calificaciones-home {
+.home-article {
     width: 340px;
     height: 120px;
     background-color: #000;
@@ -135,7 +135,7 @@ nav {
     top: 90px;
 }
 
-.horario-home a, .calificaciones-home a {
+.home-article a {
     color: white;
     text-decoration: none;
     display: flex;
@@ -145,17 +145,21 @@ nav {
     transform: translateY(20px);
 }
 
-.horario-home h3, .calificaciones-home h3 {
+.home-article h3 {
     order: 1;
     font-size: 20px;
     line-height: 80px;
     transform: translateX(-25px);
 }
 
-.horario-home img, .calificaciones-home img {
+.home-article img {
     order: 0;
     width: 50px;
     height: 50px;
+}
+
+.home-admin {
+    box-shadow: 2px 2px rgba(0, 255, 255, 0.322);
 }
 
 .home-article-container {
@@ -476,7 +480,7 @@ nav {
 .formulario-de-registro-container {
     margin: 0 auto;
     width: 800px;
-    height: 600px;
+    height: 440px;
     padding: 20px 0;
     display: flex;
     justify-content: center;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario De Registro</title>
+    <title>Secci&oacute;n-A </title>
     <link rel="icon" href="imagenes/recursos/logo-jes.png">
     <link rel="stylesheet" href="css/estilos1.css">
 </head>
@@ -19,7 +19,7 @@
                     <h3>Junior Explorers System</h3>    
                 </div>
             </div>
-            <h1>Registro De Profesor</h1>
+            <h1>Registro Profesor</h1>
                 <nav class="menu-navegador">
                     <ul>
                         <li>
@@ -68,18 +68,22 @@
                     <div class="formulario-de-registro">
                         <label for="genero">G&eacute;nero:</label>
                         <select id="genero" name="genero">
+                            <option value="default">------</option>
                             <option value="masculino">Masculino</option>
                             <option value="femenino">Femenino</option>
+                        </select>
+                    </div>                    
+                    <div class="formulario-de-registro">
+                        <label for="seccion">Sección:</label>
+                        <select type="text" id="seccion" name="seccion">
+                            <option value="seccion-a">A</option>
                         </select>
                     </div>
                     <div class="formulario-de-registro">
                         <label for="email">Correo Electrónico:</label>
                         <input type="email" id="email" name="email" required>
                     </div>
-                    <div class="formulario-de-registro">
-                        <label for="seccion">Sección:</label>
-                        <input type="text" id="seccion" name="seccion">
-                    </div>
+
                     <div class="formulario-de-registro">
                         <label for="asignatura">Asignatura:</label>
                         <input type="text" id="asignatura" name="asignatura">
@@ -94,7 +98,7 @@
                     </div>
                     <div class="formulario-de-registro">
                         <label for="matricula">ID:</label>
-                        <input type="text" id="matricula" name="matricula">
+                        <input type="text" id="matricula" name="matricula" required>
                     </div>
                     <div class="formulario-de-registro">
                         <label for="contrasena">Contraseña:</label>
@@ -105,8 +109,5 @@
             </article>
         </section>
     </main>
-    <footer>
-        &copy;Todos los Derechos Reservados - Designers
-    </footer>
 </body>
 </html>

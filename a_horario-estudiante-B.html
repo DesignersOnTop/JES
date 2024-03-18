@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horario de Clases | Estudiante</title>
+    <title>Horario - Secci&oacute;n A</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="icon" href="imagenes/recursos/logo-jes.png">
 </head>
@@ -20,37 +20,54 @@
                     <h3>Junior Explorers System</h3>    
                 </div>
             </div>
-            <h1>Horario</h1>
-                <nav class="menu-navegador">
-                    <ul>
-                        <li>
-                            <figure>
-                                <a href="e-home.html">
-                                    <img src="imagenes/iconos/home.svg" alt="icono-home">
-                                </a>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <a href="e-perfil.html">
-                                    <img src="imagenes/iconos/usuario.svg" alt="icono-usuario">
-                                </a>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="imagenes/iconos/menu.svg" alt="icono-menu">
-                            </figure>
-                        </li>
-                    </ul>
-                </nav>            
+            <h1>Horario secci&oacute;n B</h1>
+            <nav class="menu-navegador">
+                <ul>
+                    <li>
+                        <figure>
+                            <a href="a-home.html">
+                                <img src="imagenes/iconos/home.svg" alt="icono-home">
+                            </a>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="a-perfil.html">
+                                <img src="imagenes/iconos/usuario.svg" alt="icono-usuario">
+                            </a>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="imagenes/iconos/menu.svg" alt="icono-menu">
+                        </figure>
+                    </li>
+                </ul>
+            </nav>            
         </div>
     </header>
-    <!-- Creamos el main para introducir la tabla, ya que esta será la principal del horario -->
     <main>
-        <section class="tabla-centrar">
-            <table class="tabla-horario">
-                <!-- Creamos los heads o titulos de las columnas -->
+        <!-- Creamos un selector para alternar entre estudiantes y profesor --> 
+        <div class="selector">
+            <div class="selector-alt">
+                <a href="#a_horario-estudiante.html" class="current"><span>Estudiante</span></a>
+                <a href="a-horario-profesor-B.html" class="current">Profesor</a>
+            </div>
+            <form class="select">
+                <!-- Creamos las opciones para alternar entre grados -->
+                <select name="secciones" id="select">
+                    <option value="">1ro</option>
+                    <option value="">2do</option>
+                    <option value="">3ro</option>
+                    <option value="">4to</option>
+                    <option value="">5to</option>
+                    <option value="">6to</option>
+                </select>
+            </form>
+        </div>
+        <section class="tabla-container">
+            <table class="tabla-horario tabla-horario-estudiante">
+                <!-- Este Horario es parte del área del administrador, significa que se pueden modificar  -->
                 <tr>
                     <th>Hora</th>
                     <th>Lunes</th>
@@ -59,7 +76,6 @@
                     <th>Jueves</th>
                     <th>Viernes</th>
                 </tr>
-                <!-- Creamos las filas de cada una de las columnas con su contenido -->
                 <tr>
                     <th>7:00</th>
                     <td>Matemáticas</td>

@@ -6,6 +6,27 @@
     <title>Ayuda y Soporte</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="icon" href="imagenes/recursos/logo-jes.png">
+    <style>
+        .mensajes-container1 {
+            background-color: #000000a9;
+            width: 90%;
+            border: 1px solid gray;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        .mensajes-container1 {
+            border-radius: 10px;
+        }
+        .mensajes-container1::-webkit-scrollbar {
+            background-color: #000000bd;
+            width: 10px;
+            border-radius: inherit;
+        }
+        .mensajes-container1::-webkit-scrollbar-thumb {
+            background-color: #00000060;
+            border-radius: 20px;
+        }
+    </style>
 </head>
 <body>
     <!-- Creamos el header con el logo, el nombre del proyecto -->
@@ -48,7 +69,7 @@
     </header>
     <!-- Aquí creamos el apartado donde se verán los mensajes enviados al admin -->
     <main>
-        <section class="mensajes">
+        <section class="mensajes mensajes-container1">
             <article class="mensajes-container">
                 <h4>juanita2024@gmail.com</h4>
                 <p>Tengo algunos problemas con mi ID y no puedo ingresar.</p>
@@ -63,8 +84,5 @@
             </article>
         </section>
     </main>
-    <footer>
-        &copy; Todos los Derechos Reservados - Designers
-    </footer>
 </body>
 </html>
