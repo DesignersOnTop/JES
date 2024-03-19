@@ -344,6 +344,59 @@ border-radius: 10px;
 
 /* RESPONSIVE */
 
-@media screen and (min-width: 1028px) {
+/* Desktop pantallas grandes */
+@media screen and (max-width: 1200px) {
+    
+}
+
+/* Desktop */
+@media screen and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+/* Iphone XR - 11 */
+@media screen and (max-width: 896px) {
+    *, .current {
+        font-size: 10px;
+    }
+
+    header h1 {
+        font-size: 14px;
+    }
+
+    header h3 {
+        display: none;
+    }
+
+    .tabla-registro {
+        width: 90%;
+        display: flex;
+    }
+
+    .selector-alt {
+        height: 40px;
+    }
+
+    .tabla-registro {
+        height: 355px;
+    }
+}
+
+/* Pantalla media */
+@media screen and (max-width: 768px) {
+    
+}
+
+/* Pantalla pequeña */
+@media screen and (max-width: 540px) {
+    
+}
+
+/* Pantallas de móviles pequeños */
+@media screen and (max-width: 320px) {
     
 }
