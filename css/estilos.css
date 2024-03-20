@@ -364,6 +364,14 @@ border-radius: 10px;
         font-size: 10px;
     }
 
+    .menu-navegador {
+        width: 100px;
+    }
+
+    .menu-navegador img {
+        height: 20px;
+    }
+
     header h1 {
         font-size: 14px;
     }
@@ -377,12 +385,26 @@ border-radius: 10px;
         display: flex;
     }
 
+    #select {
+        height: 50px;
+        width: 100px;
+    }
+
     .selector-alt {
-        height: 40px;
+        height: 50px;
+    }
+
+    .selector {
+        width: 300px;
     }
 
     .tabla-registro {
-        height: 355px;
+        height: 630px;
+    }
+
+    table td img {
+        height: 10px;
+        width: 30px;
     }
 }
 
