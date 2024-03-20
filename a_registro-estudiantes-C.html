@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Secci&oacute;n C</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="imagenes/recursos/logo-jes.png">
+    <style>
+        body {
+            overflow-y: scroll;
+            /* overflow-x: hidden; */
+        }
+        body::-webkit-scrollbar {
+            background-color: #000000bd;
+            width: 10px;
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: #00000060;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Usamos el header -->
+    <header>
+        <div class="header-container">
+            <div class="JES">
+                <figure>
+                    <img src="imagenes/recursos/logo-jes.png" alt="logo-jes">
+                </figure>
+                <div class="JES-nom">
+                    <h2>JES</h2>
+                    <h3>Junior Explorers System</h3>    
+                </div>
+            </div>
+            <h1>Registro Secci&oacute;n C</h1>
+                <nav class="menu-navegador">
+                    <ul>
+                        <li>
+                            <figure>
+                                <a href="a-home.html">
+                                    <img src="imagenes/iconos/home.svg" alt="icono-home">
+                                </a>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="imagenes/iconos/usuario.svg" alt="icono-usuario">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="imagenes/iconos/menu.svg" alt="icono-menu">
+                            </figure>
+                        </li>
+                    </ul>
+                </nav>            
+        </div>
+    </header>
+    <main>
+        <!-- Usamos un selector para alternar entre estudiantes y profesor -->
+        <div class="selector">
+            <div class="selector-alt">
+                <a href="a_registro-estudiantes.html" class="current"><span>Estudiante</span></a>
+                <a href="a_registro-profesores.html" class="current">Profesor</a>
+            </div>
+            <form class="select">
+                <!-- Creamos las opciones para alternar entre grados -->
+                <select name="secciones" id="select">
+                    <option value="">1ro</option>
+                    <option value="">2do</option>
+                    <option value="">3ro</option>
+                    <option value="">4to</option>
+                    <option value="">5to</option>
+                    <option value="">6to</option>
+                </select>
+            </form>
+        </div>
+        <section style="padding-bottom: 10px;">
+            <table class="tabla-registro tabla-registro-border" style="border-radius: inherit;border-radius: 10px 10px 0 0;">
+                <tr>
+                    <th>Perfil</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>ID</th>
+                    <th>Edad</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/recursos/man-perfil.jpeg" alt="perfil"></td>
+                    <td>Juana</td>
+                    <td>Rodriguez</td>
+                    <td>#12-031-10</td>
+                    <td>12</td>
+                    <td>juanita2024@gmail.com</td>
+                    <td><a href="a-perfil-Estudiante-C.html"><figure><img src="imagenes/iconos/lapiz-editar.svg" alt="" class="editar"></figure></a></td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/recursos/man-perfil.jpeg" alt="perfil"></td>
+                    <td>Juana</td>
+                    <td>Rodriguez</td>
+                    <td>#12-031-10</td>
+                    <td>12</td>
+                    <td>juanita2024@gmail.com</td>
+                    <td><a href="a-perfil-Estudiante-C.html"><figure><img src="imagenes/iconos/lapiz-editar.svg" alt="" class="editar"></figure></a></td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/recursos/man-perfil.jpeg" alt="perfil"></td>
+                    <td>Juana</td>
+                    <td>Rodriguez</td>
+                    <td>#12-031-10</td>
+                    <td>12</td>
+                    <td>juanita2024@gmail.com</td>
+                    <td><a href="a-perfil-Estudiante-C.html"><figure><img src="imagenes/iconos/lapiz-editar.svg" alt="" class="editar"></figure></a></td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/recursos/man-perfil.jpeg" alt="perfil"></td>
+                    <td>Juana</td>
+                    <td>Rodriguez</td>
+                    <td>#12-031-10</td>
+                    <td>12</td>
+                    <td>juanita2024@gmail.com</td>
+                    <td><a href="a-perfil-Estudiante-C.html"><figure><img src="imagenes/iconos/lapiz-editar.svg" alt="" class="editar"></figure></a></td>
+                </tr>
+                <!-- Agregamos la opción para que se pueda agregar usuarios -->
+                <tr>
+                    <td><a href="#"><img src="imagenes/iconos/signo de añadir dentro de un circulo.svg" alt="agregar"></a></td>
+                    <td>----</td>
+                    <td>----</td>
+                    <td>#-------</td>
+                    <td>---</td>
+                    <td>-------------</td>
+                    <td>
+                        <a href="a-formulario-de-registro-e.html"><figure><img src="imagenes/iconos/agregar-usuario.svg" alt="" class="agregar-usuario" style="width: 36px; height: 36px;"></figure></a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
