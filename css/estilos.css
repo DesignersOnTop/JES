@@ -90,35 +90,66 @@ footer {
 /* a_ayuda-soporte */
 
 .mensajes {
+    width: 80%;
+    overflow: hidden;
     margin: 0 auto;
-    height: 480px;
-    width: 60%;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .mensajes-container {
-    background-color: #000;
-    border: 1px solid darkgrey;
-    border-radius: 20px;
-    height: 120px;
-    width: 700px;
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 10px;
+    flex: 0 0 auto;
+    width: 300px;
+    height: 300px;
     margin: 10px;
+    padding: 10px;
+}
+
+.mensajes-container figure {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.mensajes-container img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    object-fit: cover;
 }
 
 .mensajes-container h4 {
     color: #FFF;
-    padding: 15px;
-    margin-left: 40px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .mensajes-container p {
     color: #FFF;
-    margin-left: 200px;
-    padding: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#botones-container {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    left: 200px;
+}
+
+#scroll-container {
+    display: flex;
+    overflow: hidden;
+}
+
+#scroll-left, #scroll-right {
+    background-color: #000;
+    color: #FFF;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
 }
 
 /* a_horario-estudiante */
