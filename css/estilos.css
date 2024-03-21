@@ -103,6 +103,7 @@ footer {
     height: 300px;
     margin: 10px;
     padding: 10px;
+    position: relative;
 }
 
 .mensajes-container figure {
@@ -120,8 +121,8 @@ footer {
 
 .mensajes-container h4 {
     color: #FFF;
-    text-align: center;
     margin-top: 10px;
+    text-align: center;
 }
 
 .mensajes-container p {
