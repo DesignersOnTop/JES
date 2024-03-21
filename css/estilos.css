@@ -90,35 +90,42 @@ footer {
 /* a_ayuda-soporte */
 
 .mensajes {
+    border: none;
     margin: 0 auto;
     height: 480px;
     width: 60%;
     border-radius: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 .mensajes-container {
-    background-color: #000;
-    border: 1px solid darkgrey;
+    border: 1px solid #FFF;
     border-radius: 20px;
-    height: 120px;
+    height: 300px;
     width: 700px;
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.mensajes-container img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
 }
 
 .mensajes-container h4 {
     color: #FFF;
-    padding: 15px;
-    margin-left: 40px;
 }
 
 .mensajes-container p {
     color: #FFF;
-    margin-left: 200px;
-    padding: 10px;
 }
 
 /* a_horario-estudiante */
