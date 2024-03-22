@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secci&oacute;n-A</title>
+    <title>Secci&oacute;n-A </title>
     <link rel="icon" href="imagenes/recursos/logo-jes.png">
     <link rel="stylesheet" href="css/estilos1.css">
 </head>
@@ -16,10 +16,10 @@
                 </figure>
                 <div class="JES-nom">
                     <h2>JES</h2>
-                    <h3>Junior Explorers System</h3>    
+                    <h3>Junior Explorers System</h3>
                 </div>
             </div>
-            <h1>Registro De Estudiante</h1>
+            <h1>Registro</h1>
                 <nav class="menu-navegador">
                     <ul>
                         <li>
@@ -46,11 +46,19 @@
         </div>
     </header>
     <main>
-        <section class="formulario-de-registro-e">
-            <article class="formulario-de-registro-container">
-                <form action="#">
+        <div class="regresar-perfil regresar-registro">
+            <a href="a_registro-profesores.html">
+                <figure>
+                    <img src="imagenes/iconos/flecha-regresar.svg" alt="regresar">
+                </figure>
+            </a>
+        </div>
+        <section>
+            <form action="#">
+                <fieldset class="form-container">
+                    <legend>Estudiante</legend>
                     <div class="subir-imagen-registro">
-                        <label for="subir-imagen" class="subir-imagen">Subir Imagen</label>
+                        <label for="subir-imagen">Subir Imagen</label>
                         <input type="file" id="subir-imagen">
                     </div>
                     <div class="formulario-de-registro">
@@ -66,25 +74,23 @@
                         <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
                     </div>
                     <div class="formulario-de-registro">
-                        <label for="genero">Género:</label>
+                        <label for="genero">G&eacute;nero:</label>
                         <select id="genero" name="genero">
-                            <option value="">----------</option>
+                            <option value="default">------</option>
                             <option value="masculino">Masculino</option>
                             <option value="femenino">Femenino</option>
                         </select>
                     </div>                    
                     <div class="formulario-de-registro">
-                        <label for="seccion"> Grado & Secci&oacute;n:</label>
-                        <select name="seccion" id="seccion">
-                            <option value="">-----------</option>
-                            <optgroup label="Secci&oacute;n A">
-                                <option value="1-A">1</option>
-                                <option value="2-A">2</option>
-                                <option value="3-A">3</option>
-                                <option value="4-A">4</option>
-                                <option value="5-A">5</option>
-                                <option value="6-A">6</option>
-                            </optgroup>
+                        <label for="curso">Curso:</label>
+                        <select type="text" id="curso" name="curso">
+                            <option value="default">-----</option>
+                            <option value="1-a">1-A</option>
+                            <option value="2-a">2-A</option>
+                            <option value="3-a">3-A</option>
+                            <option value="4-a">4-A</option>
+                            <option value="5-a">5-A</option>
+                            <option value="6-a">6-A</option>
                         </select>
                     </div>
                     <div class="formulario-de-registro">
@@ -95,8 +101,8 @@
                         <label for="telefono">Teléfono:</label>
                         <input type="tel" id="telefono" name="telefono">
                     </div>
-                    <div class="formulario-de-registro">
-                        <label for="direccion">Direcci&oacute;n:</label>
+                    <div class="formulario-de-registro formulario-direccion">
+                        <label for="direccion">Dirección:</label>
                         <input type="text" id="direccion" name="direccion">
                     </div>
                     <div class="formulario-de-registro">
@@ -104,12 +110,14 @@
                         <input type="text" id="matricula" name="matricula" required>
                     </div>
                     <div class="formulario-de-registro">
-                        <label for="contrasena">Contrase&ntilde;a:</label>
-                        <input type="password" id="contrasena" name="contrasena" required>
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" id="contrasena" name="contrasena" required autocomplete="off">
                     </div>
-                    <input type="submit" value="Registrar">
-                </form>
-            </article>
+                    <div class="formulario-de-registro submit-registro">
+                        <input type="submit" value="Registrar">
+                    </div>  
+                </fieldset>
+            </form>
         </section>
     </main>
 </body>
