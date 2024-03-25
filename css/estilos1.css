@@ -223,7 +223,6 @@ nav {
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
-
 }
 
 #inicio-de-sesion form{
@@ -247,9 +246,13 @@ nav {
 #id, #password {
     width: 320px;
     height: 45px;
-    border-radius: 10px;
+    border-radius: 15px;
     padding-left: 60px;
     position: relative;
+    border: 1px solid #ffffff2d;
+    background-color: #00000054;
+    font-size: 14px;
+    color: white;
 }
 
 #introducir-id figure {
@@ -258,45 +261,23 @@ nav {
     width: 60px;
     height: 60px;
     border-radius: inherit;
-    transform: translateX(-25px);
+    transform: translateX(-20px);
 }
 
 #introducir-id img {
     width: 60%;
-    transform: translateY(-10px);
-}
-
-#inicio-de-sesion .svg img {
-    fill: #FFC93D;
+    transform: translateY(-10px) translateX(-5px);
 }
 
 .problemas-al-iniciar {
+    margin-top: 6px;
     color: white;
     text-decoration: none;
     font-size: 16px;
 }
 
-[href="olvido_su_id.html"] {
-    color: #FFC93D;
-    text-decoration: none;
-    font-size: 16px;
-    position: relative;
-    transform: translateX(100px);
-}
 
-/* [type="submit"] {
-    width: 200px;
-    height: 50px;
-    border-radius: 10px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
-    border: 1px solid #FFC93D;
-    text-transform: uppercase;
-} */
-
-#inicio-de-sesion #iniciar-sesion {
+#iniciar-sesion {
     padding: 16px 50px;
     border-radius: 10px;
     background-color: black;
@@ -535,5 +516,88 @@ nav {
     width: 30px; 
     height: 30px;
 }
-
 /* AQUI TERMINA EL FORMULARIO DE REGISTRO */
+
+
+/* Responsive */
+
+/* Dispositivos móviles con una anchura de pantalla de hasta 600px */
+@media only screen and (max-width: 600px) {
+    /* Estilos para dispositivos móviles */
+}
+
+/* Tablets con una anchura de pantalla de 601px a 900px */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    /* Estilos para tablets */
+    #problemas-al-iniciar-main, #index-main {
+        background-color: rgba(0, 0, 0, 0.84);
+        width: 700px;
+        height: 400px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        display: flex;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px 1px gray;
+        border: 1px solid white;
+    }
+    #inicio-de-sesion h1 {
+        font-size: 20px;
+        padding-bottom: 30px;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    #inicio-de-sesion form{
+        position: relative;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #inicio-de-sesion input {
+        width: 200px;
+        height: 40px;
+        padding: 0;
+        padding-left: 50px;
+    }
+    .cara-de-jes img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .cara-de-jes h2 {
+        font-size: 22px;
+    }
+    .cara-de-jes h3 {
+        font-size: 20px;
+    }
+    #introducir-contraseña img, #introducir-id img {
+        width: 30px;
+        height: 30px;
+    }
+    #introducir-contraseña img {
+        transform: translateX(-30px) translateY(5px);
+    }
+    #introducir-id img {
+        transform: translateX(-5px) translateY(-10px);
+    }
+    .problemas-al-iniciar {
+        font-size: 12px;
+    }
+    #iniciar-sesion {
+        padding: 12px 25px;
+        border-radius: 6px;
+        font-size: 12px;
+    }
+}
+
+/* Computadoras de escritorio con una anchura de pantalla de 901px en adelante */
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+   
+}
+
