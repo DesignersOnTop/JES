@@ -671,6 +671,59 @@ nav {
         font-size: 18px;
         width: 90%;
     }
+
+    /* Homes */
+    .header-home-container {
+        width: 90%;
+    }
+
+    .logo-jes-home img {
+        width: 240px;
+        height: 200px;
+        bottom: 50px;
+    }
+
+    .main-container-home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 120px;
+    }
+
+    .home-article {
+        width: 260px;
+        height: 90px;
+        border-radius: 10px;
+        margin: 0 15px;
+        position: relative;
+        top: 80px;
+    }
+
+    .home-article a {
+        color: white;
+        margin-right: 40px;
+        position: relative;
+        bottom: 15px;
+    }
+
+    .home-article h3 {
+        order: 1;
+        font-size: 20px;
+        line-height: 80px;
+        transform: translateX(-25px);
+    }
+
+    .home-article img {
+        order: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    .home-admin {
+        box-shadow: 2px 2px rgba(0, 255, 255, 0.322);
+    }
+
 }
 
 /* Computadoras de escritorio con una anchura de pantalla de 901px en adelante */
