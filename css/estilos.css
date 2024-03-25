@@ -199,6 +199,24 @@ footer {
     padding: 65px 0;
 }
 
+.tabla-horario {
+    /* border: 1px solid #FFF; */
+    background-color: rgba(0, 0, 0, 0.65);
+    margin: 0 auto;
+    color: #FFF;
+    height: 380px;
+    width: 1000px;
+    border-radius: 10px;
+}
+
+.tabla-horario-estudiante {
+    margin-bottom: 40px;
+}
+
+.tabla-centrar {
+    padding: 65px 0;
+}
+
 .tabla-horario th {
     background-color: #000;
 }
@@ -247,26 +265,33 @@ border-radius: 10px;
     color: #FFF;
     margin: 0 auto;
     margin-top: 40px;
+    overflow: hidden;
     border-radius: 15px;
     width: 1150px;
-    height: 550px;
+    height: 300px;
     text-align: center;
+}
+
+.tabla-registro th {
+    height: 20px;
 }
 
 .tabla-registro td {
     background-color: #000;
+    font-size: 14px;
+    height: 50px;
 }
 
 .tabla-registro td img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
     object-fit: cover;
 }
 
 .tabla-registro td .editar {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
 /* p_calificacion-seccionA */
