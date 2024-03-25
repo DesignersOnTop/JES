@@ -348,3 +348,204 @@ border-radius: 10px;
     height: 30px;
     transform: translateX(-120px) translateY(-60px);
 }
+
+/* RESPONSIVE */
+
+/* Desktop */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    
+}
+
+/* Célulares */
+@media screen and (max-width: 600px) {
+    * {
+        font-size: 14px;
+    }
+
+    .menu-navegador {
+        width: 100px;
+        margin-right: 5px;
+    }
+
+    .menu-navegador img {
+        height: 20px;
+        padding: 0 3px;
+    }
+
+    header h1 {
+        font-size: 16px;
+    }
+
+    header h3 {
+        display: none;
+    }
+
+    /* TABLAS DEL REGISTRO ESTUDIANTE/PROFESOR */
+    .tabla-registro {
+        width: 90%;
+        display: flex;
+    }
+
+    #select {
+        height: 50px;
+        width: 100px;
+    }
+
+    .selector a {
+        font-size: 14px;
+    }
+
+    .selector-alt {
+        height: 40px;
+        width: 200px;
+    }
+
+    .selector {
+        width: 300px;
+    }
+
+    .tabla-registro {
+        width: 85%;
+        height: 250px;
+        margin-left: 35px;
+        position: relative;
+    }
+
+    .tabla-registro th, .tabla-registro td {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .tabla-registro th {
+        font-size: 10px;
+        height: 30px;
+        width: 100px;
+
+    }
+
+    .tabla-registro td {
+        font-size: 10px;
+        width: 100px;
+    }
+
+    .tabla-registro td .editar {
+        height: 20px;
+        width: 20px;
+    }
+
+    .tabla-registro td img {
+        height: 25px;
+        width: 25px;
+    }
+
+    /* TABLAS DE HORARIO PROFESOR/ESTUDIANTE */
+    main {
+        padding-bottom: 200px;
+    }
+
+    .tabla-horario {
+        width: 400px;
+    }
+
+    .tabla-horario th {
+        height: 40px;
+        width: 80px;
+    }
+
+    .tabla-horario td {
+        font-size: 10px;
+    }
+
+    /* CALIFICACIONES POR SECCIONES */
+    #select-calificacion {
+        width: 100px;
+        height: 40px;
+    }
+}
+
+/* TABLETS */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+    /* Tablas de registro */
+    * {
+        font-size: 14px;
+    }
+
+    main {
+        padding-bottom: 250px;
+    }
+
+    .header-container {
+        width: 100%;
+    }
+
+    .header-container h1 {
+        font-size: 20px;
+    }
+
+    .menu-navegador {
+        width: 110px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .menu-navegador img {
+        width: 20px;
+        margin: 0 5px;
+        padding-top: 2px;
+    }
+
+    .selector {
+        padding: 0 20px;
+    }
+
+    .selector-alt {
+        height: 50px;
+        width: 200px;
+        border-radius: 20px;
+    }
+
+    .selector-alt a {
+        font-size: 14px;
+    }
+
+    .tabla-registro {
+        width: 700px;
+        margin-left: 100px;
+    }
+
+    .tabla-registro td {
+        font-size: 12px;
+    }
+
+    .tabla-registro td img {
+        height: 30px;
+        width: 30px;
+    }
+
+    /* Horarios */
+    #select {
+        height: 50px;
+        width: 80px;
+    }
+
+    .tabla-container {
+        width: 850px;
+    }
+
+    .tabla-horario {
+        margin-left: 80px;
+        width: 80%;
+    }
+
+    /* Área de Cálificaciones */
+    #select-calificacion {
+        width: 100px;
+        height: 45px;
+    }
+
+    .tabla-registro th {
+        height: 30px;
+    }
+}
