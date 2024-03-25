@@ -2,12 +2,14 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>perfil-Estudiante-Admin</title>
-    <meta name="description" content="Esta pagina se usara para darle diseño con CSS, para que el Admin pueda modificar o crear perfiles a los estudiantes...">
+    <title>Perfil modificado Profesor </title>
+    <meta name="description" content="PERFIL MODIFICADO, Creando este perfil lo que buscamos es poder diferenciar entre maestros y estudiantes, tambien que el administrador pueda agregar nuevos perfiles y donde el mismo puedo ver la informacion de los usuarios. ">
     <link rel="icon" href="imagenes/recursos/logo-jes.png">
     <link rel="stylesheet" href="css/estilosS.css">
 </head>
+
 <body>
     <div id="contenedor">
         <header>
@@ -21,19 +23,19 @@
                         <h3>Junior Explorers System</h3> 
                     </div>
                 </div>
-                <h1> Perfil</h1>
+                <h1>Perfil</h1>
                 <nav class="menu-navegador">
                     <ul>
                         <li>
                             <figure>
-                                <a href="p-home.html">
+                                <a href="a-home.html">
                                     <img src="imagenes/iconos/home.svg" alt="icono-home">
                                 </a>
                             </figure>
                         </li>
                         <li>
                             <figure>
-                                <a href="#p-perfil.html">
+                                <a href="a-perfil.html">
                                     <img src="imagenes/iconos/usuario.svg" alt="icono-usuario">
                                 </a>
                             </figure>
@@ -47,52 +49,49 @@
                 </nav>            
             </div>
         </header>
-        <main class="importante">
-            <div class="info-estudiante">
-                <ul class="info-ul-container">
-                    <li class="perfil">
-                        <figure >
-                            <img src="imagenes/recursos/perfil.Profesor.png" alt="Foto de perfil">
-                        </figure>
-                    </li>
-                    <li class="nombre">
-                        <h4 >Nombre</h4>
-                        <p >Emmy Maria</p>
-                    </li>
-                    <li class="apellido">
-                        <h4>Apellidos</h4>
-                        <p>Garcia Paulino</p>
-                    </li>
-                    <li class="id-perfil">
-                        <h4>ID</h4>
-                        <p>12-031-10</p>
-                    </li>
-                    <li class="genero">
-                        <h4>G&eacute;nero</h4>
-                        <p>Femenino</p>
-                    </li>
-                    <li class="grado">
-                        <h4>Secci&oacute;n</h4>
-                        <p>A</p>
-                    </li>
-                    <li class="numero-tel" >
-                        <h4>Asignatura</h4>
-                        <p>C. Sociales</p>
-                    </li>
-                    <li class="fecha-nacimiento">
-                        <h4>Cedula</h4>
-                        <p>031-00753-2</p>
-                    </li>
-                    <li class="email">
-                        <h4>Email</h4>
-                        <p>emmyMaria@gmail.com</p>
-                    </li>
-                    <li class="direccion">
-                        <h4>Telefono</h4>
-                        <p>829-999-0555</p>
-                    </li>
-                </ul>
+        <main class="central">
+            <div class="izquierda-arriba">
+                <h5>Profesor</h5>
+                <figure>
+                    <img src="imagenes/recursos/fotoP.jpg" alt="Foto del perfil ">
+                </figure>
+                <div class="izquierda-abajo">
+                    <h6>Materia</h6>
+                    <h4>Ciencias Sociales</h4>
+                </div>
             </div>
+            <section class="contenedor-central">
+                <article class="derecha-arriba">
+                    <h2>Rafael Trujillo</h2>
+                    <p>1-22-0500</p>
+                </article>
+                <article class="derecha-abajo">
+                    <div class="datos">
+                        <h4>Email</h4>
+                        <p>elcuartopadre@gmail.com</p>
+                    </div>
+                    <div class="datos">
+                        <h4>Telefóno</h4>
+                        <p>809-101-0000</p>
+                    </div>
+                    <div class="datos">
+                        <h4>Genero</h4>
+                        <p>Masculino</p>
+                    </div>
+                    <div class="datos">
+                        <h4>Dirección</h4>
+                        <p>Calle 16 de Agosto #01</p>
+                    </div>
+                    <div class="datos">
+                        <h4>Cédula</h4>
+                        <p>031-00753-2</p>
+                    </div>
+                    <div class="datos">
+                        <h4>Cursos Asignados</h4>
+                        <p>1ro - 2do</p>
+                    </div>
+                </article>
+            </section>
         </main>
     </div>
 </body>
