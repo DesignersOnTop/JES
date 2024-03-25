@@ -523,7 +523,75 @@ nav {
 
 /* Dispositivos móviles con una anchura de pantalla de hasta 600px */
 @media only screen and (max-width: 600px) {
-    /* Estilos para dispositivos móviles */
+    #index-main, #problemas-al-iniciar-main {
+        width: 100%;
+        height: 100%;
+        border: none;
+        margin-top: 0;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+    .cara-de-jes img {
+        position: relative;
+        left: 25px;
+        width: 140px;
+        height: 140px;
+        margin-top: 10px;
+    }
+    .cara-de-jes h2, .cara-de-jes h3 {
+        display: none;
+    }
+    .cara-de-jes {
+        border: none;
+        width: 100%;
+    }
+    #inicio-de-sesion {
+        width: 100%;
+    }
+    #inicio-de-sesion h1 {
+        font-size: 26px;
+    }
+    #password, #id {
+        max-width: 60%;
+    }
+    #iniciar-sesion {
+        padding: 14px 20px;
+    }
+    .problemas-al-iniciar {
+        font-size: 14px;
+    }
+    #introducir-id img, #introducir-contraseña img {
+        margin-top: 3px;
+        width:30px;
+        height: 30px;
+    }
+    #introducir-contraseña, #introducir-id {
+        position: relative;
+        left: 10%;
+        width: 80%;
+    }
+
+    /* Problemas al iniciar */
+    #problemas_al_iniciar{
+        width: 100%;
+    }
+    #problemas_al_iniciar h1 {
+        font-size: 26px;
+    }
+    #parrafo-de-soporte {
+        position: relative;
+        left: 50px;
+        width: 80%;
+        font-size: 18px;
+        text-align: center;
+    }
+    .volver-atras {
+        padding: 10px 30px;
+        font-size: 12px;
+    }
+
 }
 
 /* Tablets con una anchura de pantalla de 601px a 900px */
@@ -531,8 +599,8 @@ nav {
     /* Estilos para tablets */
     #problemas-al-iniciar-main, #index-main {
         background-color: rgba(0, 0, 0, 0.84);
-        width: 700px;
-        height: 400px;
+        max-width: 700px;
+        max-height: 400px;
         margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
@@ -593,6 +661,15 @@ nav {
         padding: 12px 25px;
         border-radius: 6px;
         font-size: 12px;
+    }
+    #problemas_al_iniciar h1 {
+        font-size: 26px;
+    }
+    #parrafo-de-soporte {
+        position: relative;
+        left: 10%;
+        font-size: 18px;
+        width: 90%;
     }
 }
 
