@@ -522,20 +522,19 @@ nav {
 /* Responsive */
 
 /* Dispositivos móviles con una anchura de pantalla de hasta 600px */
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     #index-main, #problemas-al-iniciar-main {
         width: 100%;
-        height: 100%;
         border: none;
         margin-top: 0;
         border-radius: 0;
         display: flex;
         flex-direction: column;
-        padding-bottom: 40px;
     }
     .cara-de-jes img {
         position: relative;
-        left: 25px;
+        top: 16px;
+        left: 35px;
         width: 140px;
         height: 140px;
         margin-top: 10px;
@@ -554,8 +553,9 @@ nav {
         font-size: 26px;
     }
     #password, #id {
-        max-width: 60%;
+        max-width: 100%;
     }
+
     #iniciar-sesion {
         padding: 14px 20px;
     }
@@ -568,11 +568,9 @@ nav {
         height: 30px;
     }
     #introducir-contraseña, #introducir-id {
-        position: relative;
-        left: 10%;
-        width: 80%;
+        width: 60%;
+        margin-right: 60px;
     }
-
     /* Problemas al iniciar */
     #problemas_al_iniciar{
         width: 100%;
@@ -595,22 +593,16 @@ nav {
 }
 
 /* Tablets con una anchura de pantalla de 601px a 900px */
-@media only screen and (min-width: 601px) and (max-width: 900px) {
+@media screen and (min-width: 601px) and (max-width: 900px) {
     /* Estilos para tablets */
     #problemas-al-iniciar-main, #index-main {
         background-color: rgba(0, 0, 0, 0.84);
-        max-width: 700px;
+        max-width: 640px;
         max-height: 400px;
         margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
         color: white;
         display: flex;
-        border-radius: 15px;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 1px 1px gray;
-        border: 1px solid white;
+        border-radius: 20px;
     }
     #inicio-de-sesion h1 {
         font-size: 20px;
@@ -643,6 +635,7 @@ nav {
     }
     .cara-de-jes h3 {
         font-size: 20px;
+        white-space: nowrap;
     }
     #introducir-contraseña img, #introducir-id img {
         width: 30px;
@@ -673,27 +666,30 @@ nav {
     }
 
     /* Homes */
-    .header-home-container {
-        width: 90%;
+
+    .menu-navegador {
+        height: 24px;
+        width: 130px;
+    }
+    .menu-navegador img {
+        width: 22px;
+        position: relative;
+        bottom: 2px;
     }
 
     .logo-jes-home img {
-        width: 240px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
         bottom: 50px;
     }
 
     .main-container-home {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 120px;
+        padding-bottom: 110px;
     }
 
     .home-article {
-        width: 260px;
-        height: 90px;
+        width: 220px;
+        height: 80px;
         border-radius: 10px;
         margin: 0 15px;
         position: relative;
@@ -727,17 +723,17 @@ nav {
 }
 
 /* Computadoras de escritorio con una anchura de pantalla de 901px en adelante */
-@media only screen and (min-width: 901px) and (max-width: 1200px) {
+@media screen and (min-width: 901px) and (max-width: 1200px) {
        #problemas-al-iniciar-main, #index-main {
         background-color: rgba(0, 0, 0, 0.84);
         width: 80%;
-        height: 440px;
+        height: 460px;
         margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
         color: white;
         display: flex;
-        border-radius: 10px;
+        border-radius: 20px;
         justify-content: center;
         align-items: center;
         box-shadow: 1px 1px gray;
