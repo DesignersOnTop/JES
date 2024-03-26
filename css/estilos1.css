@@ -668,30 +668,31 @@ nav {
     /* Homes */
 
     .menu-navegador {
-        height: 24px;
-        width: 130px;
+        height: 26px;
+        width: 122px;
     }
     .menu-navegador img {
         width: 22px;
         position: relative;
         bottom: 2px;
+        right: 3px;
     }
 
     .logo-jes-home img {
-        width: 180px;
+        width: 200px;
         height: 180px;
-        bottom: 50px;
+        bottom: 60px;
     }
 
     .main-container-home {
-        padding-bottom: 110px;
+        padding-bottom: 120px;
     }
 
     .home-article {
-        width: 220px;
+        width: 39.933444%; /* 240px/601 */
         height: 80px;
         border-radius: 10px;
-        margin: 0 15px;
+        margin: 0 26px;
         position: relative;
         top: 80px;
     }
@@ -700,20 +701,20 @@ nav {
         color: white;
         margin-right: 40px;
         position: relative;
-        bottom: 15px;
+        bottom: 21px;
     }
 
     .home-article h3 {
         order: 1;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 80px;
         transform: translateX(-25px);
     }
 
     .home-article img {
         order: 0;
-        width: 40px;
-        height: 40px;
+        width: 34px;
+        height: 34px;
     }
 
     .home-admin {
