@@ -449,7 +449,7 @@ nav {
 .form-container {
     background-color: rgba(0, 0, 0, 0.706);
     margin: 0 auto;
-    width: 1000px;
+    width: 80%;
     height: 480px;
     padding: 20px 0;
     display: flex;
@@ -507,9 +507,10 @@ nav {
 
 .regresar-registro {
     width: 20px; 
-    position: absolute; 
-    left: 80px; 
-    top: 150px;
+    position: relative; 
+    left: 20px; 
+    top: 100px;
+    z-index: 3;
 }
 
 .regresar-registro img {
@@ -590,6 +591,91 @@ nav {
         font-size: 12px;
     }
 
+    /* Formulario de registro */
+    .subir-imagen-registro label {
+        width: 180px;
+        padding: 25px 0;
+        position: relative;
+        right: 40px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    header {
+        overflow: hidden;
+        border-bottom: 1px solid white;
+        margin-bottom: 0;
+    }
+    
+    .header-container {
+        background-color: #000000;
+        width: 90%;
+    }
+    .header-container h1 {
+        font-size: 20px;
+        transform: translateX(-40px); 
+        
+    }
+    .header-container nav {
+        width: 25px;
+        height: 25px;
+        background-color: #00000000;
+        border: none;
+    }
+    .header-container nav img {
+        width: 20px;
+        height: 20px;
+    }
+    .header-container h2, .header-container h3 {
+        display: none;
+    }
+    .mobile-none {
+        display: none;
+    }
+    .JES img {
+        width: 40px;
+        height: 40px;
+        transform: translateX(-40px);
+    }
+    .form-container {
+        background-color: rgba(0, 0, 0, 0);
+        height: 100%;
+        width: inherit;
+        flex-flow: column;
+        align-items: center;
+        border-radius: 0;
+    }
+    .form-container legend {
+        font-size: 14px;
+        font-style: italic;
+        margin-left: 30px;
+        transform: translateY(-15px);
+    }
+    .formulario-de-registro {
+        width: 90%;
+        margin-left: 20%;
+    }
+    .subir-imagen-registro {
+        flex-basis: 100%;
+    }
+    .subir-imagen-registro label {
+        margin-left: 20%;
+    }
+    .submit-registro {
+        flex-basis: 100%;
+        margin-right: 70px;
+    }
+    .regresar-registro {
+        position: relative;
+        left: 5px;
+        top: 5px;
+    }
+    .form-main {
+        background-color: rgba(0, 0, 0, 0.706);
+        height: 972px;
+        padding-bottom: 10px;
+        overflow: hidden;
+    }
+    /* aqui termina el formulario de registro */
 }
 
 /* Tablets con una anchura de pantalla de 601px a 900px */
@@ -666,7 +752,6 @@ nav {
     }
 
     /* Homes */
-
     .menu-navegador {
         height: 26px;
         width: 122px;
@@ -710,22 +795,63 @@ nav {
         line-height: 80px;
         transform: translateX(-25px);
     }
-
     .home-article img {
         order: 0;
         width: 34px;
         height: 34px;
     }
-
     .home-admin {
         box-shadow: 2px 2px rgba(0, 255, 255, 0.322);
     }
 
+    /* Formulario registro */
+    .header-container {
+        width: 98%;
+    }
+    .JES {
+        transform: translateX(-30px);
+    }
+    .header-container h1 {
+        font-size: 22px;
+        transform: translateX(-40px);
+    }
+    .JES h2 {
+        font-size: 14px;
+    }
+    
+    .JES h3 {
+        font-size: 10px
+    }
+    .form-container {
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 85%;
+    }
+    .form-container * {
+        margin-left: 15px;
+    }
+    .form-container input {
+        padding: 0 10px;
+        margin: 0 5px;
+    }
+    .submit-registro {
+        flex-basis: 60%;
+        position: relative;
+        left: 30%;
+    }
+
+    .subir-imagen-registro label {
+        transform: translateX(20px);
+    }
+
+    .regresar-registro {
+        transform: translateX(-25px) translateY(15px);
+    }
 }
 
 /* Computadoras de escritorio con una anchura de pantalla de 901px en adelante */
 @media screen and (min-width: 901px) and (max-width: 1200px) {
-       #problemas-al-iniciar-main, #index-main {
+    #problemas-al-iniciar-main, #index-main {
         background-color: rgba(0, 0, 0, 0.84);
         width: 80%;
         height: 460px;
