@@ -577,12 +577,13 @@ border-radius: 10px;
     }
 
     .selector {
+        width: 50%;
         padding: 0 20px;
     }
 
     .selector-alt {
-        height: 50px;
-        width: 200px;
+        height: 40px;
+        width: 50%;
         border-radius: 20px;
     }
 
@@ -591,7 +592,7 @@ border-radius: 10px;
     }
 
     .tabla-registro {
-        width: 700px;
+        width: 80%;
         margin-left: 100px;
     }
 
@@ -606,12 +607,12 @@ border-radius: 10px;
 
     /* Horarios */
     #select {
-        height: 50px;
+        height: 40px;
         width: 80px;
     }
 
     .tabla-container {
-        width: 850px;
+        width: 100%;
     }
 
     .tabla-horario {
