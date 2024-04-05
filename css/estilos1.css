@@ -173,8 +173,8 @@ nav {
 #problemas-al-iniciar-main, #index-main {
     background-color: rgba(0, 0, 0, 0.84);
     width: 1100px;
-    height: 580px;
-    margin-top: 50px;
+    height: 560px;
+    margin-top: 4%;
     margin-left: auto;
     margin-right: auto;
     color: white;
@@ -223,7 +223,6 @@ nav {
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
-
 }
 
 #inicio-de-sesion form{
@@ -247,9 +246,13 @@ nav {
 #id, #password {
     width: 320px;
     height: 45px;
-    border-radius: 10px;
+    border-radius: 15px;
     padding-left: 60px;
     position: relative;
+    border: 1px solid #ffffff2d;
+    background-color: #00000054;
+    font-size: 14px;
+    color: white;
 }
 
 #introducir-id figure {
@@ -258,45 +261,23 @@ nav {
     width: 60px;
     height: 60px;
     border-radius: inherit;
-    transform: translateX(-25px);
+    transform: translateX(-20px);
 }
 
 #introducir-id img {
     width: 60%;
-    transform: translateY(-10px);
-}
-
-#inicio-de-sesion .svg img {
-    fill: #FFC93D;
+    transform: translateY(-10px) translateX(-5px);
 }
 
 .problemas-al-iniciar {
+    margin-top: 6px;
     color: white;
     text-decoration: none;
     font-size: 16px;
 }
 
-[href="olvido_su_id.html"] {
-    color: #FFC93D;
-    text-decoration: none;
-    font-size: 16px;
-    position: relative;
-    transform: translateX(100px);
-}
 
-/* [type="submit"] {
-    width: 200px;
-    height: 50px;
-    border-radius: 10px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
-    border: 1px solid #FFC93D;
-    text-transform: uppercase;
-} */
-
-#inicio-de-sesion #iniciar-sesion {
+#iniciar-sesion {
     padding: 16px 50px;
     border-radius: 10px;
     background-color: black;
@@ -468,7 +449,7 @@ nav {
 .form-container {
     background-color: rgba(0, 0, 0, 0.706);
     margin: 0 auto;
-    width: 1000px;
+    width: 80%;
     height: 480px;
     padding: 20px 0;
     display: flex;
@@ -482,6 +463,7 @@ nav {
 .form-container legend {
     color:white; 
     font-weight: bold;
+    font-style: italic;
 }
 
 .formulario-de-registro {
@@ -526,14 +508,546 @@ nav {
 
 .regresar-registro {
     width: 20px; 
-    position: absolute; 
-    left: 80px; 
-    top: 150px;
+    position: relative; 
+    left: 5px; 
+    top: 15px;
+    z-index: 3;
+    transform: translateX(-130px);
 }
 
 .regresar-registro img {
     width: 30px; 
     height: 30px;
 }
-
 /* AQUI TERMINA EL FORMULARIO DE REGISTRO */
+
+.menu{
+    position: relative;
+    top: 18px;
+    left: 40px;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.bar{
+    height: 3px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 200ms ease-in-out;
+}
+
+.menu.active .bar:nth-last-child(1){
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.menu.active .bar:nth-last-child(2){
+   opacity: 0;
+}
+
+.menu.active .bar:nth-last-child(3){
+    transform: translateY(7px) rotate(40deg);
+}
+
+/* Responsive */
+
+/* Dispositivos móviles con una anchura de pantalla de hasta 600px */
+@media screen and (max-width: 600px) {
+    #index-main, #problemas-al-iniciar-main {
+        width: 100%;
+        border: none;
+        margin-top: 0;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .cara-de-jes img {
+        position: relative;
+        top: 16px;
+        left: 35px;
+        width: 140px;
+        height: 140px;
+        margin-top: 10px;
+    }
+    .cara-de-jes h2, .cara-de-jes h3 {
+        display: none;
+    }
+    .cara-de-jes {
+        border: none;
+        width: 100%;
+    }
+    #inicio-de-sesion {
+        width: 100%;
+    }
+    #inicio-de-sesion h1 {
+        font-size: 26px;
+    }
+    #password, #id {
+        max-width: 100%;
+    }
+
+    #iniciar-sesion {
+        padding: 14px 20px;
+    }
+    .problemas-al-iniciar {
+        font-size: 14px;
+    }
+    #introducir-id img, #introducir-contraseña img {
+        margin-top: 3px;
+        width:30px;
+        height: 30px;
+    }
+    #introducir-contraseña, #introducir-id {
+        width: 60%;
+        margin-right: 60px;
+    }
+    /* Problemas al iniciar */
+    #problemas_al_iniciar{
+        width: 100%;
+    }
+    #problemas_al_iniciar h1 {
+        font-size: 22px;
+    }
+    #parrafo-de-soporte {
+        width: 98%;
+        font-size: 16px;
+        text-align: center;
+    }
+    .volver-atras {
+        padding: 10px 30px;
+        font-size: 12px;
+    }
+
+    /* HOME */
+    .home-header {
+        border: none;
+    }
+
+    .menu-navegador {
+        width: 50px;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
+
+    .header-home-container {
+        width: 90%;
+    }
+
+    .logo-jes-home img {
+        width: 160px;
+        height: 140px;
+        margin-bottom: 0;
+        transform: translateY(40px);
+    }
+
+    .jes-nombre-home h2 {
+        font-size: 12px;
+    }
+    .jes-nombre-home h3 {
+        font-size: 10px;
+    }
+    .main-container-home {
+        overflow: hidden;
+    }
+
+    .home-article-container {
+        flex-flow: column;
+        gap: 10px;
+    }
+
+    .home-article {
+        box-shadow: 1px 1px #FFC93D;
+        border: 1px solid rgba(128, 128, 128, 0.268);
+        border-radius: 10px;
+        width: 80%;
+        height: 80px;
+        margin: 0;
+        margin-bottom: 10px;
+        margin-left: 10%;
+    }
+
+    .home-article img {
+        width: 30px;
+        height: 30px;
+        transform: translateY(-20px) translateX(10px); 
+    }
+
+    .home-article h3 {
+        font-size: 16px;
+        transform: translateY(-20px) translateX(-20px);
+    }
+
+    /* termina el home */
+
+    /* Formulario de registro */
+    .subir-imagen-registro label {
+        flex-basis: 100%;
+        padding: 20px 30px;
+        position: relative;
+        right: 40px;
+        border-radius: 10px;
+        margin-bottom: 20px;      
+        margin-top: 45px;
+        margin-left: 20%;
+    }
+    header {
+        overflow: hidden;
+        border-bottom: 1px solid white;
+        margin-bottom: 0;
+    }
+    
+    .header-container {
+        background-color: #000000;
+        width: 90%;
+    }
+    .header-container h1 {
+        font-size: 20px;
+        transform: translateX(-40px); 
+        
+    }
+    .header-container nav {
+        width: 25px;
+        height: 25px;
+        background-color: #00000000;
+        border: none;
+    }
+    .header-container nav img {
+        width: 20px;
+        height: 20px;
+    }
+    .header-container h2, .header-container h3 {
+        display: none;
+    }
+    .mobile-none {
+        display: none;
+    }
+    .JES img {
+        width: 40px;
+        height: 40px;
+        transform: translateX(-40px);
+    }
+    .form-container {
+        background-color: rgba(0, 0, 0, 0);
+        height: 100%;
+        width: inherit;
+        flex-flow: column;
+        align-items: center;
+        border-radius: 0;
+    }
+    .form-container legend {
+        font-size: 14px;
+        font-style: italic;
+        margin-left: 30px;
+        transform: translateY(30px) translateX(20px);
+    }
+    .formulario-de-registro {
+        width: 90%;
+        margin-left: 20%;
+    }
+    .subir-imagen-registro {
+        flex-basis: 100%;
+    }
+
+    .submit-registro {
+        flex-basis: 100%;
+        margin-right: 70px;
+    }
+
+    .regresar-registro {
+        position: absolute;
+        top: 98px;
+        left: 2px;
+        transform: translateX(-20px) translateY(-27px);
+    }
+
+    .form-main {
+        background-color: rgba(0, 0, 0, 0.706);
+        height: 972px;
+        padding-bottom: 10px;
+        overflow: hidden;
+    }
+    /* aqui termina el formulario de registro */
+}
+
+/* Tablets con una anchura de pantalla de 601px a 900px */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    /* Estilos para tablets */
+    #problemas-al-iniciar-main, #index-main {
+        background-color: rgba(0, 0, 0, 0.84);
+        max-width: 640px;
+        max-height: 400px;
+        margin-top: 50px;
+        color: white;
+        display: flex;
+        border-radius: 20px;
+    }
+    #inicio-de-sesion h1 {
+        font-size: 20px;
+        padding-bottom: 30px;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    #inicio-de-sesion form{
+        position: relative;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #inicio-de-sesion input {
+        width: 200px;
+        height: 40px;
+        padding: 0;
+        padding-left: 50px;
+    }
+    .cara-de-jes img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .cara-de-jes h2 {
+        font-size: 22px;
+    }
+    .cara-de-jes h3 {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+    #introducir-contraseña img, #introducir-id img {
+        width: 30px;
+        height: 30px;
+    }
+    #introducir-contraseña img {
+        transform: translateX(-30px) translateY(5px);
+    }
+    #introducir-id img {
+        transform: translateX(-5px) translateY(-10px);
+    }
+    .problemas-al-iniciar {
+        font-size: 12px;
+    }
+    #iniciar-sesion {
+        padding: 12px 25px;
+        border-radius: 6px;
+        font-size: 12px;
+    }
+    #problemas_al_iniciar h1 {
+        font-size: 26px;
+    }
+    #parrafo-de-soporte {
+        position: relative;
+        left: 10%;
+        font-size: 18px;
+        width: 90%;
+    }
+
+    /* Homes */
+    .menu-navegador {
+        height: 26px;
+        width: 122px;
+    }
+    .menu-navegador img {
+        width: 22px;
+        position: relative;
+        bottom: 2px;
+        right: 3px;
+    }
+
+    .logo-jes-home img {
+        width: 200px;
+        height: 180px;
+        bottom: 60px;
+    }
+
+    .main-container-home {
+        padding-bottom: 120px;
+    }
+
+    .home-article {
+        width: 39.933444%; /* 240px/601 */
+        height: 80px;
+        border-radius: 10px;
+        margin: 0 26px;
+        position: relative;
+        top: 80px;
+    }
+
+    .home-article a {
+        color: white;
+        margin-right: 40px;
+        position: relative;
+        bottom: 21px;
+    }
+
+    .home-article h3 {
+        order: 1;
+        font-size: 18px;
+        line-height: 80px;
+        transform: translateX(-25px);
+    }
+    .home-article img {
+        order: 0;
+        width: 34px;
+        height: 34px;
+    }
+    .home-admin {
+        box-shadow: 2px 2px rgba(0, 255, 255, 0.322);
+    }
+
+    /* Formulario registro */
+    .header-container {
+        width: 98%;
+    }
+    .JES {
+        transform: translateX(-30px);
+    }
+    .header-container h1 {
+        font-size: 22px;
+        transform: translateX(-40px);
+    }
+    .JES h2 {
+        font-size: 14px;
+    }
+    
+    .JES h3 {
+        font-size: 10px
+    }
+    .form-container {
+        position: relative;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 85%;
+    }
+    .form-container * {
+        margin-left: 15px;
+    }
+    .form-container input {
+        padding: 0 10px;
+        margin: 0 5px;
+    }
+    .form-container legend {
+        transform: translateX(-30px);
+    }
+    .submit-registro {
+        flex-basis: 60%;
+        position: relative;
+        left: 30%;
+    }
+
+    .subir-imagen-registro label {
+        transform: translateX(30px);
+    }
+
+    .regresar-registro {
+        transform: translateX(-55px) translateY(-12px);
+    }
+}
+
+/* Computadoras de escritorio con una anchura de pantalla de 901px en adelante */
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    #problemas-al-iniciar-main, #index-main {
+        background-color: rgba(0, 0, 0, 0.84);
+        width: 80%;
+        height: 460px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        display: flex;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px 1px gray;
+        border: 1px solid white;
+    }
+    #inicio-de-sesion h1 {
+        font-size: 25px;
+        padding-bottom: 30px;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    #inicio-de-sesion form{
+        position: relative;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #password,#id {
+        width: 280px;
+        height: 50px;
+        padding: 0;
+        padding-left: 50px;
+    }
+    .cara-de-jes img {
+        width: 240px;
+        height: 240px;
+        object-fit: cover;
+    }
+    .cara-de-jes h2 {
+        font-size: 22px;
+    }
+    .cara-de-jes h3 {
+        font-size: 20px;
+    }
+    #introducir-contraseña img, #introducir-id img {
+        width: 30px;
+        height: 30px;
+    }
+    #introducir-contraseña img {
+        transform: translateX(-30px) translateY(10px);
+    }
+    #introducir-id img {
+        transform: translateX(-6px) translateY(-5px);
+    }
+    .problemas-al-iniciar {
+        font-size: 14px;
+    }
+    #iniciar-sesion {
+        padding: 14px 20px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+    #problemas_al_iniciar h1 {
+        font-size: 26px;
+    }
+    #parrafo-de-soporte {
+        position: relative;
+        left: 10%;
+        font-size: 18px;
+        width: 90%;
+    }
+
+    /* Formulario */
+    .form-container {
+        width: 90%;
+    }
+
+    .form-container * {
+        margin-left: 10px;
+    }
+
+    .submit-registro {
+        flex-basis: 60%;
+        margin-left: 25%;
+    }
+
+    .regresar-registro {
+        transform: translateY(-10px) translateX(-90px);
+    }
+
+    .form-container legend {
+        transform: translateX(-10px);
+    }
+}
