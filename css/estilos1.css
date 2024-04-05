@@ -684,6 +684,9 @@ nav {
         font-size: 16px;
         transform: translateY(-20px) translateX(-20px);
     }
+    .home-admin {
+        box-shadow: 1px 1px rgba(0, 255, 255, 0.322);
+    }
 
     /* termina el home */
 
