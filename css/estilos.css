@@ -225,24 +225,6 @@ footer {
     padding: 65px 0;
 }
 
-.tabla-horario {
-    /* border: 1px solid #FFF; */
-    background-color: rgba(0, 0, 0, 0.65);
-    margin: 0 auto;
-    color: #FFF;
-    height: 380px;
-    width: 1000px;
-    border-radius: 10px;
-}
-
-.tabla-horario-estudiante {
-    margin-bottom: 40px;
-}
-
-.tabla-centrar {
-    padding: 65px 0;
-}
-
 .tabla-horario th {
     background-color: #000;
 }
@@ -403,8 +385,45 @@ border-radius: 10px;
 /* RESPONSIVE */
 
 /* Desktop */
-@media screen and (min-width: 1024px) and (max-width: 1200px) {
-    
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    * {
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    /* TABLAS DE REGISTRO */
+    .selector-alt .current {
+        font-size: 16px;
+    }
+
+    .selector {
+        width: 600px;
+    }
+
+    .selector-alt {
+        width: 200px;
+        height: 50px;
+    }
+
+    #select {
+        height: 50px;
+    }
+
+    .tabla-registro {
+        width: 80%;
+    }
+
+    .tabla-registro th {
+        font-size: 14px;
+    }
+
+    /* TABLAS DE HORARIO */
+    .tabla-horario {
+        width: 80%;
+    }
 }
 
 /* Célulares */
@@ -431,15 +450,22 @@ border-radius: 10px;
         display: none;
     }
 
-    /* TABLAS DEL REGISTRO ESTUDIANTE/PROFESOR */
-    .tabla-registro {
-        width: 90%;
-        display: flex;
+    #botones-container {
+        width: 150px;
     }
 
+    #scroll-right, #scroll-left {
+        height: 40px;
+        width: 40px;
+    }
+
+    /* TABLAS DEL REGISTRO ESTUDIANTE/PROFESOR */
+
     #select {
-        height: 50px;
-        width: 100px;
+        font-size: 12px;
+        height: 40px;
+        width: 70px;
+        margin-right: 30px;
     }
 
     .selector a {
@@ -448,7 +474,11 @@ border-radius: 10px;
 
     .selector-alt {
         height: 40px;
-        width: 200px;
+        width: 150px;
+    }
+
+    .selector-alt .current, span {
+        font-size: 10px;
     }
 
     .selector {
@@ -456,10 +486,8 @@ border-radius: 10px;
     }
 
     .tabla-registro {
-        width: 85%;
-        height: 250px;
-        margin-left: 35px;
-        position: relative;
+        width: 90%;
+        height: 300px;
     }
 
     .tabla-registro th, .tabla-registro td {
@@ -496,7 +524,8 @@ border-radius: 10px;
     }
 
     .tabla-horario {
-        width: 400px;
+        width: 80%;
+        height: 400px;
     }
 
     .tabla-horario th {
@@ -548,12 +577,13 @@ border-radius: 10px;
     }
 
     .selector {
+        width: 50%;
         padding: 0 20px;
     }
 
     .selector-alt {
-        height: 50px;
-        width: 200px;
+        height: 40px;
+        width: 50%;
         border-radius: 20px;
     }
 
@@ -562,7 +592,7 @@ border-radius: 10px;
     }
 
     .tabla-registro {
-        width: 700px;
+        width: 80%;
         margin-left: 100px;
     }
 
@@ -577,12 +607,12 @@ border-radius: 10px;
 
     /* Horarios */
     #select {
-        height: 50px;
+        height: 40px;
         width: 80px;
     }
 
     .tabla-container {
-        width: 850px;
+        width: 100%;
     }
 
     .tabla-horario {
