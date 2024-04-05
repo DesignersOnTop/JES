@@ -1053,5 +1053,54 @@ nav {
     .form-container legend {
         transform: translateX(-10px);
     }
+
+    /* HOMES */
+        .main-container-home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 170px;
+    }
+
+    .home-article {
+        width: 40%;
+        height: 110px;
+        background-color: #000;
+        border-radius: 15px;
+        box-shadow: 2px 2px #FFC93D;
+        margin: 0 30px;
+        position: relative;
+        top: 90px;
+    }
+
+    .home-admin {
+        width: 33%;
+    }
+    .home-article a {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 40px;
+        transform: translateY(20px);
+    }
+
+    .home-article h3 {
+        order: 1;
+        font-size: 20px;
+        line-height: 80px;
+        transform: translateX(-25px);
+    }
+
+    .home-article img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .home-admin {
+        box-shadow: 2px 2px aqua;
+    }
 }
 
