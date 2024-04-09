@@ -490,6 +490,14 @@ border-radius: 10px;
         height: 300px;
     }
 
+    .tabla-registro td:nth-of-type(6), .tabla-registro td:nth-of-type(5) {
+        display: none;
+    }
+
+    .tabla-registro th:nth-of-type(6), .tabla-registro th:nth-of-type(5) {
+        display: none;
+    }
+
     .tabla-registro th, .tabla-registro td {
         white-space: nowrap;
         overflow: hidden;
