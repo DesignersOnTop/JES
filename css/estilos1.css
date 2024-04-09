@@ -14,7 +14,8 @@ body {
 
 /* Header de las paginas que usaran todos excluyendo a las paginas index.html y problemas-al-iniciar.html */
 header {
-    background-color: #000;
+    background-color: #000000a4;
+    backdrop-filter: blur(20px);
     height: 65px;
     width: 100%;
     margin-bottom: 40px;
@@ -104,15 +105,13 @@ nav {
 }
 
 .logo-jes-home img {
-    width: 280px;
-    height: 240px;
+    width: 240px;
+    height: 200px;
     position: relative;
-    bottom: 50px;
+    bottom: 30px;
+    right: 20px;
 }
 
-.jes-nombre-home {
-    text-align: center;
-}
 /* AQUI TERMINA LOS HEADER DE LOS HOMES */
 
 /* HOMES */
@@ -165,6 +164,24 @@ nav {
 .home-article-container {
     display: flex;
     justify-content: space-around;
+}
+
+.jes-nombre {
+    display: none;
+}
+
+.jes-nombre h2, .jes-nombre h3{
+    color: white;
+    margin: 0 auto;    
+    text-align: center;
+    transform: translateY(-70px);
+}
+.jes-nombre h2 {
+    font-size: 20px;
+}
+
+.jes-nombre h3 {
+    font-size: 18px;
 }
 /* AQUI TERMINAN LOS HOMES */
 
@@ -638,21 +655,46 @@ nav {
     }
 
     .header-home-container {
-        width: 90%;
+        width: 100%;
+        /* background-color: #000; */
+        transform: translateX(-20px);
     }
 
     .logo-jes-home img {
         width: 160px;
         height: 140px;
         margin-bottom: 0;
-        transform: translateY(40px);
+        transform: translateY(40px) translateX(20px);
+    }
+    .jes-nombre {
+       transform: translateY(64px);
+       display: inline-block;
+    }
+    .jes-nombre h2 {
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        display: none;
+    }
+    .jes-nombre h3 {
+        color: #fff;
+        font-size: 12px;
+        
+    }
+    .identidad figcaption {
+        font-size: 12px;
+        position: relative;
+        right: 8px;
     }
 
-    .jes-nombre-home h2 {
-        font-size: 12px;
+    .identidad img {
+        width: 34px;
+        margin-bottom: 5px;
     }
-    .jes-nombre-home h3 {
-        font-size: 10px;
+    
+    .identidad {
+        position: relative;
+        right: 20px;
     }
     .main-container-home {
         overflow: hidden;
@@ -661,6 +703,7 @@ nav {
     .home-article-container {
         flex-flow: column;
         gap: 10px;
+        transform: translateY(-30px);
     }
 
     .home-article {
@@ -684,7 +727,6 @@ nav {
         font-size: 16px;
         transform: translateY(-20px) translateX(-20px);
     }
-
     /* termina el home */
 
     /* Formulario de registro */
@@ -705,7 +747,7 @@ nav {
     }
     
     .header-container {
-        background-color: #000000;
+        /* background-color: #000000; */
         width: 90%;
     }
     .header-container h1 {
@@ -865,13 +907,18 @@ nav {
     .logo-jes-home img {
         width: 200px;
         height: 180px;
-        bottom: 60px;
+        bottom: 40px;
+        left: 12px;
     }
 
     .main-container-home {
         padding-bottom: 120px;
     }
 
+    .header-home-container {
+        width: 96%;
+        margin-right: 20px;
+    }
     .home-article {
         width: 39.933444%; /* 240px/601 */
         height: 80px;
@@ -903,6 +950,14 @@ nav {
         box-shadow: 2px 2px rgba(0, 255, 255, 0.322);
     }
 
+    .jes-nombre-home h3{
+        font-size: 14px;
+    }
+
+    .jes-nombre-home h2 {
+        font-size: 12px;
+    }
+
     /* Formulario registro */
     .header-container {
         width: 98%;
@@ -921,6 +976,7 @@ nav {
     .JES h3 {
         font-size: 10px
     }
+
     .form-container {
         position: relative;
         padding-left: 20px;
