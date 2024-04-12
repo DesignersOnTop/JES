@@ -432,22 +432,42 @@ border-radius: 10px;
         font-size: 14px;
     }
 
-    .menu-navegador {
-        width: 100px;
-        margin-right: 5px;
+    header {
+        overflow: hidden;
+        border-bottom: 1px solid white;
+        margin-bottom: 0;
     }
-
-    .menu-navegador img {
+    
+    .header-container {
+        background-color: #000000;
+        width: 90%;
+        transform: translateX(25px);
+    }
+    .header-container h1 {
+        font-size: 20px;
+        transform: translateX(-40px); 
+        
+    }
+    .header-container nav {
+        width: 25px;
+        height: 25px;
+        background-color: #00000000;
+        border: none;
+    }
+    .header-container nav img {
+        width: 20px;
         height: 20px;
-        padding: 0 3px;
     }
-
-    header h1 {
-        font-size: 16px;
-    }
-
-    header h3 {
+    .header-container h2, .header-container h3 {
         display: none;
+    }
+    .mobile-none {
+        display: none;
+    }
+    .JES img {
+        width: 40px;
+        height: 40px;
+        transform: translateX(-40px);
     }
 
     #botones-container {
