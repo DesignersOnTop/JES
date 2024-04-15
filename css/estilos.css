@@ -90,42 +90,68 @@ footer {
 /* a_ayuda-soporte */
 
 .mensajes {
-    border: none;
+    width: 80%;
+    overflow: hidden;
     margin: 0 auto;
-    height: 480px;
-    width: 60%;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 .mensajes-container {
-    border: 1px solid #FFF;
-    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    flex: 0 0 auto;
+    width: 300px;
     height: 300px;
-    width: 700px;
     margin: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.mensajes-container figure {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
 }
 
 .mensajes-container img {
     width: 80px;
     height: 80px;
     border-radius: 100%;
+    object-fit: cover;
 }
 
 .mensajes-container h4 {
     color: #FFF;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .mensajes-container p {
     color: #FFF;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#botones-container {
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+#scroll-container {
+    display: flex;
+    overflow: hidden;
+}
+
+#scroll-left, #scroll-right {
+    background-color: #000;
+    color: #FFF;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
 }
 
 /* a_horario-estudiante */
@@ -247,26 +273,33 @@ border-radius: 10px;
     color: #FFF;
     margin: 0 auto;
     margin-top: 40px;
+    overflow: hidden;
     border-radius: 15px;
     width: 1150px;
-    height: 550px;
+    height: 300px;
     text-align: center;
+}
+
+.tabla-registro th {
+    height: 20px;
 }
 
 .tabla-registro td {
     background-color: #000;
+    font-size: 14px;
+    height: 50px;
 }
 
 .tabla-registro td img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
     object-fit: cover;
 }
 
 .tabla-registro td .editar {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
 /* p_calificacion-seccionA */
@@ -347,4 +380,253 @@ border-radius: 10px;
     width: 30px;
     height: 30px;
     transform: translateX(-120px) translateY(-60px);
+}
+
+/* RESPONSIVE */
+
+/* Desktop */
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    * {
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    /* TABLAS DE REGISTRO */
+    .selector-alt .current {
+        font-size: 16px;
+    }
+
+    .selector {
+        width: 600px;
+    }
+
+    .selector-alt {
+        width: 200px;
+        height: 50px;
+    }
+
+    #select {
+        height: 50px;
+    }
+
+    .tabla-registro {
+        width: 80%;
+    }
+
+    .tabla-registro th {
+        font-size: 14px;
+    }
+
+    /* TABLAS DE HORARIO */
+    .tabla-horario {
+        width: 80%;
+    }
+}
+
+/* Célulares */
+@media screen and (max-width: 600px) {
+    * {
+        font-size: 14px;
+    }
+
+    .menu-navegador {
+        width: 100px;
+        margin-right: 5px;
+    }
+
+    .menu-navegador img {
+        height: 20px;
+        padding: 0 3px;
+    }
+
+    header h1 {
+        font-size: 16px;
+    }
+
+    header h3 {
+        display: none;
+    }
+
+    #botones-container {
+        width: 150px;
+    }
+
+    #scroll-right, #scroll-left {
+        height: 40px;
+        width: 40px;
+    }
+
+    /* TABLAS DEL REGISTRO ESTUDIANTE/PROFESOR */
+
+    #select {
+        font-size: 12px;
+        height: 40px;
+        width: 70px;
+        margin-right: 30px;
+    }
+
+    .selector a {
+        font-size: 14px;
+    }
+
+    .selector-alt {
+        height: 40px;
+        width: 150px;
+    }
+
+    .selector-alt .current, span {
+        font-size: 10px;
+    }
+
+    .selector {
+        width: 300px;
+    }
+
+    .tabla-registro {
+        width: 90%;
+        height: 300px;
+    }
+
+    .tabla-registro th, .tabla-registro td {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .tabla-registro th {
+        font-size: 10px;
+        height: 30px;
+        width: 100px;
+
+    }
+
+    .tabla-registro td {
+        font-size: 10px;
+        width: 100px;
+    }
+
+    .tabla-registro td .editar {
+        height: 20px;
+        width: 20px;
+    }
+
+    .tabla-registro td img {
+        height: 25px;
+        width: 25px;
+    }
+
+    /* TABLAS DE HORARIO PROFESOR/ESTUDIANTE */
+    main {
+        padding-bottom: 200px;
+    }
+
+    .tabla-horario {
+        width: 80%;
+        height: 400px;
+    }
+
+    .tabla-horario th {
+        height: 40px;
+        width: 80px;
+    }
+
+    .tabla-horario td {
+        font-size: 10px;
+    }
+
+    /* CALIFICACIONES POR SECCIONES */
+    #select-calificacion {
+        width: 100px;
+        height: 40px;
+    }
+}
+
+/* TABLETS */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+    /* Tablas de registro */
+    * {
+        font-size: 14px;
+    }
+
+    main {
+        padding-bottom: 250px;
+    }
+
+    .header-container {
+        width: 100%;
+    }
+
+    .header-container h1 {
+        font-size: 20px;
+    }
+
+    .menu-navegador {
+        width: 110px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .menu-navegador img {
+        width: 20px;
+        margin: 0 5px;
+        padding-top: 2px;
+    }
+
+    .selector {
+        width: 50%;
+        padding: 0 20px;
+    }
+
+    .selector-alt {
+        height: 40px;
+        width: 50%;
+        border-radius: 20px;
+    }
+
+    .selector-alt a {
+        font-size: 14px;
+    }
+
+    .tabla-registro {
+        width: 80%;
+        margin-left: 100px;
+    }
+
+    .tabla-registro td {
+        font-size: 12px;
+    }
+
+    .tabla-registro td img {
+        height: 30px;
+        width: 30px;
+    }
+
+    /* Horarios */
+    #select {
+        height: 40px;
+        width: 80px;
+    }
+
+    .tabla-container {
+        width: 100%;
+    }
+
+    .tabla-horario {
+        margin-left: 80px;
+        width: 80%;
+    }
+
+    /* Área de Cálificaciones */
+    #select-calificacion {
+        width: 100px;
+        height: 45px;
+    }
+
+    .tabla-registro th {
+        height: 30px;
+    }
 }

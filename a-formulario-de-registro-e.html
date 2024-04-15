@@ -22,14 +22,14 @@
             <h1>Registro</h1>
                 <nav class="menu-navegador">
                     <ul>
-                        <li>
+                        <li class="mobile-none">
                             <figure>
                                 <a href="a-home.html">
                                     <img src="imagenes/iconos/home.svg" alt="icono-home">
                                 </a>
                             </figure>
                         </li>
-                        <li>
+                        <li class="mobile-none">
                             <figure>
                                 <a href="a-perfil.html">
                                     <img src="imagenes/iconos/usuario.svg" alt="icono-usuario">
@@ -38,25 +38,25 @@
                         </li>
                         <li>
                             <figure>
-                                <img src="imagenes/iconos/menu.svg" alt="icono-menu">
+                                <img src="imagenes/iconos/menu.svg" alt="icono-menu" class="mobile-menu">
                             </figure>
                         </li>
                     </ul>
                 </nav>            
         </div>
     </header>
-    <main>
-        <div class="regresar-perfil regresar-registro">
-            <a href="a_registro-profesores.html">
-                <figure>
-                    <img src="imagenes/iconos/flecha-regresar.svg" alt="regresar">
-                </figure>
-            </a>
-        </div>
+    <main class="form-main">
         <section>
             <form action="#">
                 <fieldset class="form-container">
-                    <legend>Estudiante</legend>
+                    <legend>Estudiante</legend>          
+                    <div class="regresar-perfil regresar-registro">
+                        <a href="a_registro-profesores.html">
+                            <figure>
+                                <img src="imagenes/iconos/flecha-regresar.svg" alt="regresar">
+                            </figure>
+                        </a>
+                    </div>
                     <div class="subir-imagen-registro">
                         <label for="subir-imagen">Subir Imagen</label>
                         <input type="file" id="subir-imagen">
@@ -85,12 +85,20 @@
                         <label for="curso">Curso:</label>
                         <select type="text" id="curso" name="curso">
                             <option value="default">-----</option>
-                            <option value="1-a">1-A</option>
-                            <option value="2-a">2-A</option>
-                            <option value="3-a">3-A</option>
-                            <option value="4-a">4-A</option>
-                            <option value="5-a">5-A</option>
-                            <option value="6-a">6-A</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                    <div class="formulario-de-registro">
+                        <label for="seccion">Sección:</label>
+                        <select name="seccion" id="seccion">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
                         </select>
                     </div>
                     <div class="formulario-de-registro">
