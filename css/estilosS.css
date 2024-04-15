@@ -131,6 +131,7 @@ footer {
     font-size: 20px;
     color: #FFC93D;
 }
+
 .izquierda-abajo {
     margin-top: 40px;
     width: 250px;
@@ -164,7 +165,7 @@ footer {
     margin-bottom: 40px;
     border-bottom: 2px solid #CCC;
     padding-bottom: 30px;
-    /* text-align: center; */
+    margin-right: 15px;
 }
 
 .contenedor-central {
@@ -181,7 +182,6 @@ footer {
     margin-bottom: 20px;
     display: flex;
     flex-flow: row;
-
 }
 
 .datos p {
@@ -287,74 +287,41 @@ figure #editor_admin {
 .contenedor-info {
     background-color: rgba(0, 0, 0, 0.65);
     height: 250px;
-    width: 30%;
+    width: 50%;
     border-radius: 15px;
     margin: 0 auto;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.contenedor-info p {
     color: #FFF;
-}
-
-.derecha-info img{
-    border-radius: 80px;
-    height: 130px;
-    width: 130px;
-    object-fit: cover;
-    position: relative;
-    right: 40px;
-    bottom: 10px;
-}
-
-.derecha-info h4 {
-    position: relative;
-    top: 5px;
-    right: 40px;
-}
-
-.izquierda-info .info {
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.tit-pro h3{
-    position: relative;
-    bottom: 10px;
-    right: 10px;
-    color: #FFC93D;
-}
-
-/* p-calificacionesEstudiante */
-.info h3 p,
-.info-est {
     text-align: center;
 }
 
-.tit-est h4 {
-    margin-left: 50px;
+.contenedor-info img {
+    height: 100px;
+    width: 100px;
+    margin: 15px 0;
 }
 
-figure .perfil-est  {
+.horizontal {
+    
+    height: 150px;
+    width: 550px;
     position: relative;
-    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.tit-est h3 {
-    color: #FFC93D;
-    position: relative;
-    left: 10px;
+.vertical {
+    position: absolute;
 }
 
-.tit-est h4 {
-    margin-left: 70px;
-}
-
-.info-est{
-    padding: 25px;
-}
-
-/* Icono para regresar y tabla. */
 .flecha-regresar {
     position: relative;
 }
@@ -443,14 +410,81 @@ figure .perfil-est  {
 
 @media screen and (min-width: 901px) and (max-width: 1200px) {
     
+    * {
+        font-size: 16px;
+    }
+
+     .izquierda-arriba {
+        transform: translateX(40px);
+    }
+
+    .izquierda-arriba h5 {
+        position: relative;
+        top: 10px;
+    }
+
+    .izquierda-arriba img {
+        height: 200px;
+        width: 200px;
+        margin-top: 40px;
+    }
+
+    .contenedor-central {
+        padding: 20px;
+    }
+
+   .datos p {
+        margin-left: 30px;
+    }
+
+   .datos h4 {
+        margin-right: 10px ;
+   }
+
+   /* PARTE DEL ADMIN */
+
+    .izquierda-arriba_admin img {
+        height: 200px;
+        width: 200px;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+
+    .izquierda-arriba_admin h5 {
+        position: relative;
+        left: 60px;
+        top: 10px;
+    }
+
+    .izquierda-arriba_admin figure {
+        border-bottom: 2px solid gray;
+        margin-left: 150px;
+        margin-bottom: 80px;
+    }
+
+    .derecha-arriba h2 {
+        text-align: center;
+    }
+
+    #editor_admin {
+        right: 120px;
+    }
+
+
 }
   
 /* TABLET */
+
 
 @media screen and (min-width: 601px ) and (max-width: 900px) {
 
     * {
         font-size: 14px;
+
+    }
+
+    .derecha-arriba {
+        margin-right: 30px;
     }
 
     .izquierda-arriba img {
@@ -458,27 +492,39 @@ figure .perfil-est  {
         height: 150px;
     }
 
-    .central {
-        width: 300px;
+    .central, .central-admin {
+        overflow: hidden;
+        padding: 0;        
+        width: 70%;  
+        height: auto; 
     }
 
-    .central,
-    .central-admin {
-        width: 90%;  
-        height: auto; 
+    .perfil-main {
+        padding-bottom: 120px;
     }
 
     .izquierda-arriba,
     .izquierda-arriba_admin {
         width: 60%; 
         margin-top: 20px;
+        height: 90%;
     }
 
     .contenedor-central,
     .contenedor-central_admin {
         margin-left: 0; 
-        width: 100%; 
+        width: 100%;
     }
+
+    .datos p {
+    margin-left: 0 ;
+    }
+
+    .central {
+        height: 10px 10px;
+    }
+
+
 }
 
 /* CELULARES */
