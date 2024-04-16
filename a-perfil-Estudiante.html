@@ -2,12 +2,14 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>perfil-Estudiante-Admin</title>
-    <meta name="description" content="Esta pagina se usara para darle diseño con CSS, para que el Admin pueda modificar o crear perfiles a los estudiantes...">
+    <title>Perfil estudiante </title>
+    <meta name="description" content="PERFIL MODIFICADO, Creando este perfil lo que buscamos es poder diferenciar entre maestros y estudiantes, tambien que el administrador pueda agregar nuevos perfiles y donde el mismo puedo ver la informacion de los usuarios. ">
     <link rel="icon" href="imagenes/recursos/logo-jes.png">
     <link rel="stylesheet" href="css/estilosS.css">
 </head>
+
 <body>
     <div id="contenedor">
         <header>
@@ -21,7 +23,7 @@
                         <h3>Junior Explorers System</h3> 
                     </div>
                 </div>
-                <h1>Perfil Del Estudiante</h1>
+                <h1>Perfil</h1>
                 <nav class="menu-navegador">
                     <ul>
                         <li>
@@ -47,63 +49,53 @@
                 </nav>            
             </div>
         </header>
-        <div class="icono-regresar-perfil" style="width: 20px; margin-top: 20px; position: absolute; left: 80px;">
-            <a href="a_registro-estudiantes.html">
+        <main class="central">
+            <div class="izquierda-arriba">
+                <h5>Estudiante</h5>
                 <figure>
-                    <img src="imagenes/iconos/flecha-regresar.svg" alt="regresar" style="width: 30px; height: 30px;">
+                    <img src="imagenes/recursos/perfil.Estudiante.png" alt="Foto del perfil ">
                 </figure>
-            </a>
-        </div>
-        <main class="importante">
-            <div class="info-estudiante">
-                <ul class="info-ul-container">
-                    <li class="perfil">
-                        <figure >
-                            <img src="imagenes/recursos/perfil.Estudiante.png" alt="Foto de perfil">
-                        </figure>
-                    </li>
-                    <li class="nombre">
-                        <h4 >Nombre</h4>
-                        <p >Emmy Maria</p>
-                    </li>
-                    <li class="apellido">
-                        <h4>Apellidos</h4>
-                        <p>Garcia Paulino</p>
-                    </li>
-                    <li class="grado">
-                        <h4>Grado</h4>
-                        <p> 1 - A</p>
-                    </li>
-                    <li class="fecha-nacimiento">
-                        <h4>Fecha de Nacimiento</h4>
-                        <p>10-05-2009</p>
-                    </li>
-                    <li class="email">
+                <figure>
+                    <img src="imagenes/iconos/editar.svg" alt="icono para editar" class="editor">
+                </figure>
+                <div class="izquierda-abajo">
+                    <h6>Grado</h6>
+                    <h4>1ro A </h4>
+                </div>
+            </div>
+            <section class="contenedor-central">
+                <article class="derecha-arriba">
+                    <h2>Emmy Garcia</h2>
+                    <p>1-22-0500</p>
+                </article>
+                <article class="derecha-abajo">
+                    <div class="datos">
                         <h4>Email</h4>
                         <p>emmyMaria@gmail.com</p>
-                    </li>
-                    <li class="id-perfil">
-                        <h4>ID</h4>
-                        <p>12-031-10</p>
-                    </li>
-                    <li class="genero">
-                        <h4>G&eacute;nero</h4>
+                    </div>
+                    <div class="datos">
+                        <h4>Fecha de Nacimiento</h4>
+                        <p>10-05-2009</p>
+                    </div>
+                    <div class="datos">
+                        <h4>Genero</h4>
                         <p>Femenino</p>
-                    </li>
-                    <li class="numero-tel" >
-                        <h4>N&uacute;mero</h4>
-                        <p>829-999-0555</p>
-                    </li>
-                    <li class="direccion">
-                        <h4>Direcci&oacute;n</h4>
-                        <p>calle 16 de agosto #01</p>
-                    </li>
-                </ul>
-            </div>
+                    </div>
+                    <div class="datos">
+                        <h4>Dirección</h4>
+                        <p>Calle 16 de Agosto #01</p>
+                    </div>
+                    <div class="datos">
+                        <h4>Edad</h4>
+                        <p> 13 años</p>
+                    </div>
+                    <div class="datos">
+                        <h4>Telefóno</h4>
+                        <p>809-101-0000</p>
+                    </div>
+                </article>
+            </section>
         </main>
-        <figure>
-            <img src="imagenes/iconos/editar.svg" alt="icono de editar" id="editor">
-        </figure>
     </div>
 </body>
 </html>

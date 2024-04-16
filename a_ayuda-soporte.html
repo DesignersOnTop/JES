@@ -6,27 +6,6 @@
     <title>Ayuda y Soporte</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="icon" href="imagenes/recursos/logo-jes.png">
-    <style>
-        .mensajes-container1 {
-            background-color: #000000a9;
-            width: 90%;
-            border: 1px solid gray;
-            overflow-y: scroll;
-            overflow-x: hidden;
-        }
-        .mensajes-container1 {
-            border-radius: 10px;
-        }
-        .mensajes-container1::-webkit-scrollbar {
-            background-color: #000000bd;
-            width: 10px;
-            border-radius: inherit;
-        }
-        .mensajes-container1::-webkit-scrollbar-thumb {
-            background-color: #00000060;
-            border-radius: 20px;
-        }
-    </style>
 </head>
 <body>
     <!-- Creamos el header con el logo, el nombre del proyecto -->
@@ -69,29 +48,57 @@
     </header>
     <!-- Aquí creamos el apartado donde se verán los mensajes enviados al admin -->
     <main>
-        <section class="mensajes mensajes-container1">
-            <article class="mensajes-container">
-                <figure>
-                    <img src="imagenes/random-glasses-guy.jpeg" alt="user">
-                </figure>
-                <h4>juanita2024@gmail.com</h4>
-                <p>Tengo algunos problemas con mi ID y no puedo ingresar.</p>
-            </article>
-            <article class="mensajes-container">
-                <figure>
-                    <img src="imagenes/random-glasses-guy.jpeg" alt="user">
-                </figure>
-                <h4>juanita2024@gmail.com</h4>
-                <p>Tengo algunos problemas con mi ID y no puedo ingresar.</p>
-            </article>
-            <article class="mensajes-container">
-                <figure>
-                    <img src="imagenes/random-glasses-guy.jpeg" alt="user">
-                </figure>
-                <h4>juanita2024@gmail.com</h4>
-                <p>Tengo algunos problemas con mi ID y no puedo ingresar.</p>
-            </article>
+        <section class="mensajes">
+            <div id="scroll-container">
+                <article class="mensajes-container">
+                    <figure>
+                        <img src="imagenes/random-glasses-guy.jpeg" alt="user">
+                    </figure>
+                    <h4>#12-031-10</h4>
+                    <p>Tengo problemas con el apartado de notas.</p>
+                </article>
+                <article class="mensajes-container">
+                    <figure>
+                        <img src="imagenes/random-glasses-guy.jpeg" alt="user">
+                    </figure>
+                    <h4>#12-031-10</h4>
+                    <p>Tengo problemas con el apartado de notas.</p>
+                </article>
+                <article class="mensajes-container">
+                    <figure>
+                        <img src="imagenes/random-glasses-guy.jpeg" alt="user">
+                    </figure>
+                    <h4>#12-031-10</h4>
+                    <p>Tengo problemas con el apartado de notas.</p>
+                </article>
+                <article class="mensajes-container">
+                    <figure>
+                        <img src="imagenes/random-glasses-guy.jpeg" alt="user">
+                    </figure>
+                    <h4>#12-031-10</h4>
+                    <p>Tengo problemas con el apartado de notas.</p>
+                </article>
+                <article class="mensajes-container">
+                    <figure>
+                        <img src="imagenes/random-glasses-guy.jpeg" alt="user">
+                    </figure>
+                    <h4>#12-031-10</h4>
+                    <p>Tengo problemas con el apartado de notas.</p>
+                </article>
+                <article class="mensajes-container">
+                    <figure>
+                        <img src="imagenes/random-glasses-guy.jpeg" alt="user">
+                    </figure>
+                    <h4>#12-031-10</h4>
+                    <p>Tengo problemas con el apartado de notas.</p>
+                </article>
+            </div>
+            <div id="botones-container">
+                <button id="scroll-left">←</button>
+                <button id="scroll-right">→</button>
+            </div>
         </section>
     </main>
+    <script src="js/scroll.js"></script>
 </body>
 </html>

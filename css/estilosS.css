@@ -131,6 +131,7 @@ footer {
     font-size: 20px;
     color: #FFC93D;
 }
+
 .izquierda-abajo {
     margin-top: 40px;
     width: 250px;
@@ -164,7 +165,7 @@ footer {
     margin-bottom: 40px;
     border-bottom: 2px solid #CCC;
     padding-bottom: 30px;
-    /* text-align: center; */
+    margin-right: 15px;
 }
 
 .contenedor-central {
@@ -181,7 +182,6 @@ footer {
     margin-bottom: 20px;
     display: flex;
     flex-flow: row;
-
 }
 
 .datos p {
@@ -287,7 +287,7 @@ figure #editor_admin {
 .contenedor-info {
     background-color: rgba(0, 0, 0, 0.65);
     height: 250px;
-    width: 70%;
+    width: 50%;
     border-radius: 15px;
     margin: 0 auto;
     position: relative;
@@ -402,4 +402,200 @@ figure #editor_admin {
 }
 .vertical h4 {
     color: #FFF;
+}
+
+/* RESPONSIVE */
+
+/* DESKTOP */
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    
+    * {
+        font-size: 16px;
+    }
+
+     .izquierda-arriba {
+        transform: translateX(40px);
+    }
+
+    .izquierda-arriba h5 {
+        position: relative;
+        top: 10px;
+    }
+
+    .izquierda-arriba img {
+        height: 200px;
+        width: 200px;
+        margin-top: 40px;
+    }
+
+    .contenedor-central {
+        padding: 20px;
+    }
+
+   .datos p {
+        margin-left: 30px;
+    }
+
+   .datos h4 {
+        margin-right: 10px ;
+   }
+
+   /* PARTE DEL ADMIN */
+
+    .izquierda-arriba_admin img {
+        height: 200px;
+        width: 200px;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+
+    .izquierda-arriba_admin h5 {
+        position: relative;
+        left: 60px;
+        top: 10px;
+    }
+
+    .izquierda-arriba_admin figure {
+        border-bottom: 2px solid gray;
+        margin-left: 150px;
+        margin-bottom: 80px;
+    }
+
+    .derecha-arriba h2 {
+        text-align: center;
+    }
+
+    #editor_admin {
+        right: 120px;
+    }
+
+
+}
+  
+/* TABLET */
+
+
+@media screen and (min-width: 601px ) and (max-width: 900px) {
+
+    * {
+        font-size: 14px;
+
+    }
+
+    .derecha-arriba {
+        margin-right: 30px;
+    }
+
+    .izquierda-arriba img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .central, .central-admin {
+        overflow: hidden;
+        padding: 0;        
+        width: 70%;  
+        height: auto; 
+    }
+
+    .perfil-main {
+        padding-bottom: 120px;
+    }
+
+    .izquierda-arriba,
+    .izquierda-arriba_admin {
+        width: 60%; 
+        margin-top: 20px;
+        height: 90%;
+    }
+
+    .contenedor-central,
+    .contenedor-central_admin {
+        margin-left: 0; 
+        width: 100%;
+    }
+
+    .datos p {
+    margin-left: 0 ;
+    }
+
+    .central {
+        height: 10px 10px;
+    }
+
+
+}
+
+/* CELULARES */
+
+@media screen and (max-width: 600px) {
+    .perfil-main {
+        padding-bottom: 60px;
+    }
+
+    .central {
+        width: 70%;
+        display: flex;
+        flex-flow: column;
+        /* padding-bottom: 50px; */
+    } 
+
+    .izquierda-arriba figure {
+        border: none;
+        width: 150px;
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .izquierda-arriba h5 {
+        position: relative;
+        left: 160px;
+        top: 40px;
+        font-size: 16px;
+    }
+
+    .izquierda-arriba img {
+        width: 110px;
+        height: 110px;
+        margin-top: 10px;
+    }
+
+    .izquierda-abajo {
+        position: relative;
+        top: 80px;
+        left: 20px;
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    .datos {
+        font-size: 14px;
+    }
+
+    .datos p {
+        margin-left: 20px;
+    }
+
+    .derecha-arriba {
+        position: relative;
+        z-index: 3 ;
+        bottom: 110px;
+        left: 50px;
+        font-size: 14px;
+        border: none;
+        width: 180px;
+    }
+
+    .derecha-abajo {
+        position: relative;
+        right: 60px;
+        width: 300px;
+        bottom: 50px;
+    }
+
+    .contenedor-central {
+        width: 60%;
+    }
 }
