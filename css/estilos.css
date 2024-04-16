@@ -208,13 +208,9 @@ footer {
 }
 
 .tabla-horario {
-    /* border: 1px solid #FFF; */
-    background-color: rgba(0, 0, 0, 0.65);
     margin: 0 auto;
     color: #FFF;
-    height: 380px;
-    width: 1000px;
-    border-radius: 10px;
+    width: 90%;
 }
 
 .tabla-horario-estudiante {
@@ -225,24 +221,24 @@ footer {
     padding: 65px 0;
 }
 
-.tabla-horario th {
-    background-color: #000;
+.tabla-horario th,.tabla-horario td {
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    height: 50px;
+    width: 300px;
 }
 
-.tabla-horario td {
-    text-align: center;
+.cambiar td {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
 }
 
 .tabla-calificacion th,.tabla-calificacion td {
-    min-width: 180px;
-    height: 70px;
-}
-.tabla-calificacion td {
-    background-color: #0000003b;
+    height: 50px;
+    width: 300px;
 }
 .tabla-calificacion .nota-final {
     border: none;
-    background: linear-gradient(180deg, #0000003b 0%, #000 100%);
 }
 
 .tabla-calificacion-centrar {
@@ -255,14 +251,14 @@ footer {
 }
 
 .tabla-calificacion-centrar::-webkit-scrollbar {
-width: 10px;
-background-color: #000;
-
-border: 1px solid rgba(255, 255, 255, 0.185);
-border-radius: 10px;
+    width: 10px;
+    background-color: #000;
+    border: 1px solid rgba(255, 255, 255, 0.185);
+    border-radius: 10px;
 }
+
 .tabla-calificacion-centrar::-webkit-scrollbar-thumb {
-    background-color: #ffc83d50;
+    background-color: #FFF;
     border-radius: 5px;
 }
 
@@ -553,7 +549,7 @@ border-radius: 10px;
     }
 
     .tabla-horario {
-        width: 90%;
+        width: 95%;
         height: 400px;
         overflow: hidden;
         overflow-x: scroll;

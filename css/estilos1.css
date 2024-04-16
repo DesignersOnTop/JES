@@ -523,6 +523,22 @@ nav {
     color: white;
 }
 
+/* BOTÓN PARA INICAR (FAURY) */
+#acceder {
+    background-color: #000;
+    color: #FFC93D;
+    border: 1px solid #FFC93D;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+}
+
+#acceder:hover {
+    transition: .5s all;
+    background-color: #FFF;
+    color: #000;
+}
+
 
 /* AQUI TERMINA EL FORMULARIO DE REGISTRO */
 

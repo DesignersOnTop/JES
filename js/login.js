@@ -1,5 +1,5 @@
 var validador = document.getElementById('id');
 
-if(validador === 'admin') {
-    
+if(validador != 'admin') {
+    alert("Su ID o contraseña es incorrecto, intentelo de nuevo!")
 }
