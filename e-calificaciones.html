@@ -46,9 +46,9 @@
                 </nav>            
         </div>
     </header>
-    <main>
-        <section class="tabla-centrar tabla-calificacion-centrar">
-            <table class="tabla-horario tabla-calificacion">
+    <main class="tabla-centrar">
+        <section class="tabla-calificacion-centrar">
+            <table class="tabla-calificacion">
                 <tr class="tabla-cabecera">
                     <th>Calificaciones</th>
                     <th>L. Española</th>
@@ -56,9 +56,29 @@
                     <th>Naturales</th>
                     <th>Ingles</th>
                     <th>Frances</th>
+                    <th>italiano</th>
+                    <th>romano</th>
                 </tr>
                 <tr>
-                    <th>C1</th>
+                    <td>C1</td>
+                    <td>90</td>
+                    <td>100</td>
+                    <td>98</td>
+                    <td>95</td>
+                    <td>96</td>
+                
+                </tr>
+                <tr>
+                    <td>C2</td>
+                    <td>90</td>
+                    <td>100</td>
+                    <td>98</td>
+                    <td>95</td>
+                    <td>96</td>
+                
+                </tr>
+                <tr>
+                    <td>C3</td>
                     <td>90</td>
                     <td>100</td>
                     <td>98</td>
@@ -66,7 +86,7 @@
                     <td>96</td>
                 </tr>
                 <tr>
-                    <th>C2</th>
+                    <td>C4</td>
                     <td>90</td>
                     <td>100</td>
                     <td>98</td>
@@ -74,23 +94,7 @@
                     <td>96</td>
                 </tr>
                 <tr>
-                    <th>C3</th>
-                    <td>90</td>
-                    <td>100</td>
-                    <td>98</td>
-                    <td>95</td>
-                    <td>96</td>
-                </tr>
-                <tr>
-                    <th>C4</th>
-                    <td>90</td>
-                    <td>100</td>
-                    <td>98</td>
-                    <td>95</td>
-                    <td>96</td>
-                </tr>
-                <tr>
-                    <th>C.Final</th>
+                    <td>C.Final</td>
                     <td class="nota-final">90</td>
                     <td class="nota-final">100</td>
                     <td class="nota-final">98</td>
@@ -99,6 +103,11 @@
                 </tr>
             </table>
         </section>
+        <div class="botones-container">
+            <button id="scroll-izquierdo">&larr;</button>
+            <button id="scroll-derecho">&rarr;</button>
+        </div>
     </main>
+    <script src="js/scroll_calificacion.js"></script>
 </body>
 </html>
