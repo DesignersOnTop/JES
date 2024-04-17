@@ -477,23 +477,22 @@ figure .perfil-est  {
 
    /* PARTE DEL ADMIN */
 
-    .izquierda-arriba_admin img {
+    .izquierda-arriba_admin #f-perfil {
         height: 200px;
         width: 200px;
-        margin-right: 50px;
-        margin-top: 50px;
+        margin-right: 80px;
+        margin-top: 70px;
     }
 
     .izquierda-arriba_admin h5 {
         position: relative;
-        left: 60px;
-        top: 10px;
+        left: 40px;
+        top: 17px;
     }
 
     .izquierda-arriba_admin figure {
-        border-bottom: 2px solid gray;
         margin-left: 150px;
-        margin-bottom: 80px;
+        /* margin-bottom: 80px; */
     }
 
     .derecha-arriba h2 {
@@ -501,7 +500,7 @@ figure .perfil-est  {
     }
 
     #editor_admin {
-       transform: translateY(-10px) translateX(120px);
+       transform: translateX(80px);
     }
 
     .derecha-arriba{
@@ -512,11 +511,9 @@ figure .perfil-est  {
         margin: 60px 0 30px 60px ;
     }
 
-    .izquierda-arriba_admin figure {
-        border: 1px solid white;
-        margin-left: 30px;
+    .izquierda-arriba_admin figure{
+        border: none;
     }
-
 
 }
   
@@ -530,8 +527,12 @@ figure .perfil-est  {
 
     }
 
-    .derecha-arriba {
+    .derecha-arriba .datos {
         margin-right: 30px;
+    }
+
+    .derecha-abajo {
+        line-height:45px;
     }
 
     .izquierda-arriba img {
@@ -539,7 +540,7 @@ figure .perfil-est  {
         height: 150px;
     }
 
-    .central, .central-admin {
+    .central{
         overflow: hidden;
         padding: 0;        
         width: 70%;  
@@ -550,28 +551,56 @@ figure .perfil-est  {
         padding-bottom: 120px;
     }
 
-    .izquierda-arriba,
-    .izquierda-arriba_admin {
+    .izquierda-arriba {
         width: 60%; 
         margin-top: 20px;
         height: 90%;
     }
 
-    .contenedor-central,
-    .contenedor-central_admin {
+    .contenedor-central {
         margin-left: 0; 
         width: 100%;
     }
 
     .datos p {
-    margin-left: 0 ;
+        margin-left: 0 ;
     }
 
     .central {
         height: 10px 10px;
     }
 
+    /* Perfil del Administrador  */
+    .izquierda-arriba_admin figure{
+        border: none;
+    }
 
+    .izquierda-arriba_admin #f-perfil {
+        height: 200px;
+        width: 200px;
+        margin-left: 150px;
+        margin-top: 60px;
+    }
+
+    .izquierda-arriba_admin h5 {
+        margin-left: 140px;
+        margin-top: 20px;
+    }
+
+    .derecha-arriba h2 {
+        text-align: center;
+    }
+    .derecha-abajo {
+        margin: 60px 0 0 30px ;
+        line-height: 35px;
+    }
+
+    #editor_admin {
+        transform: translateX(120px);
+        margin-top: 20px;
+        height: 20px;
+        width: 20px;
+    }
 }
 
 /* CELULARES */
