@@ -515,6 +515,20 @@ figure .perfil-est  {
         border: none;
     }
 
+    /* a / Asignacion horario profesor  */
+
+    .derecha-info {
+        margin-left: 40px;
+    }
+
+    /* .derecha-info img {
+        position: absolute;
+    } */
+
+    .izquierda-info {
+        position: relative;
+        right: 10px;
+    }
 }
   
 /* TABLET */
