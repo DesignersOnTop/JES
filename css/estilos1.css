@@ -14,7 +14,8 @@ body {
 
 /* Header de las paginas que usaran todos excluyendo a las paginas index.html y problemas-al-iniciar.html */
 header {
-    background-color: #000;
+    background-color: #000000a4;
+    backdrop-filter: blur(20px);
     height: 65px;
     width: 100%;
     margin-bottom: 40px;
@@ -45,12 +46,21 @@ header a {
 }
 
 nav {
-    background-color: #000;
-    width: 150px;
+    /* background-color: #000; */
+    width: 160px;
     height: 30px;
     border-radius: 20px;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
+    box-shadow: 1px -1px 1px white;
 }
+
+/* nav:hover {
+    transform: translateY(50px);
+    position: relative;
+    height: 140px;
+    background-color: #0000005e;
+} */
+
 
 .header-container {
     width: 95%;
@@ -89,7 +99,8 @@ nav {
 
 /* HEADER DE LAS PAGINAS HOMES */
 .home-header {
-    background-color: #00000000;
+    background-color: #03030313; 
+    backdrop-filter: blur(40px);
 }
 
 .header-home-container {
@@ -103,16 +114,26 @@ nav {
     margin-left: 20px;
 }
 
-.logo-jes-home img {
-    width: 280px;
-    height: 240px;
-    position: relative;
-    bottom: 50px;
+.identidad img {
+    border-radius: 100%; 
+    margin-top: 20px;
+    width: 40px;
 }
 
-.jes-nombre-home {
-    text-align: center;
+.identidad .nombre {
+    transform: translateX(50px) translateY(-30px); 
+    font-size: 12px; 
+    font-weight: bold;
 }
+
+.logo-jes-home img {
+    width: 240px;
+    height: 200px;
+    position: relative;
+    bottom: 30px;
+    right: 20px;
+}
+
 /* AQUI TERMINA LOS HEADER DE LOS HOMES */
 
 /* HOMES */
@@ -165,6 +186,24 @@ nav {
 .home-article-container {
     display: flex;
     justify-content: space-around;
+}
+
+.jes-nombre {
+    display: none;
+}
+
+.jes-nombre h2, .jes-nombre h3{
+    color: white;
+    margin: 0 auto;    
+    text-align: center;
+    transform: translateY(-70px);
+}
+.jes-nombre h2 {
+    font-size: 20px;
+}
+
+.jes-nombre h3 {
+    font-size: 18px;
 }
 /* AQUI TERMINAN LOS HOMES */
 
@@ -243,16 +282,21 @@ nav {
     transform: translateX(-40px);
 }
 
-#id, #password {
+#id, #id:focus, #id:active, 
+#password, #password:active, #password:focus {
     width: 320px;
     height: 45px;
-    border-radius: 15px;
+    border-radius: 10px;
     padding-left: 60px;
     position: relative;
     border: 1px solid #ffffff2d;
     background-color: #00000054;
-    font-size: 14px;
+    font-size: 16px;
     color: white;
+}
+
+#id:hover, #password:hover {
+    border: 1px solid #ffc83d4f;
 }
 
 #introducir-id figure {
@@ -557,6 +601,92 @@ nav {
     transform: translateY(7px) rotate(40deg);
 }
 
+/* E-CALIFICACIONES */
+.tabla-calificacion th {
+    height: 10px;
+    background-color: #000;
+    border-left: 1px solid rgba(255, 255, 255, 0.103);
+}
+
+
+.tabla-calificacion-centrar {
+    width: 70%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-radius: 10px;
+    height: 325px;
+    padding-top: 10px;
+}
+
+.tabla-centrar {
+    padding: 65px 0;
+}
+
+.tabla-calificacion {
+    margin: 0 auto;
+    color: #FFF;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.tabla-calificacion td, .tabla-calificacion th {
+    min-width: 160px;
+    padding: 20px 0;
+    border-radius: inherit;
+}
+
+.tabla-calificacion td {
+    background-color: rgba(0, 0, 0, 0.849);
+    border-left: 1px solid rgba(255, 255, 255, 0.103);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.103);
+    border-top: 1px solid rgba(255, 255, 255, 0.103);
+}
+
+.tabla-calificacion td:hover {
+    background-color: #ffc83d60;
+    backdrop-filter: blur(20px);
+}
+
+.botones-container {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    position: absolute;
+    top: 300px;
+    left: 10%;
+    right: 10%;
+    z-index: 0;
+}
+
+.botones-container * {
+    padding: 36px 10px;
+    border: none;
+    background-color: #000000d2;
+    backdrop-filter: blur(5px);
+    color: #ffc83db6;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.botones-container *:hover {
+    color: #fff;
+    background-color: #ffc83d60;
+}
+
+#scroll-izquierdo {
+    border-radius: 5px 0 0 5px;
+}
+
+#scroll-derecho {
+    border-radius: 0 5px 5px 0;
+}
+
 /* Responsive */
 
 /* Dispositivos móviles con una anchura de pantalla de hasta 600px */
@@ -635,24 +765,50 @@ nav {
         width: 50px;
         background-color: rgba(0, 0, 0, 0);
         border: none;
+        box-shadow: none;
     }
 
     .header-home-container {
-        width: 90%;
+        width: 100%;
+        /* background-color: #000; */
+        transform: translateX(-20px);
     }
 
     .logo-jes-home img {
         width: 160px;
         height: 140px;
         margin-bottom: 0;
-        transform: translateY(40px);
+        transform: translateY(40px) translateX(20px);
+    }
+    .jes-nombre {
+       transform: translateY(64px);
+       display: inline-block;
+    }
+    .jes-nombre h2 {
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        display: none;
+    }
+    .jes-nombre h3 {
+        color: #fff;
+        font-size: 12px;
+        
+    }
+    .identidad figcaption {
+        font-size: 12px;
+        position: relative;
+        right: 8px;
     }
 
-    .jes-nombre-home h2 {
-        font-size: 12px;
+    .identidad img {
+        width: 34px;
+        margin-bottom: 5px;
     }
-    .jes-nombre-home h3 {
-        font-size: 10px;
+    
+    .identidad {
+        position: relative;
+        right: 20px;
     }
     .main-container-home {
         overflow: hidden;
@@ -661,6 +817,7 @@ nav {
     .home-article-container {
         flex-flow: column;
         gap: 10px;
+        transform: translateY(-30px);
     }
 
     .home-article {
@@ -684,10 +841,10 @@ nav {
         font-size: 16px;
         transform: translateY(-20px) translateX(-20px);
     }
-    .home-admin {
-        box-shadow: 1px 1px rgba(0, 255, 255, 0.322);
-    }
 
+    .home-admin {
+        box-shadow: 1px 1px rgba(0, 255, 255, 0.582);
+    }
     /* termina el home */
 
     /* Formulario de registro */
@@ -708,7 +865,7 @@ nav {
     }
     
     .header-container {
-        background-color: #000000;
+        /* background-color: #000000; */
         width: 90%;
     }
     .header-container h1 {
@@ -868,13 +1025,18 @@ nav {
     .logo-jes-home img {
         width: 200px;
         height: 180px;
-        bottom: 60px;
+        bottom: 40px;
+        left: 12px;
     }
 
     .main-container-home {
         padding-bottom: 120px;
     }
 
+    .header-home-container {
+        width: 96%;
+        margin-right: 20px;
+    }
     .home-article {
         width: 39.933444%; /* 240px/601 */
         height: 80px;
@@ -906,6 +1068,14 @@ nav {
         box-shadow: 2px 2px rgba(0, 255, 255, 0.322);
     }
 
+    .jes-nombre-home h3{
+        font-size: 14px;
+    }
+
+    .jes-nombre-home h2 {
+        font-size: 12px;
+    }
+
     /* Formulario registro */
     .header-container {
         width: 98%;
@@ -924,6 +1094,7 @@ nav {
     .JES h3 {
         font-size: 10px
     }
+
     .form-container {
         position: relative;
         padding-left: 20px;
@@ -1052,55 +1223,6 @@ nav {
 
     .form-container legend {
         transform: translateX(-10px);
-    }
-
-    /* HOMES */
-        .main-container-home {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 170px;
-    }
-
-    .home-article {
-        width: 40%;
-        height: 110px;
-        background-color: #000;
-        border-radius: 15px;
-        box-shadow: 2px 2px #FFC93D;
-        margin: 0 30px;
-        position: relative;
-        top: 90px;
-    }
-
-    .home-admin {
-        width: 33%;
-    }
-    .home-article a {
-        color: white;
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 40px;
-        transform: translateY(20px);
-    }
-
-    .home-article h3 {
-        order: 1;
-        font-size: 20px;
-        line-height: 80px;
-        transform: translateX(-25px);
-    }
-
-    .home-article img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .home-admin {
-        box-shadow: 2px 2px aqua;
     }
 }
 

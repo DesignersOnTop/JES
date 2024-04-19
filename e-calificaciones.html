@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horario de Clases | Profesor</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos1.css">
     <link rel="icon" href="imagenes/recursos/logo-jes.png">
 </head>
 <body>
@@ -46,59 +46,76 @@
                 </nav>            
         </div>
     </header>
-    <main>
-        <section class="tabla-centrar tabla-calificacion-centrar">
-            <table class="tabla-horario tabla-calificacion">
+    <main class="tabla-centrar">
+        <section class="tabla-calificacion-centrar">
+            <table class="tabla-calificacion">
                 <tr class="tabla-cabecera">
-                     <th>Calificaciones</th>
-                     <th>L. Española</th>
-                     <th>C. Sociales</th>
-                     <th>Naturales</th>
-                     <th>Ingles</th>
-                     <th>Frances</th>
+                    <th>Calificaciones</th>
+                    <th>L. Española</th>
+                    <th>C. Sociales</th>
+                    <th>Naturales</th>
+                    <th>Ingles</th>
+                    <th>Frances</th>
+                    <th>italiano</th>
+                    <th>romano</th>
                 </tr>
                 <tr>
-                     <th>C1</th>
-                     <td>90</td>
-                     <td>100</td>
-                     <td>98</td>
-                     <td>95</td>
-                     <td>96</td>
+                    <td class="calificacion">C1</td>
+                    <td>90</td>
+                    <td>100</td>
+                    <td>98</td>
+                    <td>95</td>
+                    <td>96</td>
+                    <td>--</td>
+                    <td>--</td>
                 </tr>
                 <tr>
-                     <th>C2</th>
-                     <td>90</td>
-                     <td>100</td>
-                     <td>98</td>
-                     <td>95</td>
-                     <td>96</td>
+                    <td class="calificacion">C2</td>
+                    <td>90</td>
+                    <td>100</td>
+                    <td>98</td>
+                    <td>95</td>
+                    <td>96</td>
+                    <td>--</td>
+                    <td>--</td>
                 </tr>
                 <tr>
-                     <th>C3</th>
-                     <td>90</td>
-                     <td>100</td>
-                     <td>98</td>
-                     <td>95</td>
-                     <td>96</td>
+                    <td class="calificacion">C3</td>
+                    <td>90</td>
+                    <td>100</td>
+                    <td>98</td>
+                    <td>95</td>
+                    <td>96</td>
+                    <td>--</td>
+                    <td>--</td>
                 </tr>
                 <tr>
-                     <th>C4</th>
-                     <td>90</td>
-                     <td>100</td>
-                     <td>98</td>
-                     <td>95</td>
-                     <td>96</td>
+                    <td class="calificacion">C4</td>
+                    <td>90</td>
+                    <td>100</td>
+                    <td>98</td>
+                    <td>95</td>
+                    <td>96</td>
+                    <td>--</td>
+                    <td>--</td>
                 </tr>
                 <tr>
-                     <th>C.Final</th>
-                     <td class="nota-final">90</td>
-                     <td class="nota-final">100</td>
-                     <td class="nota-final">98</td>
-                     <td class="nota-final">95</td>
-                     <td class="nota-final">96</td>
+                    <td class="calificacion">C.Final</td>
+                    <td class="nota-final">90</td>
+                    <td class="nota-final">100</td>
+                    <td class="nota-final">98</td>
+                    <td class="nota-final">95</td>
+                    <td class="nota-final">96</td>
+                    <td class="nota-final">--</td>
+                    <td class="nota-final">--</td>
                 </tr>
             </table>
-     </section>
+        </section>
+        <div class="botones-container">
+            <button id="scroll-izquierdo">&larr;</button>
+            <button id="scroll-derecho">&rarr;</button>
+        </div>
     </main>
+    <script src="js/scroll_calificacion.js"></script>
 </body>
 </html>
