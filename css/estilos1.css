@@ -720,7 +720,9 @@ nav {
     #inicio-de-sesion h1 {
         font-size: 26px;
     }
-    #password, #id {
+    #id, #id:focus, #id:active, 
+    #password, #password:active, #password:focus 
+    {
         max-width: 100%;
     }
 
@@ -964,7 +966,9 @@ nav {
         flex-direction: column;
         align-items: center;
     }
-    #inicio-de-sesion input {
+    #id, #id:focus, #id:active, 
+    #password, #password:active, #password:focus
+    {
         width: 200px;
         height: 40px;
         padding: 0;
@@ -1158,7 +1162,9 @@ nav {
         flex-direction: column;
         align-items: center;
     }
-    #password,#id {
+    #id, #id:focus, #id:active, 
+    #password, #password:active, #password:focus 
+    {
         width: 280px;
         height: 50px;
         padding: 0;
