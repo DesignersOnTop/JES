@@ -691,10 +691,6 @@ figure .perfil-est  {
 
     /* ADMINISTRADOR */
 
-     .central-admin {
-        padding-bottom: 60px;
-    }
-
     .central {
         width: 70%;
         display: flex;
@@ -702,7 +698,13 @@ figure .perfil-est  {
         /* padding-bottom: 50px; */
     } 
 
-    .izquierda-arriba_admin figure {
+    figure #editor_admin {
+        position: absolute;
+        top: 120px;
+        left: 360px;
+    }
+
+    /* .izquierda-arriba_admin figure {
         border: none;
         width: 150px;
         height: 80px;
@@ -758,5 +760,5 @@ figure .perfil-est  {
 
     .contenedor-central_admin {
         width: 60%;
-    }
+    } */
 }
