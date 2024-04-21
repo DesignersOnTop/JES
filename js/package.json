@@ -1,0 +1,14 @@
+{
+  "name": "jes",
+  "version": "1.0.0",
+  "description": "Proyecto JES",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DESIGNERS",
+  "license": "ISC",
+  "dependencies": {
+    "sweetalert2": "^11.10.8"
+  }
+}
