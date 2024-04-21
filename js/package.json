@@ -9,6 +9,5 @@
   "author": "DESIGNERS",
   "license": "ISC",
   "dependencies": {
-    "sweetalert2": "^11.10.8"
   }
 }

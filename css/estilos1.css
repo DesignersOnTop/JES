@@ -594,7 +594,7 @@ nav {
 }
 
 .menu.active .bar:nth-last-child(2){
-   opacity: 0;
+    opacity: 0;
 }
 
 .menu.active .bar:nth-last-child(3){
