@@ -10,9 +10,17 @@ if(user === "admin" && password =="admin"){
     }else if(user === "profesor" && password === "profesor"){
         window.location = "p-home.html"
     }else if(user === "" && password === "") {
-        alert("'Por favor, asegúrate de completar todos los campos necesarios para acceder al sistema!'")
+        swal({
+            title: "oops",
+            text: '"Por favor, asegúrate de completar todos los campos necesarios para acceder al sistema!"',
+            icon: "error"
+        })
     }
     else {
-        alert("'Lo sentimos, parece que el ID o la contraseña ingresados son incorrectos. Por favor, inténtalo de nuevo.'")
+        swal({
+            title: "error",
+            text: "'Lo sentimos, parece que el ID o la contraseña ingresados son incorrectos. Por favor, inténtalo de nuevo.'",
+            icon: "error"
+        });
     }
 }   
