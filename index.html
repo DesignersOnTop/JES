@@ -6,7 +6,6 @@
     <title>Login</title>
     <link rel="stylesheet" href="css/estilos1.css">
     <link rel="icon" href="imagenes/recursos/logo-jes.png">
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body id="index-body">
     <main id="index-main">
@@ -27,7 +26,7 @@
                         <figure class="svg">
                             <img src="imagenes/iconos/user-id-verification.svg" alt="icono-id">
                         </figure>
-                        <input type="text" id="id" placeholder="Introduzca Su ID" autofocus autocomplete="on">
+                        <input type="text" id="id" placeholder="Introduzca Su ID" autofocus autocomplete="off">
                     </div>
                     <!-- En esta parte estara tanto el icono de la contraseña asi mismo como el input de la contraseña -->
                     <div id="introducir-contraseña">
@@ -45,5 +44,6 @@
         </section>
     </main>
     <script src="js/user_validator.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

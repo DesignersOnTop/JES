@@ -687,6 +687,26 @@ nav {
     border-radius: 0 5px 5px 0;
 }
 
+/* Pantallas emergentes con sweetAlertm, estilos: */
+.emergente-class {
+    background-color: #0000009c;
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    color: white;
+}
+
+.confirm-eme {
+    background-color: black;
+    border: 1px solid #FFC93D;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+
+.container-eme {
+    backdrop-filter: blur(45px);
+}
+
 /* Responsive */
 
 /* Dispositivos móviles con una anchura de pantalla de hasta 600px */

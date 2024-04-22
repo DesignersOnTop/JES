@@ -10,17 +10,33 @@ if(user === "admin" && password =="admin"){
     }else if(user === "profesor" && password === "profesor"){
         window.location = "p-home.html"
     }else if(user === "" && password === "") {
-        swal({
-            title: "oops",
-            text: '"Por favor, asegúrate de completar todos los campos necesarios para acceder al sistema!"',
-            icon: "error"
-        })
+        Swal.fire({
+            html: '<span class="white">"Por favor, asegúrate de completar todos los campos necesarios para acceder al sistema!"</span',
+            backdrop: true,
+            customClass: {
+                popup: 'emergente-class',
+                confirmButton: 'confirm-eme',
+                container: 'container-eme'
+            },
+            buttonsStyling: false,
+            showCloseButton: false,
+            // closeButtonAriaLabel: "cerrar",
+            allowOutsideClick: false,
+        });
     }
     else {
-        swal({
-            title: "error",
-            text: "'Lo sentimos, parece que el ID o la contraseña ingresados son incorrectos. Por favor, inténtalo de nuevo.'",
-            icon: "error"
+        Swal.fire({
+            html: '<span class="white">"Lo sentimos, parece que el ID o la contraseña ingresados son incorrectos. Por favor, inténtalo de nuevo."</span',
+            backdrop: true,
+            customClass: {
+                popup: 'emergente-class',
+                confirmButton: 'confirm-eme',
+                container: 'container-eme',
+            },
+            buttonsStyling: false,
+            showCloseButton: false,
+            // closeButtonAriaLabel: "cerrar",
+            allowOutsideClick: false,
         });
     }
 }   
