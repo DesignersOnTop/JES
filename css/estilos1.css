@@ -322,7 +322,7 @@ nav {
 
 
 #iniciar-sesion {
-    padding: 16px 50px;
+    padding: 14px 46px;
     border-radius: 10px;
     background-color: black;
     color: white;
@@ -331,6 +331,12 @@ nav {
     border: 1px solid #FFC93D;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+#iniciar-sesion:hover {
+    background-color: #ffc83daf;
+    color: #fff;
+    border-color: transparent;
 }
 
 
@@ -376,7 +382,7 @@ nav {
 }
 
 .volver-atras {
-    padding: 14px 65px;
+    padding: 12px 60px;
     border-radius: 10px;
     background-color: black;
     color: white;
@@ -385,6 +391,12 @@ nav {
     border: 1px solid #FFC93D;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.volver-atras:hover{
+    background-color: #ffc83daf;
+    color: #fff;
+    border-color: transparent;
 }
 
 
