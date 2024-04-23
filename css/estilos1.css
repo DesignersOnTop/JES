@@ -56,12 +56,12 @@ nav {
     box-shadow: 1px -1px 1px white;
 }
 
-/* nav:hover {
+nav:hover {
     transform: translateY(50px);
     position: relative;
     height: 140px;
     background-color: #0000005e;
-} */
+}
 
 
 .header-container {
@@ -703,7 +703,7 @@ nav {
 
 /* Pantallas emergentes con sweetAlertm, estilos: */
 .emergente-class {
-    background-color: #0000009c;
+    background-color: #00000060;
     backdrop-filter: blur(30px);
     border-radius: 10px;
     color: white;
@@ -715,6 +715,11 @@ nav {
     color: #fff;
     padding: 10px 40px;
     border-radius: 5px;
+}
+
+.confirm-eme:hover {
+    background-color: #ffc83d4f;
+    border: none;
 }
 
 .container-eme {

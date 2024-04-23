@@ -22,6 +22,7 @@ if(user === "admin" && password =="admin"){
             showCloseButton: false,
             // closeButtonAriaLabel: "cerrar",
             allowOutsideClick: false,
+            confirmButtonText: "Aceptar",
         });
     }
     else {
@@ -34,9 +35,10 @@ if(user === "admin" && password =="admin"){
                 container: 'container-eme',
             },
             buttonsStyling: false,
-            showCloseButton: false,
+            showCloseButton: true,
             // closeButtonAriaLabel: "cerrar",
             allowOutsideClick: false,
+            confirmButtonText: "Aceptar",
         });
     }
 }   
