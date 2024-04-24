@@ -542,7 +542,6 @@ figure .perfil-est  {
   
 /* TABLET */
 
-
 @media screen and (min-width: 601px ) and (max-width: 900px) {
 
     * {
@@ -618,8 +617,10 @@ figure .perfil-est  {
         line-height: 35px;
     }
 
-    #editor_admin {
-        
+    figure #editor_admin {
+        border: 1px solid #fff;
+        position: relative;
+        right: 100px;
     }
 }
 
@@ -705,9 +706,9 @@ figure .perfil-est  {
     } 
 
     figure #editor_admin {
-        position: absolute;
-        top: 120px;
-        left: 360px;
+        position: relative;
+        bottom: 120px;
+        left: 200px;
     }
 
     /* .izquierda-arriba_admin figure {
