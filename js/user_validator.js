@@ -23,6 +23,9 @@ if(user === "admin" && password =="admin"){
             // closeButtonAriaLabel: "cerrar",
             allowOutsideClick: false,
             confirmButtonText: "Aceptar",
+            imageUrl: './imagenes/recursos/logo-jes.png',
+            imageWidth: '140px',
+            imageHeight: '120px'
         });
     }
     else {
@@ -35,10 +38,13 @@ if(user === "admin" && password =="admin"){
                 container: 'container-eme',
             },
             buttonsStyling: false,
-            showCloseButton: true,
+            showCloseButton: false,
             // closeButtonAriaLabel: "cerrar",
             allowOutsideClick: false,
             confirmButtonText: "Aceptar",
+            imageUrl: './imagenes/recursos/logo-jes.png',
+            imageWidth: '140px',
+            imageHeight: '120px'
         });
     }
 }   

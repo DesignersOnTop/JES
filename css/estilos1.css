@@ -53,15 +53,15 @@ nav {
     height: 30px;
     border-radius: 20px;
     /* border: 1px solid #fff; */
-    box-shadow: 1px -1px 1px white;
+    /* box-shadow: 1px -1px 1px white; */
 }
 
-nav:hover {
+/* nav:hover {
     transform: translateY(50px);
     position: relative;
     height: 140px;
     background-color: #0000005e;
-}
+} */
 
 
 .header-container {
@@ -136,6 +136,11 @@ nav:hover {
     right: 20px;
 }
 
+.jes-nombre-home h2 {
+    text-align: center; 
+    font-size: 20px;
+}
+
 /* AQUI TERMINA LOS HEADER DE LOS HOMES */
 
 /* HOMES */
@@ -152,7 +157,7 @@ nav:hover {
     height: 120px;
     background-color: #000;
     border-radius: 15px;
-    box-shadow: 2px 2px #FFC93D;
+    box-shadow: 2px 2px #ffc83d2d;
     margin: 0 30px;
     position: relative;
     top: 90px;
@@ -182,7 +187,12 @@ nav:hover {
 }
 
 .home-admin {
-    box-shadow: 2px 2px rgba(0, 255, 255, 0.322);
+    box-shadow: 2px 2px rgba(0, 255, 255, 0.185);
+}
+
+.home-admin:hover {
+    box-shadow: 2px 2px rgba(0, 255, 255, 0.445);
+    transition: all .5s;
 }
 
 .home-article-container {
@@ -702,6 +712,7 @@ nav:hover {
     backdrop-filter: blur(30px);
     border-radius: 10px;
     color: white;
+    box-shadow: 2px 2px rgba(255, 255, 255, 0.123);
 }
 
 .confirm-eme {
@@ -718,7 +729,7 @@ nav:hover {
 }
 
 .container-eme {
-    backdrop-filter: blur(45px);
+    backdrop-filter: blur(35px);
 }
 
 /* Responsive */

@@ -76,7 +76,7 @@
                     <div class="formulario-de-registro">
                         <label for="genero">G&eacute;nero:</label>
                         <select id="genero" name="genero">
-                            <option value="default">------</option>
+                            <option selected disabled>Seleccionar</option>
                             <option value="masculino">Masculino</option>
                             <option value="femenino">Femenino</option>
                         </select>
@@ -84,7 +84,7 @@
                     <div class="formulario-de-registro">
                         <label for="curso">Curso:</label>
                         <select type="text" id="curso" name="curso">
-                            <option value="default">-----</option>
+                            <option selected disabled>Seleccionar</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -96,7 +96,7 @@
                     <div class="formulario-de-registro">
                         <label for="seccion">Sección:</label>
                         <select name="seccion" id="seccion">
-                            <option value=""--------></option>
+                            <option selected disabled>Seleccionar</option>
                             <option value="todas asignatura">Todas</option>
                             <option value="A">A</option>
                             <option value="B">B</option>
@@ -105,11 +105,11 @@
                     </div>
                     <div class="formulario-de-registro formulario-asignatura">
                         <label for="asignatura">Asignatura:</label>
-                        <input type="text" id="asignatura" name="asignatura">
+                        <input type="text" id="asignatura" name="asignatura" autocomplete="off" required>
                     </div>
                     <div class="formulario-de-registro">
                         <label for="email">Correo Electrónico:</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" autocomplete="off" required>
                     </div>
                     <div class="formulario-de-registro">
                         <label for="telefono">Teléfono:</label>
@@ -117,7 +117,7 @@
                     </div>
                     <div class="formulario-de-registro">
                         <label for="matricula">ID:</label>
-                        <input type="text" id="matricula" name="matricula" required>
+                        <input type="text" id="matricula" name="matricula" autocomplete="off" required>
                     </div>
                     <div class="formulario-de-registro">
                         <label for="contrasena">Contraseña:</label>
