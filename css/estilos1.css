@@ -9,7 +9,9 @@ body {
     background-image: url(../imagenes/background\(BODY\).jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
 }
 
 /* Header de las paginas que usaran todos excluyendo a las paginas index.html y problemas-al-iniciar.html */
@@ -61,6 +63,7 @@ nav:hover {
     background-color: #0000005e;
 }
 
+
 .header-container {
     width: 95%;
     height: 63px;
@@ -98,7 +101,8 @@ nav:hover {
 
 /* HEADER DE LAS PAGINAS HOMES */
 .home-header {
-    background-color: #00000000;
+    background-color: #03030313; 
+    backdrop-filter: blur(40px);
 }
 
 .header-home-container {
@@ -110,6 +114,18 @@ nav:hover {
     color: white;
     width: 95%;
     margin-left: 20px;
+}
+
+.identidad img {
+    border-radius: 100%; 
+    margin-top: 20px;
+    width: 40px;
+}
+
+.identidad .nombre {
+    transform: translateX(50px) translateY(-30px); 
+    font-size: 12px; 
+    font-weight: bold;
 }
 
 .logo-jes-home img {
@@ -268,15 +284,16 @@ nav:hover {
     transform: translateX(-40px);
 }
 
-#id, #password {
+#id, #id:focus, #id:active, 
+#password, #password:active, #password:focus {
     width: 320px;
     height: 45px;
-    border-radius: 15px;
+    border-radius: 10px;
     padding-left: 60px;
     position: relative;
-    border: 1px solid #ffffff2d;
+    border: 1px solid #ffc83d2d;
     background-color: #00000054;
-    font-size: 14px;
+    font-size: 16px;
     color: white;
 }
 
@@ -303,17 +320,21 @@ nav:hover {
 
 
 #iniciar-sesion {
-    padding: 16px 50px;
+    padding: 14px 46px;
     border-radius: 10px;
     background-color: black;
     color: white;
     font-weight: bold;
     font-size: 14px;
-    border: 1px solid #FFC93D;
+    border: 1px solid #ffc83d48;
     text-transform: uppercase;
     text-decoration: none;
 }
 
+#iniciar-sesion:hover {
+    border-color: #FFC93D;
+    transition: all 0.5s;
+}
 
 .problemas-al-iniciar {
     margin-bottom: 40px;
@@ -357,15 +378,22 @@ nav:hover {
 }
 
 .volver-atras {
-    padding: 14px 65px;
+    padding: 12px 60px;
     border-radius: 10px;
     background-color: black;
     color: white;
     font-weight: bold;
     font-size: 14px;
-    border: 1px solid #FFC93D;
+    border: 1px solid #ffc83d48;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.volver-atras:hover{
+    background-color: #000000de;
+    backdrop-filter: blur(30px);
+    border-color: #FFC93D;
+    transition: all 0.5s;
 }
 
 
@@ -575,7 +603,7 @@ nav:hover {
 }
 
 .menu.active .bar:nth-last-child(2){
-   opacity: 0;
+    opacity: 0;
 }
 
 .menu.active .bar:nth-last-child(3){
@@ -668,6 +696,31 @@ nav:hover {
     border-radius: 0 5px 5px 0;
 }
 
+/* Pantallas emergentes con sweetAlertm, estilos: */
+.emergente-class {
+    background-color: #00000060;
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    color: white;
+}
+
+.confirm-eme {
+    background-color: black;
+    border: 1px solid #FFC93D;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+
+.confirm-eme:hover {
+    background-color: #ffc83d4f;
+    border: none;
+}
+
+.container-eme {
+    backdrop-filter: blur(45px);
+}
+
 /* Responsive */
 
 /* Dispositivos móviles con una anchura de pantalla de hasta 600px */
@@ -701,7 +754,9 @@ nav:hover {
     #inicio-de-sesion h1 {
         font-size: 26px;
     }
-    #password, #id {
+    #id, #id:focus, #id:active, 
+    #password, #password:active, #password:focus 
+    {
         max-width: 100%;
     }
 
@@ -746,6 +801,7 @@ nav:hover {
         width: 50px;
         background-color: rgba(0, 0, 0, 0);
         border: none;
+        box-shadow: none;
     }
 
     .header-home-container {
@@ -820,6 +876,10 @@ nav:hover {
     .home-article h3 {
         font-size: 16px;
         transform: translateY(-20px) translateX(-20px);
+    }
+
+    .home-admin {
+        box-shadow: 1px 1px rgba(0, 255, 255, 0.582);
     }
     /* termina el home */
 
@@ -940,7 +1000,9 @@ nav:hover {
         flex-direction: column;
         align-items: center;
     }
-    #inicio-de-sesion input {
+    #id, #id:focus, #id:active, 
+    #password, #password:active, #password:focus
+    {
         width: 200px;
         height: 40px;
         padding: 0;
@@ -1134,7 +1196,9 @@ nav:hover {
         flex-direction: column;
         align-items: center;
     }
-    #password,#id {
+    #id, #id:focus, #id:active, 
+    #password, #password:active, #password:focus 
+    {
         width: 280px;
         height: 50px;
         padding: 0;
