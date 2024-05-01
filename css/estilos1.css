@@ -291,14 +291,10 @@ nav:hover {
     border-radius: 10px;
     padding-left: 60px;
     position: relative;
-    border: 1px solid #ffffff2d;
+    border: 1px solid #ffc83d2d;
     background-color: #00000054;
     font-size: 16px;
     color: white;
-}
-
-#id:hover, #password:hover {
-    border: 1px solid #ffc83d4f;
 }
 
 #introducir-id figure {
@@ -330,17 +326,15 @@ nav:hover {
     color: white;
     font-weight: bold;
     font-size: 14px;
-    border: 1px solid #FFC93D;
+    border: 1px solid #ffc83d48;
     text-transform: uppercase;
     text-decoration: none;
 }
 
 #iniciar-sesion:hover {
-    background-color: #ffc83daf;
-    color: #fff;
-    border-color: transparent;
+    border-color: #FFC93D;
+    transition: all 0.5s;
 }
-
 
 .problemas-al-iniciar {
     margin-bottom: 40px;
@@ -390,15 +384,16 @@ nav:hover {
     color: white;
     font-weight: bold;
     font-size: 14px;
-    border: 1px solid #FFC93D;
+    border: 1px solid #ffc83d48;
     text-transform: uppercase;
     text-decoration: none;
 }
 
 .volver-atras:hover{
-    background-color: #ffc83daf;
-    color: #fff;
-    border-color: transparent;
+    background-color: #000000de;
+    backdrop-filter: blur(30px);
+    border-color: #FFC93D;
+    transition: all 0.5s;
 }
 
 
