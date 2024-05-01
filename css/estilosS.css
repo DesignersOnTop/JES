@@ -478,61 +478,23 @@ figure .perfil-est  {
 
    /* PARTE DEL ADMIN */
 
-   .admin {
+   .izquierda-arriba #editor_admin {
+        border: 1px solid #fff;
+        position: relative;
+        bottom: 340px;
+        left: 540px;
+   }
+
+   .central-admin {
         width: 80%;
         height: 420px;
    }
-
-    .izquierda-arriba_admin #f-perfil {
-        height: 200px;
-        width: 200px;
-        margin-right: 80px;
-        margin-top: 70px;
-    }
-
-    .izquierda-arriba_admin h5 {
-        position: relative;
-        left: 40px;
-        top: 17px;
-    }
-
-    .izquierda-arriba_admin figure {
-        margin-left: 150px;
-        /* margin-bottom: 80px; */
-    }
-
-    .derecha-arriba h2 {
-        text-align: center;
-    }
-
-    #editor_admin {
-        margin-bottom: 1000px;
-        position: absolute;
-        top: 1px;
-        left: 680px;
-    }
-
-    .derecha-arriba{
-        margin: 20px 0 0 0 ;
-    }
-    
-    .derecha-abajo  {
-        margin: 60px 0 30px 60px ;
-    }
-
-    .izquierda-arriba_admin figure{
-        border: none;
-    }
 
     /* a / Asignacion horario profesor  */
 
     .derecha-info {
         margin-left: 40px;
     }
-
-    /* .derecha-info img {
-        position: absolute;
-    } */
 
     .izquierda-info {
         position: relative;
@@ -549,14 +511,6 @@ figure .perfil-est  {
 
     }
 
-    .derecha-arriba .datos {
-        margin-right: 30px;
-    }
-
-    .derecha-abajo {
-        line-height:45px;
-    }
-
     .izquierda-arriba img {
         width: 150px;
         height: 150px;
@@ -565,8 +519,17 @@ figure .perfil-est  {
     .central{
         overflow: hidden;
         padding: 0;        
-        width: 70%;  
+        width: 80%;  
         height: auto; 
+    }
+
+    .izquierda-arriba {
+        position: relative;
+        right: 30px;
+    }
+
+    .contenedor-central {
+        margin-right: 60px;
     }
 
     .perfil-main {
@@ -581,23 +544,59 @@ figure .perfil-est  {
 
     .contenedor-central {
         margin-left: 0; 
-        width: 100%;
+        width: 130%;
     }
 
     .datos p {
         margin-left: 0 ;
     }
 
-    .central {
-        height: 10px 10px;
-    }
 
     /* Perfil del Administrador  */
-    .izquierda-arriba_admin figure{
-        border: none;
+
+    * {
+        font-size: 14px;
     }
 
-    .izquierda-arriba_admin #f-perfil {
+    .izquierda-arriba #f-perfil {
+        width: 150px;
+        height: 150px;
+    }
+
+    .central-admin {
+        overflow: hidden;
+        padding: 0 ;
+        width: 80%;
+        height: auto;
+    }
+
+    .izquierda-arriba {
+        position: relative;
+        right: 30px;
+    }
+
+    /* .izquierda-arriba {
+        margin-top: 40px;
+        margin-left: 70px;
+    } */
+
+    .contenedor-central_admin {
+        margin-right: 60px;
+    }
+    
+    /* .contenedor-central_admin  {
+        margin-right: 100px; 
+        width: 40%;
+    } */
+
+    /* .izquierda-arriba #editor_admin {
+        border: #fff 1px solid;
+        position: relative;
+        bottom: 310px;
+        left: 410px;
+    }  */
+    
+    /* .izquierda-arriba_admin #f-perfil {
         height: 200px;
         width: 200px;
         margin-left: 150px;
@@ -617,11 +616,12 @@ figure .perfil-est  {
         line-height: 35px;
     }
 
-    figure #editor_admin {
+    .izquierda-arriba #editor_admin {
         border: 1px solid #fff;
         position: relative;
-        right: 100px;
-    }
+        left: 100px;
+        top: 300px;
+    }  */
 }
 
 /* CELULARES */
