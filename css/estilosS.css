@@ -553,29 +553,63 @@ figure .perfil-est  {
 
 
     /* Perfil del Administrador  */
-
-
     
-    /* .izquierda-arriba #f-perfil {
-        width: 150px;
-        height: 150px;
+    .derecha-arriba h2 {
+        width: 120px;
     }
 
-    .central-admin {
-        overflow: hidden;
-        padding: 0 ;
-        width: 80%;
-        height: auto;
+    figure #editor_admin {
+        /* bottom: 280px;
+        right: px; */
+        transform: translateX(-130px) translateY(110px);
+        width: 30px;
+        height: 30px;
     }
 
     .contenedor-central_admin {
-        margin-right: 60px;
+        border: #FFC93D 2px solid ;
     }
+
+
+    /* .central-admin {
+        overflow: hidden;
+        padding: 0;
+        width: 80%;
+        height: auto;
+    } */
+
+    /* .izquierda-arriba {
+        position: relative;
+        right: 30px;
+    } */
+
+    /* .contenedor-central_admin {
+        margin-right: 60px;
+    } */
     
-    .contenedor-central_admin  {
+    /* figure #editor_admin {
+        border: #FFC93D 2px solid;
+        width: 30px;
+        height: 30px;
+        bottom: 290px;
+        left: 420px;
+    } */
+
+    /* .izquierda-arriba #editor_admin {
+        border:  yellow 3px solid;
+        position: absolute;
+        bottom: 200px;
+        left: 650px;
+    }  */
+
+    /* .contenedor-central_admin {
+        margin-right: 60px;
+    } */
+    
+    /* .contenedor-central_admin  {
         margin-right: 100px; 
         width: 40%;
-    } */
+    }  */
 
     
 }
