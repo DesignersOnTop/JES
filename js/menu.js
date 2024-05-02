@@ -1,7 +1,6 @@
 const menu = document.querySelector('.menu');
 
-menu.addEventListener('click',() =>{
-    if(menu.classList.toggle("active")) {
+menu.addEventListener('click',() => {
     Swal.fire({
         html: '<ul class="menu-navegador-eme"><li class="li-eme"><a class="a-eme">Home</a></li><li class="li-eme"><a class="a-eme">Home</a></li><li class="li-eme"><a class="a-eme">Home</a></li><li class="li-eme"><a class="a-eme">Home</a></li></ul>',
         backdrop: true,
@@ -17,7 +16,6 @@ menu.addEventListener('click',() =>{
         confirmButtonText: "Aceptar",
         showConfirmButton: false,
         position: 'top-right',
-        grow: 'column'
-        });
-    }
+        // grow: 'column'
+    });
 });

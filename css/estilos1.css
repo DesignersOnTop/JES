@@ -630,22 +630,6 @@ nav {
     transition: 200ms ease-in-out;
 }
 
-.menu.active .bar:nth-last-child(1){
-    transform: translateY(4px) rotate(-45deg);
-}
-
-.menu.active .bar:nth-last-child(2){
-    opacity: 0;
-}
-
-.menu.active .bar:nth-last-child(3){
-    transform: translateY(19px) rotate(40deg);
-}
-
-.menu.active {
-    transform: translateY(-26px) translateX(-55px);
-} 
-
 /* E-CALIFICACIONES */
 .tabla-calificacion th {
     height: 10px;
@@ -783,6 +767,7 @@ nav {
 
 /* Dispositivos móviles con una anchura de pantalla de hasta 600px */
 @media screen and (max-width: 600px) {
+
     #index-main, #problemas-al-iniciar-main {
         width: 100%;
         height: 100%;
@@ -955,17 +940,19 @@ nav {
     }
     header {
         overflow: hidden;
-        border-bottom: 1px solid white;
+        /* border-bottom: 1px solid white; */
         margin-bottom: 0;
     }
     
     .header-container {
-        /* background-color: #000000; */
-        width: 90%;
+        background-color: #0000006c;
+        height: 100%;
+        width: 100%;
     }
     .header-container h1 {
         font-size: 20px;
-        transform: translateX(-40px); 
+        transform: translateX(-60px);
+        margin-top: 4px; 
         
     }
     .header-container nav {
@@ -973,6 +960,8 @@ nav {
         height: 25px;
         background-color: #00000000;
         border: none;
+        position: relative;
+        left: 8%;
     }
     .header-container nav img {
         width: 20px;
@@ -985,9 +974,9 @@ nav {
         display: none;
     }
     .JES img {
-        width: 40px;
+        width: 50px;
         height: 40px;
-        transform: translateX(-40px);
+        transform: translateX(-30px);
     }
     .form-container {
         background-color: rgba(0, 0, 0, 0);
@@ -1030,6 +1019,37 @@ nav {
         overflow: hidden;
     }
     /* aqui termina el formulario de registro */
+
+    /* E-CALIFICACIONES */
+    .tabla-calificacion-centrar{
+        width: 98%;
+        overflow-x: scroll;
+    }
+
+    .tabla-calificacion {
+        border-radius: none;
+        
+    }
+
+    .tabla-calificacion td, .tabla-calificacion th {
+        min-width: 100px;
+        padding: 20px 10px;
+        border-radius: none;
+    }
+
+    .botones-container {
+        width: 60%;
+        margin-top: 10px;
+        top: 75%;
+        margin: 0 auto;
+        border-radius: 10px;
+        justify-content: space-around;
+    }
+
+    .botones-container * {
+        padding: 10px;
+    }
+    /* TERMINA E-CALIFCACIONES */
 }
 
 /* Tablets con una anchura de pantalla de 601px a 900px */
