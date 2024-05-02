@@ -49,9 +49,12 @@ header a {
 
 nav {
     /* background-color: #000; */
-    width: 160px;
+    width: 80px;
     height: 30px;
     border-radius: 20px;
+    transform: translateY(-5px);
+    /* position: relative; */
+    /* left: 520px; */
     /* border: 1px solid #fff; */
     /* box-shadow: 1px -1px 1px white; */
 }
@@ -63,6 +66,12 @@ nav {
     background-color: #0000005e;
 } */
 
+
+.menu-navegador figure img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
 
 .header-container {
     width: 95%;
@@ -106,24 +115,31 @@ nav {
 }
 
 .header-home-container {
-    background-color: #00000000;
+    /* background-color: #000000fc; */
     display: flex;
     height: 60px;
-    justify-content: space-between;
+    /* justify-content: end; */
     align-items: center;
+    justify-content: center;
     color: white;
-    width: 95%;
-    margin-left: 20px;
+    width: 100%;
 }
 
-.identidad img {
+.header-home-container nav {
+    position: relative; 
+    left: 520px; 
+}
+
+.header-home-container .identidad figure img {
     border-radius: 100%; 
     margin-top: 20px;
-    width: 40px;
+    width: 34px;
+    transform: translateY(-20px) translateX(-20px);
+    margin-right: 20px;
 }
 
 .identidad .nombre {
-    transform: translateX(50px) translateY(-30px); 
+    transform: translateX(-90px) translateY(-60px); 
     font-size: 12px; 
     font-weight: bold;
 }
@@ -135,6 +151,7 @@ nav {
     bottom: 30px;
     right: 20px;
 }
+
 
 .jes-nombre-home h2 {
     text-align: center; 
@@ -600,16 +617,25 @@ nav {
     cursor: pointer;
 }
 
-.bar{
+.bar {
     height: 3px;
-    width: 20px;
+    width: 24px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 200ms ease-in-out;
+    transform: translateX(-10px) translateY(5px);
+}
+
+.header-home-container .bar{
+    height: 4px;
+    width: 26px;
     background-color: #fff;
     border-radius: 5px;
     transition: 200ms ease-in-out;
 }
 
 .menu.active .bar:nth-last-child(1){
-    transform: translateY(-7px) rotate(-45deg);
+    transform: translateY(4px) rotate(-45deg);
 }
 
 .menu.active .bar:nth-last-child(2){
@@ -617,8 +643,12 @@ nav {
 }
 
 .menu.active .bar:nth-last-child(3){
-    transform: translateY(7px) rotate(40deg);
+    transform: translateY(19px) rotate(40deg);
 }
+
+.menu.active {
+    transform: translateY(-20px) translateX(-50px);
+} 
 
 /* E-CALIFICACIONES */
 .tabla-calificacion th {
