@@ -554,11 +554,9 @@ figure .perfil-est  {
 
     /* Perfil del Administrador  */
 
-    * {
-        font-size: 14px;
-    }
 
-    .izquierda-arriba #f-perfil {
+    
+    /* .izquierda-arriba #f-perfil {
         width: 150px;
         height: 150px;
     }
@@ -570,58 +568,16 @@ figure .perfil-est  {
         height: auto;
     }
 
-    .izquierda-arriba {
-        position: relative;
-        right: 30px;
-    }
-
-    /* .izquierda-arriba {
-        margin-top: 40px;
-        margin-left: 70px;
-    } */
-
     .contenedor-central_admin {
         margin-right: 60px;
     }
     
-    /* .contenedor-central_admin  {
+    .contenedor-central_admin  {
         margin-right: 100px; 
         width: 40%;
     } */
 
-    /* .izquierda-arriba #editor_admin {
-        border: #fff 1px solid;
-        position: relative;
-        bottom: 310px;
-        left: 410px;
-    }  */
     
-    /* .izquierda-arriba_admin #f-perfil {
-        height: 200px;
-        width: 200px;
-        margin-left: 150px;
-        margin-top: 60px;
-    }
-
-    .izquierda-arriba_admin h5 {
-        margin-left: 140px;
-        margin-top: 20px;
-    }
-
-    .derecha-arriba h2 {
-        text-align: center;
-    }
-    .derecha-abajo {
-        margin: 60px 0 0 30px ;
-        line-height: 35px;
-    }
-
-    .izquierda-arriba #editor_admin {
-        border: 1px solid #fff;
-        position: relative;
-        left: 100px;
-        top: 300px;
-    }  */
 }
 
 /* CELULARES */
@@ -711,7 +667,7 @@ figure .perfil-est  {
         left: 200px;
     }
 
-    /* .izquierda-arriba_admin figure {
+    .izquierda-arriba_admin figure {
         border: none;
         width: 150px;
         height: 80px;
@@ -731,7 +687,7 @@ figure .perfil-est  {
         height: 110px;
         margin-top: 10px;
     }
-
+/* 
     .izquierda-abajo {
         position: relative;
         top: 80px;
