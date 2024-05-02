@@ -1,5 +1,10 @@
 @import url("reset.css");
 
+html {
+    width: 100%;
+    height: 100%;
+}
+
 /* fondo de la pagina aplicada al body del index y problemas al iniciar*/
 #index-body,#problemas-al-iniciar-body {
     background-image: url(../imagenes/background\(BODY\)1.jpg);
@@ -16,8 +21,8 @@ body {
 
 /* Header de las paginas que usaran todos excluyendo a las paginas index.html y problemas-al-iniciar.html */
 header {
-    background-color: #000000a4;
-    backdrop-filter: blur(20px);
+    background-color: #00000049;
+    backdrop-filter: blur(30px);
     height: 65px;
     width: 100%;
     margin-bottom: 40px;
@@ -25,6 +30,7 @@ header {
 
 header h1 {
     font-size: 25px;
+    transform: translateX(-45%);
 }
 
 header ul {
@@ -39,7 +45,7 @@ header li {
     width: 24px;
     height: 24px;
     margin: 0 10px;
-    transform: translateX(-40px) translateY(-12px);
+    transform: translateX(-50px) translateY(-22px);
 }
 
 header a {
@@ -48,23 +54,12 @@ header a {
 }
 
 nav {
-    /* background-color: #000; */
-    width: 80px;
+    border-bottom: 1px solid #ffffff60;
+    width: 130px;
     height: 30px;
-    border-radius: 20px;
-    transform: translateY(-5px);
-    /* position: relative; */
-    /* left: 520px; */
-    /* border: 1px solid #fff; */
-    /* box-shadow: 1px -1px 1px white; */
+    transform: translateY(5px) translateX(-45px);
 }
 
-/* nav:hover {
-    transform: translateY(50px);
-    position: relative;
-    height: 140px;
-    background-color: #0000005e;
-} */
 
 
 .menu-navegador figure img {
@@ -74,7 +69,7 @@ nav {
 }
 
 .header-container {
-    width: 95%;
+    width: 100%;
     height: 63px;
     display: flex;
     align-items: center;
@@ -84,10 +79,12 @@ nav {
 }
 
 .JES {
+    width: fit-content;
     display: flex;
     align-items: center;
     text-align: center;
     color: white;
+    transform: translateX(-15%);
 }
 
 .JES img {
@@ -110,15 +107,14 @@ nav {
 
 /* HEADER DE LAS PAGINAS HOMES */
 .home-header {
-    background-color: #03030313; 
+    background-color: #0303032d; 
     backdrop-filter: blur(40px);
+    border: none;
 }
 
 .header-home-container {
-    /* background-color: #000000fc; */
     display: flex;
     height: 60px;
-    /* justify-content: end; */
     align-items: center;
     justify-content: center;
     color: white;
@@ -127,21 +123,18 @@ nav {
 
 .header-home-container nav {
     position: relative; 
-    left: 520px; 
+    left: 42%;
+    width: 50px;
+    border: none;
 }
 
 .header-home-container .identidad figure img {
     border-radius: 100%; 
     margin-top: 20px;
     width: 34px;
-    transform: translateY(-20px) translateX(-20px);
+    transform: translateY(-18px) translateX(-20px);
     margin-right: 20px;
-}
-
-.identidad .nombre {
-    transform: translateX(-90px) translateY(-60px); 
-    font-size: 12px; 
-    font-weight: bold;
+    object-fit: cover;
 }
 
 .logo-jes-home img {
@@ -152,6 +145,9 @@ nav {
     right: 20px;
 }
 
+.jes-nombre-home {
+    transform: translateX(7%);
+}
 
 .jes-nombre-home h2 {
     text-align: center; 
@@ -647,7 +643,7 @@ nav {
 }
 
 .menu.active {
-    transform: translateY(-20px) translateX(-50px);
+    transform: translateY(-26px) translateX(-55px);
 } 
 
 /* E-CALIFICACIONES */
@@ -738,11 +734,15 @@ nav {
 
 /* Pantallas emergentes con sweetAlertm, estilos: */
 .emergente-class {
-    background-color: #00000060;
-    backdrop-filter: blur(30px);
+    background-color: #000000d2;
+    /* backdrop-filter: blur(30px); */
     border-radius: 10px;
     color: white;
     box-shadow: 2px 2px rgba(255, 255, 255, 0.123);
+}
+
+.classes-eme {
+    width: 200px;
 }
 
 .confirm-eme {
@@ -762,12 +762,30 @@ nav {
     backdrop-filter: blur(35px);
 }
 
+.conta-eme {
+    backdrop-filter: blur(10px);
+}
+
+/* MENU NAVEGADOR EMERGENTE */
+.menu-navegador-eme * {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.menu-navegador-eme a {
+    border: none;
+    color: #FFC93D;
+}
+
 /* Responsive */
 
 /* Dispositivos móviles con una anchura de pantalla de hasta 600px */
 @media screen and (max-width: 600px) {
     #index-main, #problemas-al-iniciar-main {
         width: 100%;
+        height: 100%;
         border: none;
         margin-top: 0;
         border-radius: 0;
