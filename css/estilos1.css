@@ -1,10 +1,5 @@
 @import url("reset.css");
 
-html {
-    width: 100%;
-    height: 100%;
-}
-
 /* fondo de la pagina aplicada al body del index y problemas al iniciar*/
 #index-body,#problemas-al-iniciar-body {
     background-image: url(../imagenes/background\(BODY\)1.jpg);
@@ -767,7 +762,9 @@ nav {
 
 /* Dispositivos móviles con una anchura de pantalla de hasta 600px */
 @media screen and (max-width: 600px) {
-
+    .home-html{
+        height: 100%;
+    }
     #index-main, #problemas-al-iniciar-main {
         width: 100%;
         height: 100%;
@@ -1014,7 +1011,7 @@ nav {
 
     .form-main {
         background-color: rgba(0, 0, 0, 0.706);
-        height: 972px;
+        height: 100%;
         padding-bottom: 10px;
         overflow: hidden;
     }
