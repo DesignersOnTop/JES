@@ -127,10 +127,11 @@ footer {
 
 .izquierda-arriba h5 {
     position: relative;
-    top: -10px;
+    top: 10px;
     font-size: 20px;
     color: #FFC93D;
 }
+
 .izquierda-abajo {
     margin-top: 40px;
     width: 250px;
@@ -156,6 +157,7 @@ footer {
 .izquierda-arriba img {
     height: 250px;
     width: 250px;
+    margin-top: 50px;
     object-fit: cover;
     border-radius: 100% ;
 }
@@ -164,7 +166,6 @@ footer {
     margin-bottom: 40px;
     border-bottom: 2px solid #CCC;
     padding-bottom: 30px;
-    /* text-align: center; */
 }
 
 .contenedor-central {
@@ -196,9 +197,11 @@ footer {
     text-align: justify;
 }
 
-.izquierda-arriba figure {
+.izquierda-arriba #f-perfil{
     border-bottom: 2px solid gray;
     padding-bottom: 26px;
+    position: relative;
+    
 }
 
 /* ICONO PARA EDITAR */
@@ -217,17 +220,16 @@ figure .editor {
 }
 
 #editor_admin {
-    position: absolute;
-    top: 100px;
-    right: 280px;
-    width: 100%;
-    height: 100%;
+    position: relative;
+    bottom: 405px;
+    left: 630px; 
 }
 
 figure #editor_admin {
     width: 30px;
     height: 30px;
 }
+
 /* PERFIL PARA EL ADMINISTRADOR */
 
 .central-admin {
@@ -277,51 +279,84 @@ figure #editor_admin {
     text-align: center;
 }
 
-.izquierda-arriba_admin figure {
+/* .izquierda-arriba_admin figure {
     border-bottom: 2px solid gray;
     padding-bottom: 36px;
-}
+} */
 
 /* Asignacion de Horaro para el Administrador */
 
 .contenedor-info {
     background-color: rgba(0, 0, 0, 0.65);
     height: 250px;
-    width: 70%;
+    width: 30%;
     border-radius: 15px;
     margin: 0 auto;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #FFF;
 }
 
-.contenedor-info p {
-    color: #FFF;
+.derecha-info img{
+    border-radius: 80px;
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    position: relative;
+    right: 40px;
+    bottom: 10px;
+}
+
+.derecha-info h4 {
+    position: relative;
+    top: 5px;
+    right: 40px;
+}
+
+.izquierda-info .info {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.tit-pro h3{
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    color: #FFC93D;
+}
+
+/* p-calificacionesEstudiante */
+.info h3 p,
+.info-est {
     text-align: center;
 }
 
-.contenedor-info img {
-    height: 100px;
-    width: 100px;
-    margin: 15px 0;
+.tit-est h4 {
+    margin-left: 50px;
 }
 
-.horizontal {
-    
-    height: 150px;
-    width: 550px;
+figure .perfil-est  {
     position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    margin-left: 30px;
 }
 
-.vertical {
-    position: absolute;
+.tit-est h3 {
+    color: #FFC93D;
+    position: relative;
+    left: 10px;
 }
 
+.tit-est h4 {
+    margin-left: 70px;
+}
+
+.info-est{
+    padding: 25px;
+}
+
+/* Icono para regresar y tabla. */
 .flecha-regresar {
     position: relative;
 }
@@ -410,6 +445,61 @@ figure #editor_admin {
 
 @media screen and (min-width: 901px) and (max-width: 1200px) {
     
+    * {
+        font-size: 16px;
+    }
+
+    .izquierda-arriba {
+        transform: translateX(40px);
+    }
+
+    .izquierda-arriba h5 {
+        position: relative;
+        top: 10px;
+    }
+
+    .izquierda-arriba img {
+        height: 200px;
+        width: 200px;
+        margin-top: 40px;
+    }
+
+    .contenedor-central {
+        padding: 20px;
+    }
+
+   .datos p {
+        margin-left: 30px;
+    }
+
+   .datos h4 {
+        margin-right: 10px ;
+   }
+
+   /* PARTE DEL ADMIN */
+
+   .izquierda-arriba #editor_admin {
+        border: 1px solid #fff;
+        position: relative;
+        bottom: 340px;
+        left: 540px;
+   }
+
+   .central-admin {
+        width: 80%;
+        height: 420px;
+   }
+
+    /* a / Asignacion horario profesor  */
+
+    .derecha-info {
+        margin-left: 40px;
+    }
+
+    .izquierda-info {
+        position: relative;
+        right: 10px;
+    }
 }
   
 /* TABLET */
@@ -418,6 +508,7 @@ figure #editor_admin {
 
     * {
         font-size: 14px;
+
     }
 
     .izquierda-arriba img {
@@ -425,27 +516,102 @@ figure #editor_admin {
         height: 150px;
     }
 
-    .central {
-        width: 300px;
-    }
-
-    .central,
-    .central-admin {
-        width: 90%;  
+    .central{
+        overflow: hidden;
+        padding: 0;        
+        width: 80%;  
         height: auto; 
     }
 
-    .izquierda-arriba,
-    .izquierda-arriba_admin {
-        width: 60%; 
-        margin-top: 20px;
+    .izquierda-arriba {
+        position: relative;
+        right: 30px;
     }
 
-    .contenedor-central,
-    .contenedor-central_admin {
-        margin-left: 0; 
-        width: 100%; 
+    .contenedor-central {
+        margin-right: 60px;
     }
+
+    .perfil-main {
+        padding-bottom: 120px;
+    }
+
+    .izquierda-arriba {
+        width: 60%; 
+        margin-top: 20px;
+        height: 90%;
+    }
+
+    .contenedor-central {
+        margin-left: 0; 
+        width: 130%;
+    }
+
+    .datos p {
+        margin-left: 0 ;
+    }
+
+
+    /* Perfil del Administrador  */
+    
+    .derecha-arriba h2 {
+        width: 120px;
+    }
+
+    figure #editor_admin {
+        /* bottom: 280px;
+        right: px; */
+        transform: translateX(-130px) translateY(110px);
+        width: 30px;
+        height: 30px;
+    }
+
+    .contenedor-central_admin {
+        border: #FFC93D 2px solid ;
+    }
+
+
+    /* .central-admin {
+        overflow: hidden;
+        padding: 0;
+        width: 80%;
+        height: auto;
+    } */
+
+    /* .izquierda-arriba {
+        position: relative;
+        right: 30px;
+    } */
+
+    /* .contenedor-central_admin {
+        margin-right: 60px;
+    } */
+    
+    /* figure #editor_admin {
+        border: #FFC93D 2px solid;
+        width: 30px;
+        height: 30px;
+        bottom: 290px;
+        left: 420px;
+    } */
+
+    /* .izquierda-arriba #editor_admin {
+        border:  yellow 3px solid;
+        position: absolute;
+        bottom: 200px;
+        left: 650px;
+    }  */
+
+    /* .contenedor-central_admin {
+        margin-right: 60px;
+    } */
+    
+    /* .contenedor-central_admin  {
+        margin-right: 100px; 
+        width: 40%;
+    }  */
+
+    
 }
 
 /* CELULARES */
@@ -519,4 +685,77 @@ figure #editor_admin {
     .contenedor-central {
         width: 60%;
     }
+
+    /* ADMINISTRADOR */
+
+    .central {
+        width: 70%;
+        display: flex;
+        flex-flow: column;
+        /* padding-bottom: 50px; */
+    } 
+
+    figure #editor_admin {
+        position: relative;
+        bottom: 120px;
+        left: 200px;
+    }
+
+    .izquierda-arriba_admin figure {
+        border: none;
+        width: 150px;
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .izquierda-arriba_admin h5 {
+        position: relative;
+        left: 160px;
+        top: 40px;
+        font-size: 16px;
+    }
+
+    .izquierda-arriba_admin #f-perfil {
+        width: 110px;
+        height: 110px;
+        margin-top: 10px;
+    }
+/* 
+    .izquierda-abajo {
+        position: relative;
+        top: 80px;
+        left: 20px;
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    .datos {
+        font-size: 14px;
+    }
+
+    .datos p {
+        margin-left: 20px;
+    }
+
+    .derecha-arriba {
+        position: relative;
+        z-index: 3 ;
+        bottom: 110px;
+        left: 50px;
+        font-size: 14px;
+        border: none;
+        width: 180px;
+    }
+
+    .derecha-abajo {
+        position: relative;
+        right: 60px;
+        width: 300px;
+        bottom: 50px;
+    }
+
+    .contenedor-central_admin {
+        width: 60%;
+    } */
 }
