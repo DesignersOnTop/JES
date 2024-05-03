@@ -15,7 +15,7 @@
                     <img src="imagenes/recursos/logo-jes.png" alt="logo-jes">
                 </figure>
                 <h2>JES</h2>
-                <h3>Junior Explorer System</h3> 
+                <h3>Junior Explorer System</h3>
             </div>
         </section>
         <!-- En este section estara el formulario de inicio de sesion ademas del titulo  -->
@@ -26,7 +26,7 @@
                         <figure class="svg">
                             <img src="imagenes/iconos/user-id-verification.svg" alt="icono-id">
                         </figure>
-                        <input type="text" id="id" placeholder="Introduzca Su ID" autofocus autocomplete="on">
+                        <input type="text" id="id" placeholder="Introduzca Su ID" autofocus autocomplete="off">
                     </div>
                     <!-- En esta parte estara tanto el icono de la contraseña asi mismo como el input de la contraseña -->
                     <div id="introducir-contraseña">
@@ -38,11 +38,12 @@
                     <!-- link para reportar errores al admin -->
                         <a href="problemas-al-iniciar.html" class="problemas-al-iniciar">Tiene alg&uacute;n problema al iniciar?</a>
                 <!-- Boton de inicio de sesion -->
-                <input type="submit" id="iniciar-sesion" onclick="usuario()">Iniciar Sesion</input>
+                <input type="button" id="iniciar-sesion" value="Iniciar Sesion" onclick="usuario()"></input>
                 <!-- <input type="submit" value="Solicitar Acceso"> -->
             </form>
         </section>
     </main>
     <script src="js/user_validator.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
