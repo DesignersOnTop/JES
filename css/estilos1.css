@@ -5,6 +5,10 @@
     background-image: url(../imagenes/background\(BODY\)1.jpg);
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background-image: url(../imagenes/background\(BODY\).jpg);
     background-size: cover;
@@ -592,39 +596,6 @@ nav {
 }
 /* AQUI TERMINA EL FORMULARIO DE REGISTRO */
 
-.menu{
-    position: relative;
-    top: 18px;
-    left: 40px;
-    height: 20px;
-    width: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    transition: 300ms ease-in-out;
-    cursor: pointer;
-}
-
-.bar {
-    height: 3px;
-    width: 24px;
-    background-color: #fff;
-    border-radius: 5px;
-    transition: 200ms ease-in-out;
-    transform: translateX(-10px) translateY(5px);
-}
-
-.header-home-container .bar{
-    height: 4px;
-    width: 26px;
-    background-color: #fff;
-    border-radius: 5px;
-    transition: 200ms ease-in-out;
-}
-
 /* E-CALIFICACIONES */
 .tabla-calificacion th {
     height: 10px;
@@ -762,8 +733,11 @@ nav {
 
 /* Dispositivos móviles con una anchura de pantalla de hasta 600px */
 @media screen and (max-width: 600px) {
-    .home-html{
+    html {
         height: 100%;
+    }
+    .html-auto{
+        height: auto;
     }
     #index-main, #problemas-al-iniciar-main {
         width: 100%;
@@ -838,17 +812,42 @@ nav {
         border: none;
     }
 
-    .menu-navegador {
-        width: 50px;
-        background-color: rgba(0, 0, 0, 0);
+    .header-home-container .menu-navegador {
+        /* width: 50px; */
+        /* background-color: rgba(0, 0, 0, 0); */
         border: none;
         box-shadow: none;
+        /* background-color: red; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        /* overflow: hidden; */
+        transform: translateX(-180px);
     }
+
+    .header-home-container .menu-navegador figure img {
+        display: inline-block;
+        margin-left: 50px;
+        top: 20px;
+    }
+
+    .menu {
+        left: 94%;
+        top: 24px;
+    }
+
+    .menu img {
+        width: 30px;
+    }
+
+    .header-home-container .menu-navegador * {
+      position: relative;
+    } 
+    
 
     .header-home-container {
         width: 100%;
-        /* background-color: #000; */
-        transform: translateX(-20px);
+        height: 100%;
     }
 
     .logo-jes-home img {
@@ -862,14 +861,14 @@ nav {
        display: inline-block;
     }
     .jes-nombre h2 {
-        color: #fff;
+        color: #ffffff7c;
         text-align: center;
         font-size: 14px;
-        display: none;
+        /* display: none; */
     }
     .jes-nombre h3 {
-        color: #fff;
-        font-size: 12px;
+        color: #ffffff9c;
+        font-size: 14px;
         
     }
     .identidad figcaption {
@@ -893,7 +892,6 @@ nav {
 
     .home-article-container {
         flex-flow: column;
-        gap: 10px;
         transform: translateY(-30px);
     }
 
@@ -904,7 +902,7 @@ nav {
         width: 80%;
         height: 80px;
         margin: 0;
-        margin-bottom: 10px;
+        margin-bottom: 10%;
         margin-left: 10%;
     }
 
@@ -1020,18 +1018,17 @@ nav {
     /* E-CALIFICACIONES */
     .tabla-calificacion-centrar{
         width: 98%;
-        overflow-x: scroll;
     }
 
     .tabla-calificacion {
-        border-radius: none;
+        border-radius: 0;
         
     }
 
     .tabla-calificacion td, .tabla-calificacion th {
         min-width: 100px;
         padding: 20px 10px;
-        border-radius: none;
+        border-radius: 0;
     }
 
     .botones-container {
@@ -1052,6 +1049,9 @@ nav {
 /* Tablets con una anchura de pantalla de 601px a 900px */
 @media screen and (min-width: 601px) and (max-width: 900px) {
     /* Estilos para tablets */
+    .home-html{
+        height: 100%;
+    }
     #problemas-al-iniciar-main, #index-main {
         background-color: rgba(0, 0, 0, 0.84);
         max-width: 640px;
@@ -1242,6 +1242,10 @@ nav {
 
 /* Computadoras de escritorio con una anchura de pantalla de 901px en adelante */
 @media screen and (min-width: 901px) and (max-width: 1200px) {
+    .home-html{
+        height: 100%;
+    }
+
     #problemas-al-iniciar-main, #index-main {
         background-color: rgba(0, 0, 0, 0.84);
         width: 80%;
