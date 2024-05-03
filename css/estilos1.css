@@ -16,8 +16,8 @@ body {
 
 /* Header de las paginas que usaran todos excluyendo a las paginas index.html y problemas-al-iniciar.html */
 header {
-    background-color: #000000a4;
-    backdrop-filter: blur(20px);
+    background-color: #00000049;
+    backdrop-filter: blur(30px);
     height: 65px;
     width: 100%;
     margin-bottom: 40px;
@@ -25,6 +25,7 @@ header {
 
 header h1 {
     font-size: 25px;
+    transform: translateX(-45%);
 }
 
 header ul {
@@ -39,7 +40,7 @@ header li {
     width: 24px;
     height: 24px;
     margin: 0 10px;
-    transform: translateX(-40px) translateY(-12px);
+    transform: translateX(-50px) translateY(-22px);
 }
 
 header a {
@@ -48,24 +49,22 @@ header a {
 }
 
 nav {
-    /* background-color: #000; */
-    width: 160px;
+    border-bottom: 1px solid #ffffff60;
+    width: 130px;
     height: 30px;
-    border-radius: 20px;
-    /* border: 1px solid #fff; */
-    box-shadow: 1px -1px 1px white;
+    transform: translateY(5px) translateX(-45px);
 }
 
-nav:hover {
-    transform: translateY(50px);
-    position: relative;
-    height: 140px;
-    background-color: #0000005e;
-}
 
+
+.menu-navegador figure img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
 
 .header-container {
-    width: 95%;
+    width: 100%;
     height: 63px;
     display: flex;
     align-items: center;
@@ -75,10 +74,12 @@ nav:hover {
 }
 
 .JES {
+    width: fit-content;
     display: flex;
     align-items: center;
     text-align: center;
     color: white;
+    transform: translateX(-15%);
 }
 
 .JES img {
@@ -101,31 +102,34 @@ nav:hover {
 
 /* HEADER DE LAS PAGINAS HOMES */
 .home-header {
-    background-color: #03030313; 
+    background-color: #0303032d; 
     backdrop-filter: blur(40px);
+    border: none;
 }
 
 .header-home-container {
-    background-color: #00000000;
     display: flex;
     height: 60px;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     color: white;
-    width: 95%;
-    margin-left: 20px;
+    width: 100%;
 }
 
-.identidad img {
+.header-home-container nav {
+    position: relative; 
+    left: 42%;
+    width: 50px;
+    border: none;
+}
+
+.header-home-container .identidad figure img {
     border-radius: 100%; 
     margin-top: 20px;
-    width: 40px;
-}
-
-.identidad .nombre {
-    transform: translateX(50px) translateY(-30px); 
-    font-size: 12px; 
-    font-weight: bold;
+    width: 34px;
+    transform: translateY(-18px) translateX(-20px);
+    margin-right: 20px;
+    object-fit: cover;
 }
 
 .logo-jes-home img {
@@ -134,6 +138,15 @@ nav:hover {
     position: relative;
     bottom: 30px;
     right: 20px;
+}
+
+.jes-nombre-home {
+    transform: translateX(7%);
+}
+
+.jes-nombre-home h2 {
+    text-align: center; 
+    font-size: 20px;
 }
 
 /* AQUI TERMINA LOS HEADER DE LOS HOMES */
@@ -152,7 +165,7 @@ nav:hover {
     height: 120px;
     background-color: #000;
     border-radius: 15px;
-    box-shadow: 2px 2px #FFC93D;
+    box-shadow: 2px 2px #ffc83d2d;
     margin: 0 30px;
     position: relative;
     top: 90px;
@@ -182,7 +195,12 @@ nav:hover {
 }
 
 .home-admin {
-    box-shadow: 2px 2px rgba(0, 255, 255, 0.322);
+    box-shadow: 2px 2px rgba(0, 255, 255, 0.185);
+}
+
+.home-admin:hover {
+    box-shadow: 2px 2px rgba(0, 255, 255, 0.445);
+    transition: all .5s;
 }
 
 .home-article-container {
@@ -590,24 +608,21 @@ nav:hover {
     cursor: pointer;
 }
 
-.bar{
+.bar {
     height: 3px;
-    width: 20px;
+    width: 24px;
     background-color: #fff;
     border-radius: 5px;
     transition: 200ms ease-in-out;
+    transform: translateX(-10px) translateY(5px);
 }
 
-.menu.active .bar:nth-last-child(1){
-    transform: translateY(-7px) rotate(-45deg);
-}
-
-.menu.active .bar:nth-last-child(2){
-    opacity: 0;
-}
-
-.menu.active .bar:nth-last-child(3){
-    transform: translateY(7px) rotate(40deg);
+.header-home-container .bar{
+    height: 4px;
+    width: 26px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 200ms ease-in-out;
 }
 
 /* E-CALIFICACIONES */
@@ -698,10 +713,15 @@ nav:hover {
 
 /* Pantallas emergentes con sweetAlertm, estilos: */
 .emergente-class {
-    background-color: #00000060;
-    backdrop-filter: blur(30px);
+    background-color: #000000d2;
+    /* backdrop-filter: blur(30px); */
     border-radius: 10px;
     color: white;
+    box-shadow: 2px 2px rgba(255, 255, 255, 0.123);
+}
+
+.classes-eme {
+    width: 200px;
 }
 
 .confirm-eme {
@@ -718,15 +738,36 @@ nav:hover {
 }
 
 .container-eme {
-    backdrop-filter: blur(45px);
+    backdrop-filter: blur(35px);
+}
+
+.conta-eme {
+    backdrop-filter: blur(10px);
+}
+
+/* MENU NAVEGADOR EMERGENTE */
+.menu-navegador-eme * {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.menu-navegador-eme a {
+    border: none;
+    color: #FFC93D;
 }
 
 /* Responsive */
 
 /* Dispositivos móviles con una anchura de pantalla de hasta 600px */
 @media screen and (max-width: 600px) {
+    .home-html{
+        height: 100%;
+    }
     #index-main, #problemas-al-iniciar-main {
         width: 100%;
+        height: 100%;
         border: none;
         margin-top: 0;
         border-radius: 0;
@@ -896,17 +937,19 @@ nav:hover {
     }
     header {
         overflow: hidden;
-        border-bottom: 1px solid white;
+        /* border-bottom: 1px solid white; */
         margin-bottom: 0;
     }
     
     .header-container {
-        /* background-color: #000000; */
-        width: 90%;
+        background-color: #0000006c;
+        height: 100%;
+        width: 100%;
     }
     .header-container h1 {
         font-size: 20px;
-        transform: translateX(-40px); 
+        transform: translateX(-60px);
+        margin-top: 4px; 
         
     }
     .header-container nav {
@@ -914,6 +957,8 @@ nav:hover {
         height: 25px;
         background-color: #00000000;
         border: none;
+        position: relative;
+        left: 8%;
     }
     .header-container nav img {
         width: 20px;
@@ -926,9 +971,9 @@ nav:hover {
         display: none;
     }
     .JES img {
-        width: 40px;
+        width: 50px;
         height: 40px;
-        transform: translateX(-40px);
+        transform: translateX(-30px);
     }
     .form-container {
         background-color: rgba(0, 0, 0, 0);
@@ -966,11 +1011,42 @@ nav:hover {
 
     .form-main {
         background-color: rgba(0, 0, 0, 0.706);
-        height: 972px;
+        height: 100%;
         padding-bottom: 10px;
         overflow: hidden;
     }
     /* aqui termina el formulario de registro */
+
+    /* E-CALIFICACIONES */
+    .tabla-calificacion-centrar{
+        width: 98%;
+        overflow-x: scroll;
+    }
+
+    .tabla-calificacion {
+        border-radius: none;
+        
+    }
+
+    .tabla-calificacion td, .tabla-calificacion th {
+        min-width: 100px;
+        padding: 20px 10px;
+        border-radius: none;
+    }
+
+    .botones-container {
+        width: 60%;
+        margin-top: 10px;
+        top: 75%;
+        margin: 0 auto;
+        border-radius: 10px;
+        justify-content: space-around;
+    }
+
+    .botones-container * {
+        padding: 10px;
+    }
+    /* TERMINA E-CALIFCACIONES */
 }
 
 /* Tablets con una anchura de pantalla de 601px a 900px */
@@ -1265,4 +1341,3 @@ nav:hover {
         transform: translateX(-10px);
     }
 }
-
