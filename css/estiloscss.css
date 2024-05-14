@@ -1,0 +1,1015 @@
+@import url(./css/reset.css);
+
+body {
+    background-image: url(../imagenes/background\(BODY\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+html {
+    height: 100%;
+}
+
+/* HEADER DE LAS PAGINAS HOMES */
+.head-h1 {
+    font-size: 22px;
+    font-style: italic;
+}
+.home-header {
+    background-color: #000000d2;
+    backdrop-filter: blur(10px);
+    max-width: 16%;
+    min-width: 16%;
+    height: 100%;
+}
+
+.jes-nombre-home h2 {
+    text-align: center; 
+    font-size: 20px;
+}
+
+.header-home-container {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+}
+
+.header-form figure {
+    width: 60px;
+    height: 50px;
+}
+.header-form img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* AQUI TERMINA LOS HEADER DE LOS HOMES */
+
+.main-container-home{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.416);
+    width: 84%;
+    overflow: hidden;
+}
+
+
+/* DISEÑO DEL NAV */
+
+.body-container {
+    display: flex;
+    height: 100%;
+}
+
+.nav-li-lateral a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #FFC93D;
+    background-color: rgba(0, 0, 0, 0.318);
+    margin-bottom: 12px;
+    height: 6vh;
+    margin-top: 12px;
+    border-radius: inherit;
+}
+
+.a-perfil::before {
+    content: url(imagenes/iconos/usuario.svg);
+}
+.a-curso::before {
+    content: url(imagenes/iconos/curso.svg);
+}
+.a-horario::before {
+    content: url(imagenes/iconos/horario.svg);
+}
+.a-calificaciones::before {
+    content: url(imagenes/iconos/libro.svg);
+}
+.a-perfil::before,.a-curso::before,.a-horario::before,.a-calificaciones::before {
+    width: 8px;
+    height: 8px;
+    transform: translateY(-10px);
+    margin:0 10px;
+}
+
+.nav-li-lateral a h3 {
+    margin-left: 15px;
+}
+
+.nav-current {
+    background-color: #ffc83d3e;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.nav-current a {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-current h3 {
+    color: white;
+}
+
+
+.logo-jes {
+    width: 50%;
+    /* height: 50px; */
+}
+
+.logo-jes img {
+    width: 100%
+}
+
+#li-admin {
+    background-color: rgba(0, 255, 255, 0.24);
+}
+/* TERMINACION DEL CODDIGO DEL DISEÑO DEL NAV */
+
+/* ------------------------------------------------ */
+.subir-imagen-registro input[type="file"] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.form-container label {
+    color: rgb(47, 172, 172);
+    font-weight: 400;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.subir-imagen-registro label {
+    border: 1px solid white; 
+    background-color: #000000d2;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    right: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100px;
+    padding: 42px 0;
+    border-radius: 100%;
+}
+
+.subir-imagen-registro label:hover {
+    box-shadow: 2px 2px gray;
+    transition: all .3s;
+}
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.706);
+    margin: 0 auto;
+    width: 80%;
+    height: 480px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    border-radius: 10px;
+    flex-flow: row wrap;
+    margin-bottom: 50px;
+}
+
+.form-container legend {
+    color:white; 
+    font-weight: bold;
+    font-style: italic;
+}
+
+.formulario-de-registro {
+    width: 30%;
+    margin: 10px 0;
+    margin-left: 10px;
+} 
+
+.formulario-de-registro input, .formulario-de-registro select {
+    border: none;
+    border-radius: 2px;
+    border-bottom: 1px solid #fff;
+    background-color: #ffffff00;
+    color: white;
+    width: 70%;
+    height: 30px;
+    padding: 0 5px;
+}
+
+.formulario-de-registro select:focus{
+    background-color: #0f1113;
+    color: white;
+}
+
+.submit-registro {
+    flex-basis: 40%;
+    margin: 0 auto;
+}
+
+.submit-registro input {
+    background-color: black;
+    border: 1px solid rgb(47, 172, 172);
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 60%;
+    height: 30px;
+    margin-left: 60px;
+}
+
+/* Perfiles*/
+.central {
+    background-color: rgba(0, 0, 0, 0.547);
+    backdrop-filter: blur(10px);
+    color: #FFF;
+    border-radius: 10px;
+    max-width: 70%;
+    max-height: 480px;
+    padding: 0 50px;
+    margin:  0 auto;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.izquierda-arriba {
+    max-height: 500px ;
+    margin-top: 40px;
+    max-width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.izquierda-arriba h5 {
+    position: relative;
+    top: -10px;
+    font-size: 20px;
+    color: #FFC93D;
+}
+.izquierda-abajo {
+    margin-top: 40px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.izquierda-abajo h6 {
+    text-align: center;
+    color: gray;
+    position: relative;
+    bottom: 20px;
+}
+
+.izquierda-abajo h4 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 5px;
+}
+
+.izquierda-arriba img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 100% ;
+}
+
+.derecha-arriba {
+    margin-bottom: 40px;
+    border-bottom: 2px solid #CCC;
+    padding-bottom: 30px;
+    /* text-align: center; */
+}
+
+.contenedor-central {
+    margin-left: 100px;
+    margin-top: 40px;
+    width: 400px 
+}
+
+.derecha-abajo {
+    text-align: center;
+}
+
+.datos {
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: row;
+
+}
+
+.datos p {
+    color: #FFF;
+    margin-left: 70px;
+    text-align: center;
+}
+
+.datos h4 {
+    color: #CCC;
+    width: 80px;
+    text-align: justify;
+}
+
+.izquierda-arriba figure {
+    border-bottom: 2px solid gray;
+    padding-bottom: 26px;
+}
+
+.admin-color {
+    color: aqua;
+}
+
+.izquierda-arriba .admin-color {
+    color: white;
+}
+
+/* editar perfil admin */
+
+#editor_admin {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 40px;
+    top: 40px;
+}
+
+/* Perfiles terminados */
+
+/* E-CALIFICACIONES */
+
+.tabla-calificacion th {
+    height: 10px;
+    background-color: #000;
+    border-left: 1px solid rgba(255, 255, 255, 0.103);
+}
+
+
+.tabla-calificacion-centrar {
+    width: 70%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-radius: 10px;
+    height: 325px;
+    padding-top: 10px;
+}
+
+.tabla-centrar {
+    padding: 65px 0;
+}
+
+.tabla-calificacion {
+    margin: 0 auto;
+    color: #FFF;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.tabla-calificacion td, .tabla-calificacion th {
+    min-width: 160px;
+    padding: 20px 0;
+    border-radius: inherit;
+}
+
+.tabla-calificacion td {
+    background-color: rgba(0, 0, 0, 0.849);
+    border-left: 1px solid rgba(255, 255, 255, 0.103);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.103);
+    border-top: 1px solid rgba(255, 255, 255, 0.103);
+}
+
+.tabla-calificacion td:hover {
+    background-color: #ffc83d60;
+    backdrop-filter: blur(20px);
+}
+
+.botones-container {
+    display: flex;
+    height: 50px;
+    width: 20%;
+    justify-content: space-between;
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 20px;
+    left: 47%;
+    background-color: #00000068;
+    backdrop-filter: blur(15px);
+    border-radius: 5px;
+    z-index: 0;
+}
+
+.botones-container * {
+    padding: 10px 10px;
+    border: none;
+    background-color: #000000d2;
+    backdrop-filter: blur(5px);
+    color: #ffc83db6;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.botones-container *:hover {
+    color: #fff;
+    background-color: #ffc83d60;
+}
+
+#scroll-izquierdo {
+    border-radius: 5px 0 0 5px;
+}
+
+#scroll-derecho {
+    border-radius: 0 5px 5px 0;
+}
+/* Tabla horario central */
+.tabla-horario-centrar {
+    height: auto;
+    width: fit-content;
+}
+
+/* Aqui termina las tablas horario y calificaciones */
+
+/* Menu desplegable */
+
+.classes-eme {
+    background-color: rgba(0, 0, 0, 0.596);
+    backdrop-filter: blur(30px);
+    width: 300px;
+    height: 200px;
+    border-radius: 0 10px 0 10px;
+    margin-right: 2px;
+}
+
+.classes-eme li {
+    margin-bottom: 10px;
+}
+
+.a-eme {
+    color: #ffc83da7;
+    text-decoration: none;
+}
+
+.a-eme:hover {
+    color: white;
+    transition: 0.7s;
+}
+
+.classes-eme li::before {
+    content: url(imagenes/iconos/ajuste.svg);
+    margin-right: 5px;
+}
+
+.cerrar-eme:hover {
+    color: red;
+    transition: 0.7s;
+}
+
+/* Termina aqui el menu */
+
+/* CURSOS */
+.curso-container {
+    border: 1px solid red;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.info-p {
+    border: 1px solid purple;
+    color: white;
+    background-color: #0000007b;
+    backdrop-filter: blur(10px);
+    /* text-align: center; */
+}
+
+.identidad-profesor {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.info-p img {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    object-fit: cover;
+    text-align: center;
+}
+
+.info-e {
+    border: 1px solid orange;
+}
+.info-e table {
+    border: 1px solid black;
+    width: 100%;
+    background-color: #0000007b;
+    backdrop-filter: blur(10px);
+    color: white;
+}
+.info-e legend {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.171);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.info-e th {
+    width: 100px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.171);
+}
+
+/* Termina cursos */
+
+/* INICIO  DE SMAILYN */
+
+/* Contenedor para la foto de perfil */
+
+.central {
+    background-color: #000000e0;
+    color: #FFF;
+    border-radius: 10px ;
+    width: 70%;
+    height: 480px;
+    margin:  0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.izquierda-arriba {
+    height: 500px ;
+    margin-top: 40px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.izquierda-arriba h5 {
+    position: relative;
+    top: -10px;
+    font-size: 20px;
+    color: #FFC93D;
+}
+.izquierda-abajo {
+    margin-top: 40px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.izquierda-abajo h6 {
+    text-align: center;
+    color: gray;
+    position: relative;
+    bottom: 20px;
+}
+
+.izquierda-abajo h4 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 5px;
+}
+
+.izquierda-arriba img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 100% ;
+}
+
+.derecha-arriba {
+    margin-bottom: 40px;
+    border-bottom: 2px solid #CCC;
+    padding-bottom: 30px;
+    /* text-align: center; */
+}
+
+.contenedor-central {
+    margin-left: 100px;
+    margin-top: 40px;
+    width: 400px 
+}
+
+.derecha-abajo {
+    text-align: center;
+}
+
+.datos {
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: row;
+
+}
+
+.datos p {
+    color: #FFF;
+    margin-left: 70px;
+    text-align: center;
+}
+
+.datos h4 {
+    color: #CCC;
+    width: 80px;
+    text-align: justify;
+}
+
+.izquierda-arriba figure {
+    border-bottom: 2px solid gray;
+    padding-bottom: 26px;
+}
+
+/* ICONO PARA EDITAR */
+
+figure .editor {
+    width: 30px;
+    height: 30px;
+}
+
+.editor {
+    position: absolute;
+    top: 150px;
+    right: 270px;
+    width: 100%;
+    height: 100%;
+}
+
+#editor_admin {
+    position: absolute;
+    top: 100px;
+    right: 280px;
+    width: 100%;
+    height: 100%;
+}
+
+figure #editor_admin {
+    width: 30px;
+    height: 30px;
+}
+/* PERFIL PARA EL ADMINISTRADOR */
+
+.central-admin {
+    background-color: #000000e0;
+    color: #FFF;
+    border-radius: 10px ;
+    width: 70%;
+    height: 440px;
+    margin:  0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.izquierda-arriba_admin {
+    height: 500px ;
+    margin-top: 40px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.izquierda-arriba_admin h5 {
+    position: relative;
+    top: -10px;
+    font-size: 20px;
+    color: #FFC93D;
+}
+
+.izquierda-arriba_admin img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 100% ;
+    margin-top: 30px ;
+}
+
+.contenedor-central_admin {
+    position: relative;
+    margin-left: 100px;
+    margin-top: 40px;
+    width: 400px 
+}
+
+.derecha-abajo_admin {
+    text-align: center;
+}
+
+.izquierda-arriba_admin figure {
+    border-bottom: 2px solid gray;
+    padding-bottom: 36px;
+}
+
+/* Asignacion de Horaro para el Administrador */
+
+.contenedor-info {
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 250px;
+    width: 70%;
+    border-radius: 15px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-info p {
+    color: #FFF;
+    text-align: center;
+}
+
+.contenedor-info img {
+    height: 100px;
+    width: 100px;
+    margin: 15px 0;
+}
+
+.horizontal {
+    
+    height: 150px;
+    width: 550px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vertical {
+    position: absolute;
+}
+
+.flecha-regresar {
+    position: relative;
+}
+
+.flecha-regresar img {
+    width: 30px;
+    height: 30px;
+    transform: translateX(-120px) translateY(-60px);
+}
+
+.tabla-horario {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.65);
+    margin: 0 auto;
+    color: #FFF;
+    height: 380px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.tabla-centrar {
+    padding: 50px 0;
+}
+
+.tabla-cabecera {
+    background-color: #000;
+}
+
+.tabla-horario td {
+    text-align: center;
+}
+
+.tabla-horario th {
+    background-color: #000;
+    width: 150px;
+}
+
+/* Departamentos admin y profesores */
+
+.section-secciones-container {
+    border: 0.5px solid gray;
+    width: 800px;
+    height: 400px;
+    background-color: #000;
+    margin: 0 auto;
+    margin-top: 80px;
+    border-radius: 20px;
+}
+
+.section-secciones-container article {
+    width: 98%;
+    margin: 0 auto;
+    height: 133px;
+    text-align: center;
+}
+
+.article-secciones-border {
+    border-bottom: 2px solid #FFF;
+}
+
+.section-secciones-container a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+.main-departamentos-container {
+    padding-bottom: 125px;
+}
+
+.section-secciones-container h2 {
+    line-height: 120px;
+}
+
+.horizontal h4 {
+    margin-left: 10px;
+    color: gray;
+}
+.vertical h4 {
+    color: #FFF;
+}
+
+/* RESPONSIVE */
+
+/* DESKTOP */
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    * {
+        font-size: 16px;
+    }
+
+    .izquierda-arriba {
+        transform: translateX(40px);
+    }
+
+    .izquierda-arriba h5 {
+        position: relative;
+        top: 10px;
+    }
+
+    .izquierda-arriba img {
+        height: 200px;
+        width: 200px;
+        margin-top: 40px;
+    }
+
+    .contenedor-central {
+        padding: 20px;
+    }
+
+   .datos p {
+        margin-left: 30px;
+    }
+
+   .datos h4 {
+        margin-right: 10px ;
+   }
+
+   /* PARTE DEL ADMIN */
+
+   .izquierda-arriba #editor_admin {
+        border: 1px solid #fff;
+        position: relative;
+        bottom: 340px;
+        left: 540px;
+   }
+
+   .central-admin {
+        width: 80%;
+        height: 420px;
+   }
+
+    /* a / Asignacion horario profesor  */
+
+    .derecha-info {
+        margin-left: 40px;
+    }
+
+    .izquierda-info {
+        position: relative;
+        right: 10px;
+    }
+}
+  
+/* TABLET */
+
+@media screen and (min-width: 601px ) and (max-width: 900px) {
+
+    * {
+        font-size: 14px;
+    }
+
+    .izquierda-arriba img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .central {
+        width: 300px;
+    }
+
+    .central,
+    .central-admin {
+        width: 90%;  
+        height: auto; 
+    }
+
+    .izquierda-arriba,
+    .izquierda-arriba_admin {
+        width: 60%; 
+        margin-top: 20px;
+    }
+
+    .contenedor-central,
+    .contenedor-central_admin {
+        margin-left: 0; 
+        width: 100%; 
+    }
+}
+
+/* CELULARES */
+
+@media screen and (max-width: 600px) {
+    .perfil-main {
+        padding-bottom: 60px;
+    }
+
+    .central {
+        width: 70%;
+        display: flex;
+        flex-flow: column;
+        /* padding-bottom: 50px; */
+    } 
+
+    .izquierda-arriba figure {
+        border: none;
+        width: 150px;
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .izquierda-arriba h5 {
+        position: relative;
+        left: 160px;
+        top: 40px;
+        font-size: 16px;
+    }
+
+    .izquierda-arriba img {
+        width: 110px;
+        height: 110px;
+        margin-top: 10px;
+    }
+
+    .izquierda-abajo {
+        position: relative;
+        top: 80px;
+        left: 20px;
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    .datos {
+        font-size: 14px;
+    }
+
+    .datos p {
+        margin-left: 20px;
+    }
+
+    .derecha-arriba {
+        position: relative;
+        z-index: 3 ;
+        bottom: 110px;
+        left: 50px;
+        font-size: 14px;
+        border: none;
+        width: 180px;
+    }
+
+    .derecha-abajo {
+        position: relative;
+        right: 60px;
+        width: 300px;
+        bottom: 50px;
+    }
+
+    .contenedor-central {
+        width: 60%;
+    }
+}
+
+/* FIN DE SMAILYN ( Por ahora...) */
